@@ -28,7 +28,7 @@ Participant --> DP
 Datamanager --> DP
 DP --> onlimit:::system
 Researcher --> onlimit
-onlimit --> DS
+onlimit --> DS:::external
 Researcher --> DS
 
 classDef system stroke-width:4pt
