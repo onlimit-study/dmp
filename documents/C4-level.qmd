@@ -10,9 +10,11 @@ Even though the C4 model is primarily used for software architecture, we use it 
 ON LiMiT is a research project that collects data from various sources, including biological samples, questionnaires, and other electronic data. The data is collected from participants in the study, healthcare professionals, and bioanalysts. The data is stored on GenomeDKs servers and will be made available for researchers to analyze.
 The following diagram shows the context of ON LiMiT, including the main users and data providers.
 
-![C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers.](../images/c4_context.svg)
+![C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers.](../images/c4_context.png)
 
+::: {.content-hidden}
 ```{mermaid}
+
 %%| label: fig-c4-context
 %%| fig-cap: "C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers."
 flowchart TD
@@ -26,23 +28,26 @@ onlimit@{shape: proc, label: "<b>ON LiMiT</b><br><i>[system]</i><br><br>the ON L
 DS@{shape: proc, label: "<b>Denmark Statistics</b><br><i>[system]</i><br>Closed analysis tool where data from ON LiMiT can be uploaded."}
 DP@{ shape: procs, label: "<b>Data Collectors</b><br><i>[systems]</i><br>Monsenso, MyFood24,<br>Food preferences app,<br>SENS, Libre CGM,<br>Clinic: biological samples."}
 
-Bioanalyst --> DP:::external
+Bioanalyst --> DP
 Healthprof --> DP
 Participant --> DP
 Datamanager --> DP
-DP --> onlimit:::system
+DP --> onlimit
 Researcher --> onlimit
-onlimit --> DS:::external
+onlimit --> DS
 Researcher --> DS
 
 classDef system stroke-width:4pt
 classDef external fill:lightgrey
 ```
-
+:::
 ## Container
 
 The Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.
 
+![C4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis tools.](../images/c4_container.png)
+
+::: {.content-hidden}
 ```{mermaid}
 %%| label: fig-c4-container
 %%| fig-cap: "C4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis tools."
@@ -81,3 +86,4 @@ Researcher --> DS
 classDef system fill:none
 classDef external fill:lightgrey
 ```
+:::
