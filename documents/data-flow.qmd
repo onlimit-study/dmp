@@ -61,16 +61,16 @@ iMotion Food Preference is a system that tracks the eye movements of participant
 
 ## SENS
 
-SENS is an activity monitor that will be placed on the study participants for a week. The data collected by a SENS device will be extracted at clinic visits and the data will be uploaded to the REDCap database. The SENS device will track the participants' physical activity levels during week ?? of the study.
+SENS is an activity monitor that will be placed on the study participants for a week. The data collected by a SENS device will be extracted at clinic visits and the data will be uploaded to the REDCap database. The SENS device will track the participants' physical activity levels in selected weeks of the study.
 
 ## Libre
 
-Libre is a continuous glucose monitoring (CGM) sensor from Abbott that will be worn by the participants for a week. The data collected by the Libre device will be extracted at clinic visits and uploaded to the REDCap database. The Libre device will track the participants' glucose levels during week ?? of the study.
+Libre is a continuous glucose monitoring (CGM) sensor from Abbott that will be worn by the participants for a week. The data collected by the Libre device will be extracted at clinic visits and uploaded to the REDCap database. The Libre device will track the participants' glucose levels in selected weeks of the study.
 
 ## Monsenso
 
-Monsenso is a mobile app that will be used by the participants to enter data about their daily activities, mood, and other relevant information. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.
+Monsenso is a mobile app that will be used by the participants to track their physical activity (via Withings or Garmin activity watch), adherence to the assigned diet intervention (via short diet screener), bedy weight (via Withings or Gamin scale), answer other small questionnaires, follow the study schedule and interact with study personnel via a chat function. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.
 
-### Withings Watch and Scales
+### Withings or Garmin Watch and Scales
 
-The Withings Watch and Scales will be used by the participants to track their physical activity and weight. The data collected by these devices will be transmitted to the Monsenso app where it will be collated and then uploaded to the REDCap database. The watch will track the participants' physical activity levels, while the scales will track their weight.
+The Withings or Garmin Watch and Scales will be used by the participants to track their physical activity and weight. The data collected by these devices will be transmitted to the Monsenso app where it will be collated and then uploaded to the REDCap database. The watch will track the participants' physical activity levels, while the scales will track their weight.
