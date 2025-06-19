@@ -12,10 +12,10 @@ flowchart LR
 Lab@{shape: stadium, label: "<b>Lab staff</b><br> collecting and analysing biological samples from participants."}
 HP@{shape: stadium, label: "<b>Healthcare professional</b><br> working with the participants in the study."}
 Pt@{shape: stadium, label: "<b>Participant</b><br> participating in the study."}
-REDC@{shape: cyl, label: "<b>REDCap db</b><br> database, main purpose is to collate data before it is uploaded onto GenomeDK."}
+Red@{shape: cyl, label: "<b>REDCap db</b><br> database, main purpose is to collate data before it is uploaded onto GenomeDK."}
 Genome@{shape: lin-cyl, label: "<b>GenomeDK</b><br> HPC facility where the processed data will be stored. "}
 
-Frms@{shape: proc, label: "<b>Forms in REDCap</b><br> multiple forms and questionaires for both healthcare staff and participants"}
+Forms@{shape: proc, label: "<b>Forms in REDCap</b><br> multiple forms and questionnaires for both healthcare staff and participants"}
 Mons@{shape: proc, label: "<b>Monsenso</b><br> app which allows users to enter information about ...."}
 MyF@{shape: proc, label: "<b>MyFood24</b><br> app which helps users to register food ...."}
 iMo@{shape: proc, label: "<b>iMotions Food Preference</b><br> tracks eye movement of participants when looking at pictures of food."}
@@ -27,10 +27,10 @@ MBox@{shape: proc, label: "<b>Meal Boxes</b><br> contains recipes and ingredient
 
 %%ID@{shape: proc, label: "<b>NAME</b><br> description ...."}
 
-Lab -->|Uploads data from systems ?| Frms
-HP --> |Completes data forms| Frms
-Frms --- REDC
-REDC -->|API| Genome
+Lab -->|Uploads data from systems ?| Forms
+HP --> |Completes data forms| Forms
+Forms --- Red
+Red -->|API| Genome
 
 Pt -->|Enters data| Mons
 Pt -->|Enters data| MyF
@@ -39,16 +39,16 @@ Pt -->|Wears for a week| Sen
 Pt -->|Wears for a week| Lib
 Pt -->|Wears continuously| Watch
 Pt --> |Uses| Scales
-Pt --> |Choses| MBox
+Pt --> |Chooses| MBox
 
-iMo --> |??| REDC
-Sen -->|Manual upload ?| REDC
-Lib -->|Manual upload ?| REDC
+iMo --> |??| Red
+Sen -->|Manual upload ?| Red
+Lib -->|Manual upload ?| Red
 Watch -->|transmits| Mons
 Scales -->|transmits| Mons
 Mons --> |API ?| Genome
 MyF --> |API ?| Genome
-MBox --> |?? may also be to REDCap| Genome
+MBox --> |?? may also be to RedCap| Genome
 ```
 
 ## REDCap
