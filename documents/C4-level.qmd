@@ -14,7 +14,6 @@ The following diagram shows the context of ON LiMiT, including the main users an
 
 ::: {.content-hidden}
 ```{mermaid}
-
 %%| label: fig-c4-context
 %%| fig-cap: "C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers."
 flowchart TD
@@ -28,6 +27,9 @@ onlimit@{shape: proc, label: "<b>ON LiMiT</b><br><i>[system]</i><br><br>the ON L
 DS@{shape: proc, label: "<b>Denmark Statistics</b><br><i>[system]</i><br>Closed analysis tool where data from ON LiMiT can be uploaded."}
 DP@{ shape: procs, label: "<b>Data Collectors</b><br><i>[systems]</i><br>Monsenso, MyFood24,<br>Food preferences app,<br>SENS, Libre CGM,<br>Clinic: biological samples."}
 
+onlimit:::system
+DP:::external
+DS:::external
 Bioanalyst --> DP
 Healthprof --> DP
 Participant --> DP
@@ -65,25 +67,30 @@ Website@{ shape: div-rect, label: "<b>Website</b><br><i>[systems]</i><br> websit
 Researcher@{shape: stadium, label: "<b>Researcher</b><br><i>[person]</i><br> interested in doing additional analysis of existing data."}
 
 subgraph i1 [<b>ON LiMiT environment</b>]
-Redcap --> Sprout
-Biobank ~~~ Sprout
-Sprout --> Genome
-Genome --> DS
-Genome -.-> Analysis
-Genome --> Flower
-Flower --> Website
+    Redcap --> Sprout
+    Biobank ~~~ Sprout
+    subgraph i2 [ ]
+        Sprout --> Genome
+        Genome --> Flower
+        Genome -.-> Analysis
+    end
+    Genome --> DS
+    Flower --> Website
 end
+
 Data:::external --> Sprout
 Data --> Redcap
-Data ~~~ i1:::system
+i1:::system
+i2:::hidden 
 Samples:::external --> Redcap
 Samples --> Biobank
-Website ~~~ Researcher
-Researcher --> Website
-DS ~~~ Researcher:::external
+Researcher:::external
 Researcher --> DS
+Researcher --> Analysis
+Researcher --> Website
 
 classDef system fill:none
 classDef external fill:lightgrey
+classDef hidden fill:none, stroke-width:0
 ```
 :::
