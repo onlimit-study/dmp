@@ -6,7 +6,12 @@ At present the diagram is a work in progress, and will be updated as the pilot s
 
 Underneath the diagram is a more detailed description of the components and their interactions.
 
+![Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage](../images/data-flow.png)
+
+::: {.content-hidden}
 ```{mermaid}
+%%| label: fig-c4-context
+%%| fig-cap: "Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage."
 flowchart LR
 
 Lab@{shape: stadium, label: "<b>Lab staff</b><br> collecting and analysing biological samples from participants."}
@@ -16,13 +21,13 @@ Red@{shape: cyl, label: "<b>REDCap db</b><br> database, main purpose is to colla
 Genome@{shape: lin-cyl, label: "<b>GenomeDK</b><br> HPC facility where the processed data will be stored. "}
 
 Forms@{shape: proc, label: "<b>Forms in REDCap</b><br> multiple forms and questionnaires for both healthcare staff and participants"}
-Mons@{shape: proc, label: "<b>Monsenso</b><br> app which allows users to enter information about ...."}
+Mons@{shape: proc, label: "<b>Liva</b><br> main study app which allows users to enter information about meals, activity, ect"}
 MyF@{shape: proc, label: "<b>MyFood24</b><br> app which helps users to register food ...."}
 iMo@{shape: proc, label: "<b>iMotions Food Preference</b><br> tracks eye movement of participants when looking at pictures of food."}
 Sen@{shape: proc, label: "<b>SENS</b><br> activity monitor, placed on the study participant and then collected and read in the clinic."}
-Lib@{shape: proc, label: "<b>Libre</b><br> CGM sensor from Abbott which participants will be wearing, will be read in the clinic."}
-Watch@{shape: proc, label: "<b>Withings Watch</b><br> smart watch which will connect to the Monsenso app."}
-Scales@{shape: proc, label: "<b>Withings Scales</b><br> smart scales which will connect to the Monsenso app."}
+Lib@{shape: proc, label: "<b>Libre</b><br> Blinded CGM sensor from Abbott which participants will be wearing. Will be read in the clinic."}
+Watch@{shape: proc, label: "<b>Withings Watch</b><br> smart watch which will connect to the Liva app."}
+Scales@{shape: proc, label: "<b>Withings Scales</b><br> smart scales which will connect to the Liva app."}
 MBox@{shape: proc, label: "<b>Meal Boxes</b><br> contains recipes and ingredients for two meals a day."}
 
 %%ID@{shape: proc, label: "<b>NAME</b><br> description ...."}
@@ -36,21 +41,21 @@ Pt -->|Enters data| Mons
 Pt -->|Enters data| MyF
 Pt -->|Enters data| iMo
 Pt -->|Wears for a week| Sen
-Pt -->|Wears for a week| Lib
+Pt -->|Wears for two weeks| Lib
 Pt -->|Wears continuously| Watch
 Pt --> |Uses| Scales
 Pt --> |Chooses| MBox
 
 iMo --> |??| Red
 Sen -->|Manual upload ?| Red
-Lib -->|Manual upload ?| Red
+Lib -->|Manual upload| Red
 Watch -->|transmits| Mons
 Scales -->|transmits| Mons
 Mons --> |API ?| Genome
 MyF --> |API ?| Genome
 MBox --> |?? may also be to RedCap| Genome
 ```
-
+:::
 ## REDCap
 
 REDCap is a secure web application for building and managing online surveys and databases. It is used to collect data from participants and healthcare professionals in the ON LiMiT project. REDCap will have two main functions, the first is to collect data from clinicians and participants via forms and questionnaires, and the second is to collate data from other systems, likely through APIs or csv uploads.
@@ -67,9 +72,9 @@ SENS is an activity monitor that will be placed on the study participants for a 
 
 Libre is a continuous glucose monitoring (CGM) sensor from Abbott that will be worn by the participants for a week. The data collected by the Libre device will be extracted at clinic visits and uploaded to the REDCap database. The Libre device will track the participants' glucose levels in selected weeks of the study.
 
-## Monsenso
+## Liva
 
-Monsenso is a mobile app that will be used by the participants to track their physical activity (via Withings or Garmin activity watch), adherence to the assigned diet intervention (via short diet screener), bedy weight (via Withings or Gamin scale), answer other small questionnaires, follow the study schedule and interact with study personnel via a chat function. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.
+Liva is a mobile app that will be used by the participants to track their physical activity (via Withings or Garmin activity watch), adherence to the assigned diet intervention (via short diet screener), body weight (via Withings or Gamin scale), answer other small questionnaires, follow the study schedule and interact with study personnel via a chat function. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.
 
 ### Withings or Garmin Watch and Scales
 
