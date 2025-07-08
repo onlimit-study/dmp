@@ -1,0 +1,12 @@
+name: Build website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy-docs:
+    uses: seedcase-project/.github/.github/workflows/reusable-build-docs.yml@main
+    secrets:
+      netlify-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
