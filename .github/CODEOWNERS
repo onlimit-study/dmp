@@ -1,0 +1,9 @@
+# All members on Developers team get added to review PRs
+* @on-limit-study/data-team
+
+# Ignore these so we don't get added to sync PRs
+/.github/
+/.vscode/
+justfile
+.editorconfig
+.gitignore
