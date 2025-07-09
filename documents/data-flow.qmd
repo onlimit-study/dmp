@@ -26,8 +26,9 @@ MyF@{shape: proc, label: "<b>MyFood24</b><br> app which helps users to register 
 iMo@{shape: proc, label: "<b>iMotions Food Preference</b><br> tracks eye movement of participants when looking at pictures of food."}
 Sen@{shape: proc, label: "<b>SENS</b><br> activity monitor, placed on the study participant and then collected and read in the clinic."}
 Lib@{shape: proc, label: "<b>Libre</b><br> Blinded CGM sensor from Abbott which participants will be wearing. Will be read in the clinic."}
-Watch@{shape: proc, label: "<b>Withings Watch</b><br> smart watch which will connect to the Liva app."}
-Scales@{shape: proc, label: "<b>Withings Scales</b><br> smart scales which will connect to the Liva app."}
+Watch@{shape: proc, label: "<b>Watch</b><br> smart watch which will connect to the Liva app."}
+Scales@{shape: proc, label: "<b>Scales</b><br> smart scales which will connect to the Liva app."}
+BP@{shape: proc, label: "<b>Blood Pressure monitor</b><br> the user will meassure their blood pressure and enter it into the app."}
 MBox@{shape: proc, label: "<b>Meal Boxes</b><br> contains recipes and ingredients for two meals a day."}
 
 %%ID@{shape: proc, label: "<b>NAME</b><br> description ...."}
@@ -44,6 +45,7 @@ Pt -->|Wears for a week| Sen
 Pt -->|Wears for two weeks| Lib
 Pt -->|Wears continuously| Watch
 Pt --> |Uses| Scales
+Pt --> |Uses|BP
 Pt --> |Chooses| MBox
 
 iMo --> |??| Red
@@ -51,6 +53,7 @@ Sen -->|Manual upload ?| Red
 Lib -->|Manual upload| Red
 Watch -->|transmits| Mons
 Scales -->|transmits| Mons
+BP -->|Participant enteres results| Mons
 Mons --> |API ?| Genome
 MyF --> |API ?| Genome
 MBox --> |?? may also be to RedCap| Genome
