@@ -1,0 +1,44 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "ON-LiMiT Docs"
+  repo-branch: main
+  repo-actions: [edit, issue, source]
+  search:
+    location: navbar
+    type: textbox
+  site-url: "https://docs.onlimit.org"
+  repo-url: "https://github.com/on-limit-study/docs"
+  navbar:
+    background: light
+    pinned: true
+    left:
+      - text: "Welcome"
+        href: index.qmd
+    tools:
+      - icon: "github"
+        href: "https://github.com/on-limit-study/docs"
+    page-footer:
+      border: true
+      center:
+        - text: "License: CC BY 4.0"
+          href: "LICENSE.md"
+
+format:
+  html:
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    from: markdown+emoji
+    theme:
+      - litera
+      - brand
+
+brand: _brand.yml
+
+editor:
+  markdown:
+    wrap: 72
+    canonical: true
