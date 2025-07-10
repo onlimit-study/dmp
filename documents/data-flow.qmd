@@ -1,14 +1,27 @@
-# Data Flow Diagram for the ON LiMiT project
+---
+title: "Data Flows"
+---
 
-Below is a data flow diagram for the ON LiMiT project. The diagram illustrates the flow of data between various components of the study, including participants, healthcare professionals, and data management systems.
+Below is a data flow diagram for the ON LiMiT project. The diagram
+illustrates the flow of data between various components of the study,
+including participants, healthcare professionals, and data management
+systems.
 
-At present the diagram is a work in progress, and will be updated as the pilot study progresses. Most data will originate from the participants, who will enter data into various apps and systems. The healthcare professionals will also enter data into the system, and the lab staff will collect and analyse biological samples from the participants. Much of the data will be collated in a REDCap database before being uploaded to the GenomeDK HPC facility for further processing.
+At present the diagram is a work in progress, and will be updated as the
+pilot study progresses. Most data will originate from the participants,
+who will enter data into various apps and systems. The healthcare
+professionals will also enter data into the system, and the lab staff
+will collect and analyse biological samples from the participants. Much
+of the data will be collated in a REDCap database before being uploaded
+to the GenomeDK HPC facility for further processing.
 
-Underneath the diagram is a more detailed description of the components and their interactions.
+Underneath the diagram is a more detailed description of the components
+and their interactions.
 
-![Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage](../images/data-flow.png)
+![Data flow in the ON LiMiT study, who generates data, where is does it
+enter, and how is it transmitted to storage](../images/data-flow.png)
 
-::: {.content-hidden}
+::: content-hidden
 ```{mermaid}
 %%| label: fig-c4-context
 %%| fig-cap: "Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage."
@@ -59,26 +72,55 @@ MyF --> |API ?| Genome
 MBox --> |?? may also be to RedCap| Genome
 ```
 :::
+
 ## REDCap
 
-REDCap is a secure web application for building and managing online surveys and databases. It is used to collect data from participants and healthcare professionals in the ON LiMiT project. REDCap will have two main functions, the first is to collect data from clinicians and participants via forms and questionnaires, and the second is to collate data from other systems, likely through APIs or csv uploads.
+REDCap is a secure web application for building and managing online
+surveys and databases. It is used to collect data from participants and
+healthcare professionals in the ON LiMiT project. REDCap will have two
+main functions, the first is to collect data from clinicians and
+participants via forms and questionnaires, and the second is to collate
+data from other systems, likely through APIs or csv uploads.
 
 ## iMotions Food Preference
 
-iMotion Food Preference is a system that tracks the eye movements of participants when they are looking at pictures of food. The data collected by this system can be pulled out as csv files and uploaded to the REDCap database or directly to the GenomeDK HPC facility.
+iMotion Food Preference is a system that tracks the eye movements of
+participants when they are looking at pictures of food. The data
+collected by this system can be pulled out as csv files and uploaded to
+the REDCap database or directly to the GenomeDK HPC facility.
 
 ## SENS
 
-SENS is an activity monitor that will be placed on the study participants for a week. The data collected by a SENS device will be extracted at clinic visits and the data will be uploaded to the REDCap database. The SENS device will track the participants' physical activity levels in selected weeks of the study.
+SENS is an activity monitor that will be placed on the study
+participants for a week. The data collected by a SENS device will be
+extracted at clinic visits and the data will be uploaded to the REDCap
+database. The SENS device will track the participants' physical activity
+levels in selected weeks of the study.
 
 ## Libre
 
-Libre is a continuous glucose monitoring (CGM) sensor from Abbott that will be worn by the participants for a week. The data collected by the Libre device will be extracted at clinic visits and uploaded to the REDCap database. The Libre device will track the participants' glucose levels in selected weeks of the study.
+Libre is a continuous glucose monitoring (CGM) sensor from Abbott that
+will be worn by the participants for a week. The data collected by the
+Libre device will be extracted at clinic visits and uploaded to the
+REDCap database. The Libre device will track the participants' glucose
+levels in selected weeks of the study.
 
 ## Liva
 
-Liva is a mobile app that will be used by the participants to track their physical activity (via Withings or Garmin activity watch), adherence to the assigned diet intervention (via short diet screener), body weight (via Withings or Gamin scale), answer other small questionnaires, follow the study schedule and interact with study personnel via a chat function. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.
+Liva is a mobile app that will be used by the participants to track
+their physical activity (via Withings or Garmin activity watch),
+adherence to the assigned diet intervention (via short diet screener),
+body weight (via Withings or Gamin scale), answer other small
+questionnaires, follow the study schedule and interact with study
+personnel via a chat function. The app will likely connect to the REDCap
+database via an API, allowing the data to be automatically uploaded to
+the database.
 
 ### Withings or Garmin Watch and Scales
 
-The Withings or Garmin Watch and Scales will be used by the participants to track their physical activity and weight. The data collected by these devices will be transmitted to the Monsenso app where it will be collated and then uploaded to the REDCap database. The watch will track the participants' physical activity levels, while the scales will track their weight.
+The Withings or Garmin Watch and Scales will be used by the participants
+to track their physical activity and weight. The data collected by these
+devices will be transmitted to the Monsenso app where it will be
+collated and then uploaded to the REDCap database. The watch will track
+the participants' physical activity levels, while the scales will track
+their weight.
