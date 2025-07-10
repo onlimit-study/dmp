@@ -10,7 +10,7 @@ Even though the C4 model is primarily used for software architecture, we use it 
 ON LiMiT is a research project that collects data from various sources, including biological samples, questionnaires, and other electronic data. The data is collected from participants in the study, healthcare professionals, and bioanalysts. The data is stored on GenomeDKs servers and will be made available for researchers to analyze.
 The following diagram shows the context of ON LiMiT, including the main users and data providers.
 
-![C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers.](../images/c4_context.png)
+![C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers.](/images/c4_context.png)
 
 ::: {.content-hidden}
 ```{mermaid}
@@ -47,7 +47,7 @@ classDef external fill:lightgrey
 
 The Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.
 
-![C4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis tools.](../images/c4_container.png)
+![C4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis tools.](/images/c4_container.png)
 
 ::: {.content-hidden}
 ```{mermaid}
@@ -81,7 +81,7 @@ end
 Data:::external --> Sprout
 Data --> Redcap
 i1:::system
-i2:::hidden 
+i2:::hidden
 Samples:::external --> Redcap
 Samples --> Biobank
 Researcher:::external
