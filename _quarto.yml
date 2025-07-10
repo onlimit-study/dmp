@@ -17,6 +17,10 @@ website:
     left:
       - text: "Welcome"
         href: index.qmd
+      - text: "Data Design"
+        menu:
+          - href: documents/C4-level.qmd
+          - href: documents/data-flow.qmd
     tools:
       - icon: "github"
         href: "https://github.com/onlimit-study/data-documentation"
