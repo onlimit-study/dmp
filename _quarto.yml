@@ -9,8 +9,8 @@ website:
   search:
     location: navbar
     type: textbox
-  site-url: "https://docs.onlimit.org"
-  repo-url: "https://github.com/on-limit-study/docs"
+  site-url: "https://onlimit-study.github.io/data-documentation/"
+  repo-url: "https://github.com/onlimit-study/data-documentation"
   navbar:
     background: light
     pinned: true
@@ -19,7 +19,7 @@ website:
         href: index.qmd
     tools:
       - icon: "github"
-        href: "https://github.com/on-limit-study/docs"
+        href: "https://github.com/onlimit-study/data-documentation"
     page-footer:
       border: true
       center:
