@@ -1,3 +1,6 @@
 ---
-title: "Welcome"
+title: "Welcome!"
 ---
+
+This website contains the documentation for the design and architecture
+of ON-LiMiT's data collection, processing, and storage.
