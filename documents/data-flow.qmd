@@ -6,7 +6,7 @@ At present the diagram is a work in progress, and will be updated as the pilot s
 
 Underneath the diagram is a more detailed description of the components and their interactions.
 
-![Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage](../images/data-flow.png)
+![Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage](/images/data-flow.png)
 
 ::: {.content-hidden}
 ```{mermaid}
