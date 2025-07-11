@@ -5,8 +5,16 @@ on:
     branches:
       - main
 
+# Limit permissions to minimal needed.
+permissions: read-all
+
 jobs:
   build-deploy-docs:
     uses: seedcase-project/.github/.github/workflows/reusable-build-docs.yml@main
+    permissions:
+      contents: write
+      pages: write
+    with:
+      hosting-provider: 'gh-pages'
     secrets:
-      netlify-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      github-token: ${{ secrets.GITHUB_TOKEN }}
