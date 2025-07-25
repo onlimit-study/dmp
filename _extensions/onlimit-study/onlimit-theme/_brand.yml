@@ -1,0 +1,39 @@
+meta:
+  name:
+    full: ON-LiMiT Study
+    short: ON-LiMiT
+  link:
+    github: https://onlimit.org
+
+color:
+  primary: "#003878"
+
+typography:
+  fonts:
+    - family: montserrat
+      source: "bunny"
+    - family: mukta
+      source: "bunny"
+    - family: roboto mono
+      source: "bunny"
+  base: montserrat
+  headings: mukta
+  monospace: roboto mono
+
+
+defaults:
+  bootstrap:
+    rules: |
+        .profile-picture {
+          display: inline-block;
+          border-radius: 50%;
+          object-fit: cover;
+          width: 200px;
+          height: 200px;
+          text-align: center;
+        }
+
+        // Only brand is white in navbar
+        .navbar-brand {
+          color: #ffffff;
+        }

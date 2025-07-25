@@ -1,47 +1,22 @@
 project:
-  type: website
+  type: onlimit-theme
+
+format:
+  onlimit-theme-html:
+    theme:
+      - brand
 
 website:
   page-navigation: true
   title: "ON-LiMiT Docs"
-  repo-branch: main
-  repo-actions: [edit, issue, source]
-  search:
-    location: navbar
-    type: textbox
   site-url: "https://onlimit-study.github.io/data-documentation/"
   repo-url: "https://github.com/onlimit-study/data-documentation"
   navbar:
-    background: light
-    pinned: true
     left:
-      - text: "Welcome"
-        href: index.qmd
       - text: "Data Design"
         menu:
           - href: documents/C4-level.qmd
           - href: documents/data-flow.qmd
-    tools:
-      - icon: "github"
-        href: "https://github.com/onlimit-study/data-documentation"
-    page-footer:
-      border: true
-      center:
-        - text: "License: CC BY 4.0"
-          href: "LICENSE.md"
-
-format:
-  html:
-    toc: true
-    toc-location: right
-    toc-depth: 3
-    from: markdown+emoji
-    theme:
-      - litera
-      - brand
-
-brand: _brand.yml
-
 editor:
   markdown:
     wrap: 72
