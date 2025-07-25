@@ -1,5 +1,10 @@
 project:
-  type: website
+  type: onlimit-theme
+
+format:
+  onlimit-theme-html:
+    theme:
+      - brand
 
 website:
   page-navigation: true
@@ -29,18 +34,6 @@ website:
       center:
         - text: "License: CC BY 4.0"
           href: "LICENSE.md"
-
-format:
-  html:
-    toc: true
-    toc-location: right
-    toc-depth: 3
-    from: markdown+emoji
-    theme:
-      - litera
-      - brand
-
-brand: _brand.yml
 
 editor:
   markdown:

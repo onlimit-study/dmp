@@ -1,0 +1,37 @@
+title: onlimit-theme
+author: |
+  - Signe Kirk Brødbæk
+  - Daniel B. Ibsen
+  - Luke W. Johnston
+version: 0.1.0
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    html:
+      toc: true
+      from: markdown+emoji
+
+  project:
+    project:
+      type: website
+
+    website:
+      favicon: favicon/favicon.ico
+      page-navigation: true
+      navbar:
+        pinned: true
+        logo: images/apple-logo.png
+        logo-alt: "ON-LiMiT: Main page"
+        tools:
+        - icon: github
+          href: "https://github.com/onlimit-study/"
+          aria-label: "GitHub: Link to ON-LiMiT organization page"
+      search:
+        location: navbar
+        type: textbox
+      page-footer:
+        center:
+          - text: "License: CC BY 4.0"
+            href: https://creativecommons.org/licenses/by/4.0/
+
+    brand: _brand.yml
