@@ -11,7 +11,7 @@ repos:
       - id: gitleaks
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -25,6 +25,6 @@ repos:
   # sub-packages, which confuses pre-commit when it tries to find the latest
   # version
   - repo: https://github.com/adhtruong/mirrors-typos
-    rev: v1.34.0
+    rev: v1.35.3
     hooks:
       - id: typos
