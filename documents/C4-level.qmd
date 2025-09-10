@@ -62,7 +62,7 @@ provides an overview of how the data is collected, stored, and made
 available for analysis.
 
 ![C4 Container diagram showing the main components of ON LiMiT data
-infrastructure, including data sources, storage, and analysis
+infrastructure, including data sources, storage, and analysis](/images/c4_container.png)
 
 ::: content-hidden
 ```{mermaid}
