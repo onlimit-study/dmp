@@ -8,10 +8,6 @@ website:
   repo-branch: main
   repo-actions: [issue, edit, source]
   navbar:
-    # TODO: Add logo and logo-alt
-    # logo: ""
-    # logo-alt: ""
-    pinned: true
     left:
       - text: "Design"
         menu:
