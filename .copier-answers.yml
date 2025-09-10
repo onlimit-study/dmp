@@ -1,0 +1,11 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 0.17.2
+_src_path: gh:seedcase-project/template-website
+author_family_name: Johnston
+author_given_name: Luke
+github_board_number: '1'
+github_repo: dmp
+github_user: onlimit-study
+hosting_provider: gh-pages
+is_seedcase_website: false
+review_team: '@onlimit-study/data-team'
