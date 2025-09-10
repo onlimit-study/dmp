@@ -88,6 +88,6 @@
     "href": "documents/C4-level.html#container",
     "title": "C4 Models",
     "section": "Container",
-    "text": "Container\nThe Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.\n![C4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis"
+    "text": "Container\nThe Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.\n\n\n\nC4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis"
   }
 ]
