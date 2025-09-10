@@ -1,18 +1,4 @@
 {
-  // Place your snippets for Quarto here.
-  // Each snippet is defined under a snippet name and has a prefix, body and description.
-  // The prefix is what is used to trigger the snippet and the body will be expanded and inserted.
-  // Possible variables are:
-  //
-  // - $1 and $2 for tab stops,
-  // - $0 for the final cursor position, and
-  // - ${1:label}, ${2:another} for placeholders
-  //
-  // Placeholders with the same ids are connected.
-  //
-  // How to use the code snippets:
-  // After you have set the above settings, a suggestion for one of the code snippets below will pop up automatically, when
-  // you start writing the prefix. Press "Enter" or "Tab" to insert the code snippet.
   "Insert TODO formatting": {
     "scope": "quarto,markdown",
     "prefix": "TODO",
@@ -30,21 +16,6 @@
       "```"
     ],
     "description": "Insert bash formatted text"
-  },
-  "Insert YAML header for blogs": {
-    "scope": "quarto,markdown",
-    "prefix": "post_yaml",
-    "body": [
-      "---",
-      "title: \"\"",
-      "description: \"Our reasons for ...\"",
-      "author: \"\"",
-      "date: last-modified",
-      "categories:",
-      "  ${0:Type 'category_keywords' to insert categories}",
-      "---"
-    ],
-    "description": "Insert YAML header for Quarto blog posts."
   },
   "Insert a hidden comment section": {
     "scope": "quarto,markdown",
@@ -76,14 +47,6 @@
     ],
     "description": "Insert a 3 col table"
   },
-  "Insert video": {
-    "scope": "quarto,markdown",
-    "prefix": "video",
-    "body": [
-      "{{< video ${0:Insert link here} >}}"
-    ],
-    "description": "Insert video that will be shown"
-  },
   "Insert paneltab": {
     "scope": "quarto,markdown",
     "prefix": "paneltab",
@@ -99,39 +62,5 @@
       ":::"
     ],
     "description": "Insert paneltab (including two tabs here). If you want additional tabs, just include more headers."
-  },
-  // All our category words are included in this code snippet
-  // The idea is that we can insert this section and then delete the words we aren't interested in
-  // If words are missing then they can be added to the document, and then also added to the code snippet
-  // Much the same way that words can be added to the spell-check extension.
-  "Insert list of category words": {
-    "scope": "quarto,markdown,yaml",
-    "prefix": "decision_categories",
-    "body": [
-      "- backend",
-      "- code snippets",
-      "- communicate",
-      "- container",
-      "- contribute",
-      "- collaborate",
-      "- database",
-      "- deploy",
-      "- dependencies",
-      "- develop",
-      "- document",
-      "- front end",
-      "- framework",
-      "- git",
-      "- install",
-      "- license",
-      "- manage",
-      "- organise",
-      "- standardise",
-      "- style",
-      "- web",
-      "- workflow",
-      "- write"
-    ],
-    "description": "Insert list of category words"
   }
 }
