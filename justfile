@@ -16,7 +16,9 @@ list-todos:
     --exclude=_site \
     "TODO" *
 
-
+# Update Quarto theme
+update-quarto-theme:
+  quarto update onlimit-study/onlimit-theme --no-prompt
 
 # Install the pre-commit hooks
 install-precommit:
