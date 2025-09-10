@@ -1,0 +1,38 @@
+{
+  "creators": [
+    {
+      "name": "Beicher, Kristiane",
+      "affiliation": "Steno Diabetes Center Aarhus",
+      "orcid": "0000-0001-7556-9566"
+    },
+    {
+      "name": "Ibsen, Daniel",
+      "affiliation": "Steno Diabetes Center Aarhus",
+      "orcid": "TODO: Add ORCID"
+    },
+    {
+      "name": "Johnston, Luke",
+      "affiliation": "Steno Diabetes Center Aarhus",
+      "orcid": "0000-0003-4169-2616"
+    }
+  ],
+  "title": "TODO: The title of the website, shown as the landing page on Zenodo",
+  "description": "TODO: Fill in abstract of website, will be shown on Zenodo landing page",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/onlimit-study/dmp",
+      "relation": "isIdenticalTo",
+      "resource_type": "other"
+    }
+  ],
+  "keywords": [
+    "quarto website",
+    "data management plan",
+    "data management"
+  ],
+  "license": "cc-by-4.0",
+  "upload_type": "publication",
+  "publication_type": "other",
+  "language": "eng"
+}
