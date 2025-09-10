@@ -22,10 +22,6 @@ contributes:
         pinned: true
         logo: images/apple-logo.png
         logo-alt: "ON-LiMiT: Main page"
-        tools:
-        - icon: github
-          href: "https://github.com/onlimit-study/"
-          aria-label: "GitHub: Link to ON-LiMiT organization page"
       search:
         location: navbar
         type: textbox

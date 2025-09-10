@@ -1,22 +1,32 @@
 project:
   type: onlimit-theme
 
+website:
+  title: "ON-LiMiT DMP"
+  site-url: "https://onlimit-study.github.io/dmp/"
+  repo-url: "https://github.com/onlimit-study/dmp"
+  repo-branch: main
+  repo-actions: [issue, edit, source]
+  navbar:
+    # TODO: Add logo and logo-alt
+    # logo: ""
+    # logo-alt: ""
+    pinned: true
+    left:
+      - text: "Design"
+        menu:
+          - documents/C4-level.qmd
+          - documents/data-flow.qmd
+    tools:
+      - icon: github
+        href: "https://github.com/onlimit-study/dmp"
+        aria-label: "GitHub icon: Source repository"
+
 format:
   onlimit-theme-html:
     theme:
       - brand
 
-website:
-  page-navigation: true
-  title: "ON-LiMiT Docs"
-  site-url: "https://onlimit-study.github.io/data-documentation/"
-  repo-url: "https://github.com/onlimit-study/data-documentation"
-  navbar:
-    left:
-      - text: "Data Design"
-        menu:
-          - href: documents/C4-level.qmd
-          - href: documents/data-flow.qmd
 editor:
   markdown:
     wrap: 72
