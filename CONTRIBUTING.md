@@ -32,7 +32,7 @@ available, run:
 just
 ```
 
-As you contribute, make sure your changes will pass our tests by opening
+As you contribute, make sure your changes will pass our checks by opening
 a terminal so that the working directory is the root of this project's
 repository and running:
 
@@ -40,10 +40,10 @@ repository and running:
 just run-all
 ```
 
-When committing changes, please try to follow [Conventional
-Commits](https://decisions.seedcase-project.org/why-conventional-commits)
-as Git messages. Using this convention allows us to be able to
-automatically create a release based on the commit message by using
+When committing changes, please follow the [Conventional
+Commits specification](https://decisions.seedcase-project.org/why-conventional-commits)
+in your commit messages. Using this convention allows us to be able to
+automatically create releases based on the commit message by using
 [Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen).
 If you don't use Conventional Commits when making a commit, we will
 revise the pull request title to follow that format, as we use [squash
