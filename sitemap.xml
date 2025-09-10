@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://onlimit-study.github.io/data-documentation/documents/C4-level.html</loc>
-    <lastmod>2025-09-10T14:25:54.656Z</lastmod>
-  </url>
-  <url>
-    <loc>https://onlimit-study.github.io/data-documentation/index.html</loc>
-    <lastmod>2025-09-10T14:25:54.663Z</lastmod>
-  </url>
-  <url>
-    <loc>https://onlimit-study.github.io/data-documentation/LICENSE.html</loc>
-    <lastmod>2025-09-10T14:25:54.655Z</lastmod>
+    <loc>https://onlimit-study.github.io/data-documentation/CODE_OF_CONDUCT.html</loc>
+    <lastmod>2025-09-10T14:26:57.440Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/data-documentation/documents/data-flow.html</loc>
-    <lastmod>2025-09-10T14:25:54.657Z</lastmod>
+    <lastmod>2025-09-10T14:26:57.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://onlimit-study.github.io/data-documentation/LICENSE.html</loc>
+    <lastmod>2025-09-10T14:26:57.440Z</lastmod>
+  </url>
+  <url>
+    <loc>https://onlimit-study.github.io/data-documentation/index.html</loc>
+    <lastmod>2025-09-10T14:26:57.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://onlimit-study.github.io/data-documentation/documents/C4-level.html</loc>
+    <lastmod>2025-09-10T14:26:57.442Z</lastmod>
   </url>
 </urlset>
