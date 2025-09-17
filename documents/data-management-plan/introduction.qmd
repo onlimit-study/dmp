@@ -1,0 +1,7 @@
+# Introduction
+
+It is recommended that all studies create a Data Management Plan (DMP), to help create an overview of the data that a study will generate, how it is handled and stored.
+
+In the ON LiMiT study we've chosen to follow the guidance from [DEiC](www.deic.dk) with one or two small deviations (mainly around how we describe access to data).
+
+<!--TODO Flesh this out more before publishing-->
