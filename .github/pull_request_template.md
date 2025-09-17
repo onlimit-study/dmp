@@ -1,6 +1,6 @@
 # Description
 
-These changes PURPOSE, because REASON.
+EXPLANATION
 
 Closes #
 
