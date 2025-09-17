@@ -1,6 +1,6 @@
 # Description
 
-These changes EXPLANATION
+EXPLANATION
 
 Closes #
 
