@@ -1,10 +1,24 @@
-# Storage, Backup, and Access
+# Storage, Backup, Recovery, and Access
 
-<!--TODO Intro text-->
+As part of a DMP consideration should be given to the physical storage
+and security of the data that a research project generates. There are of
+course different levels of value that can be prescribed to data, some
+data is easy to replicate (for example data downloaded from public
+repositories), and some that are impossible to replicate (like audio
+files from an interview). By looking at how data is physically stored,
+it is possible to guard against loss of data, like accidental deletion
+by a human or a catastrophic failure of an entire system (like the loss
+of a laptop or damage to a server space either by fire or water).
 
-## Storage
+## Storage of the ON LiMiT research data and metadata
 
-<!--TODO Intro text-->
+There are three main places for storage of data for the ON LiMiT
+project. The first two, where the data is generated are REDCap and the
+LIVA application. These are not final storage areas, but they will hold
+data for long enough that we will need to take them into consideration.
+The final storage place for data will be GenomeDK, which also is the
+place where we are most responsible for setting up not only the storage,
+but also the subsequent safety and security of the data.
 
 ### GenomeDK (GDK)
 
@@ -36,9 +50,19 @@ Germany. The data will be made available to us via AWS on a ftp
 connection on request, we hope to transfer the data directly to folders
 on GDK, from where we will transform and load them into storage.
 
-## Backup
+## Backup and Recovery
 
-<!--TODO Intro text-->
+When looking at backup and recovery we again have two situations. With
+the LIVA system we will need to trust that what is stated in the
+contract is also what LIVA is doing, and that backup and recovery is
+possible without any significant loss of data. REDCap is also 'out of
+our hands' so to speak, as the setup is done entirely without any user
+engagement.
+
+Where we will play a role is with GenomeDK, as described below it is the
+responsibility of the user to set up the files for backup, although it
+is not possible for us to check that a recovery is possible, as backup
+is still done by the GDK team.
 
 ### GenomeDK
 
@@ -58,18 +82,23 @@ require this, but it will be something that we will keep under
 observation (see section on data volume).
 
 What we back up: Raw data that cannot be reproduced, cleaned data in
-parquet format, and metadata. Where we put things: We will put metadata
-in data/metadata/ and project documentation in docs/, and we will mark
-the appropriate parent directory with BACKUP so it is captured by GDK’s
-weekly backup. As we do not expect to do any analysis in the main study
-folder (see section on sharing data) we don't expect to be backing up
-any analysis scripts or results here. This will be done in separate
-project folders which will be set up to only back up scripts and
-results.
+parquet format, and metadata.
+
+Where we put things: We will put metadata in `data/metadata/` and
+project documentation in `docs/`, and we will mark the appropriate
+parent directory with `BACKUP` so it is captured by GDK’s weekly backup.
+As we do not expect to do any analysis in the main study folder (see
+section on Sharing Data) we don't expect to be backing up any analysis
+scripts or results here. This will be done in separate project folders
+which will be set up to only back up scripts and results.
 
 ### REDCap
 
 <!--TODO check this once redcap is up again-->
+
+<!--TODO check that REDCap promise to do backups and their frequency-->
+
+<!--TODO Check if REDCap has any kind of access to data log-->
 
 ### LIVA
 
@@ -79,7 +108,7 @@ encryption, location (EU/EEA), recovery time, and access/audit
 reporting. We will confirm these parameters during contract finalization
 and update this section once the contract is signed.
 
-## Access
+## Access to the main data structures
 
 It should be a limited number of people who have access to the full set
 of research data. Ideally the project manager and the data architect. In
@@ -116,9 +145,5 @@ reporting cadence, and data‑sharing/export mechanisms. We expect that
 Liva will be able to provide us with either access to a list of users
 with data viewing access, or will be able to provide such a list on
 demand.
-
-<!--TODO check that REDCap promise to do backups and their frequency-->
-
-<!--TODO Check if REDCap has any kind of access to data log-->
 
 <!--TODO We should write down access guidelines to REDCap data, this should detail that data should not be accessed in order to do analysis without prior approval -->
