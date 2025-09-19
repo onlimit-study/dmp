@@ -25,20 +25,21 @@ but also the subsequent safety and security of the data.
 GDK provides several storage areas. We will use the project storage in
 their Open zone for the ON LiMiT project. These locations are designed
 for collaborative data and are eligible for backup. We do not need a
-Data Processing Agreement with GenomeDK as our host organisations AU and
-AUH already have an agreement in place which will cover us.
+Data Processing Agreement with GenomeDK as our host organisations Aarhus
+University (AU) and Aarhus University Hospital (AUH) already have an
+agreement in place which will cover us.
 
 ### REDCap
 
 REDCap is a secure web application for research databases and e‑forms.
 It stores data in a postgres database and related files in a controlled
-file area (“File Repository”). Aarhus University provides REDCap
-facilities for both the University and Aarhus University Hospital
-employees. The File Repository is intended for storing data and study
-files, but it should not be the primary long‑term file storage for bulk
-data; we will export and archive data into our primary storage (GDK)
-using the API facility provided by REDCap. As with GDK we don't need a
-Data Processing Agreement for the same reasons as above.
+file area (“File Repository”). AU provides REDCap facilities for both
+the University and AUH employees. The File Repository is intended for
+storing data and study files, but it should not be the primary long‑term
+file storage for bulk data; we will export and archive data into our
+primary storage (GDK) using the API facility provided by REDCap. As with
+GDK we don't need a Data Processing Agreement for the same reasons as
+above.
 
 ### LIVA
 
@@ -94,11 +95,25 @@ which will be set up to only back up scripts and results.
 
 ### REDCap
 
-<!--TODO check this once redcap is up again-->
+There isn't any information on the website for REDCap at AU about backup
+and recovery, but we have received the following reply from the team
+maintaining the servers in answer to our questions about the procedures
+in place.
 
-<!--TODO check that REDCap promise to do backups and their frequency-->
+"AU-IT performs daily backups of the REDCap application and the data
+contained within it. All backups are managed under TSM and stored in
+encrypted form. Ubuntu servers are configured to automatically install
+security updates. A monthly vulnerability scan is carried out using
+Tenable. In accordance with Aarhus University's annual information
+security cycle, a system and data classification is conducted at least
+once a year, followed by a risk assessment. In addition to the regular
+annual classification, a new risk assessment is carried out whenever
+significant changes are made to the system."
 
-<!--TODO Check if REDCap has any kind of access to data log-->
+As some of the study is being conducted using the REDCap facilities at
+the University of Copenhagen, we will need to check that they are
+running a similar system.
+<!--TODO Check if REDCap CPH behaves in a similar fashion-->
 
 ### LIVA
 
