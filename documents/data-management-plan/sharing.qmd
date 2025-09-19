@@ -1,0 +1,103 @@
+# Data Sharing
+
+Sharing data from research projects is essential for promoting
+transparency, reproducibility, and collaboration within the scientific
+community. By making data findable, accessible, interoperable, and
+reusable (FAIR), we enable other researchers to build upon existing
+work, validate findings, and generate new insights. This section
+outlines how data and metadata from the project will be shared, under
+what conditions, and with what safeguards in place.
+
+## How will the data and metadata be shared?
+
+Metadata describing the structure, variables, and scope of the dataset
+will be made publicly available through the project website, using the
+[Seedcase Flower platform](https://seedcase-project.org/roadmap/). This
+will allow researchers (internal and external) to explore the metadata
+before submitting an access request. The actual research data will not
+be openly accessible and will only be shared upon formal application and
+approval.
+
+## When will the metadata be available?
+
+We aim to start metadata publication as soon as data collection starts.
+A preliminary release will be based on the feasibility study, which we
+plan to use as a test case for the metadata infrastructure. While this
+dataset is primarily intended to help iron out any issues with the two
+most demanding arms of the study, it can be used as a “dress rehearsal”
+of the metadata sharing process. We do not expect high external demand
+for the feasibility data, but it will help ensure readiness for the main
+study.
+
+## Who is the audience for the data?
+
+We anticipate that most data access requests will come from researchers
+affiliated with the study or collaborating institutions. However,
+external researchers may also apply, provided they meet the criteria
+outlined in the data access guidance. The audience may include clinical
+researchers, epidemiologists, data scientists using AI on
+diabetes-related topics, as well as anthropologist or other social
+scientists looking at behaviour in relation to food and exercise for
+people with type 2 diabetes.
+
+## How will researchers get access to the data?
+
+Researchers must submit a formal application detailing their planned use
+of the data, including which specific data points they require and why.
+Applications involving sensitive data categories must include a clear
+justification for their necessity (for instance in cases where the data
+is to be uploaded to Denmark Statistics). A guidance document outlining
+the application process, including eligibility criteria and review
+procedures, will be developed and made available on the project website.
+
+<!--TODO Write the guidance document mentioned above-->
+
+## How will the data be made available?
+
+Once an application is approved, the requested data will be made
+available in a dedicated project folder on
+[GenomeDK](https://genome.au.dk) (GDK). Raw data must remain on the GDK
+server, and only analysis scripts and results may be exported.
+Researchers will need to create an account with GDK to access the folder
+and work on their analysis environment. In some cases, it may be
+possible to upload a dataset to [Statistics
+Denmark](https://www.dst.dk/en), where it will be accessible in the SCDA
+project database. This option will be considered for projects requiring
+linkage with other national datasets.
+
+## How will access be controlled?
+
+There are three main ways to access data, only one should be used for
+data analysis. Data will be available to a few members of the study team
+on REDCap where data collection is being done. All data collected by the
+LIVA app will be available to clinicians involved with the running of
+the study in the LIVA system. Finally all research data will be
+collected, cleaned and stored on GDK servers where all analysis should
+take place. Access to the finalised research data will be controlled by
+the central study team on GDK, with each successful data application
+getting their own project folder with only the data requested. All the
+scripts used to create these data sets will be stored in the main study
+folder on GDK to ensure transparency and reproducibility. We expect that
+those who have access to the data collected within REDCap will not use
+the data for analysis and/or publication. The data collected by LIVA
+will be available through the use of the Clinician Portal and LIVA
+Reporting Module, which is encouraged for monitoring participant
+progress but should not be used for publication purposes.
+
+## What kind of IP or license will be used?
+
+A formal decision regarding intellectual property rights and licensing
+for shared data is still pending. This will be finalized before the main
+study data is made available to external researchers.
+
+## Additional considerations
+
+Some data from the feasibility study may need to be shared and analysed
+before the launch of the main study, the end points in the study
+registration on ClinicalTrials.com should help with clarifying what data
+points will be needed for this. This process should be planned and
+initiated as soon as possible. A data sharing agreement is already in
+place between the five participating centres, outlining responsibilities
+and procedures for internal data access and collaboration.
+
+<!--TODO We need to sit down and write up the end points and the corresponding data -->
