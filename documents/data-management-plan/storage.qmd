@@ -1,6 +1,6 @@
 # Storage, Backup, Recovery, and Access
 
-As part of a DMP consideration should be given to the physical storage
+As part of a DMP, consideration should be given to the physical storage
 and security of the data that a research project generates. There are of
 course different levels of value that can be prescribed to data, some
 data is easy to replicate (for example data downloaded from public
@@ -10,21 +10,23 @@ it is possible to guard against loss of data, like accidental deletion
 by a human or a catastrophic failure of an entire system (like the loss
 of a laptop or damage to a server space either by fire or water).
 
-## Storage of the ON LiMiT research data and metadata
+## Storage of data and metadata
 
-There are three main places for storage of data for the ON LiMiT
-project. The first two, where the data is generated are REDCap and the
+There are three main places we will store data from ON-LiMiT.
+The first two, where the data is generated are [REDCap](https://project-redcap.org) and the
 LIVA application. These are not final storage areas, but they will hold
 data for long enough that we will need to take them into consideration.
 The final storage place for data will be GenomeDK, which also is the
 place where we are most responsible for setting up not only the storage,
 but also the subsequent safety and security of the data.
 
-Once we know more about the specific data points we will be able to
+::: content-hidden
+TODO: Once we know more about the specific data points we will be able to
 expand this section to look in more detail at whether or not the nature
 of the data (mainly sensitivity) will have any impact on the choice of
 storage method. We don't expect there to be any major changes, but we
 may want to employ more encryption to some data while at rest.
+:::
 
 ### GenomeDK (GDK)
 
@@ -38,8 +40,8 @@ agreement in place which will cover us.
 ### REDCap
 
 REDCap is a secure web application for research databases and e‑forms.
-It stores data in a postgres database and related files in a controlled
-file area (“File Repository”). AU provides REDCap facilities for both
+It stores data in a [PostreSQL](https://www.postgresql.org) database and related files in a controlled
+file area ("File Repository"). AU provides REDCap facilities for both
 the University and AUH employees. The File Repository is intended for
 storing data and study files, but it should not be the primary long‑term
 file storage for bulk data; we will export and archive data into our
@@ -62,8 +64,8 @@ on GDK, from where we will transform and load them into storage.
 When looking at backup and recovery we again have two situations. With
 the LIVA system we will need to trust that what is stated in the
 contract is also what LIVA is doing, and that backup and recovery is
-possible without any significant loss of data. REDCap is also 'out of
-our hands' so to speak, as the setup is done entirely without any user
+possible without any significant loss of data. We also need to trust REDCap's system,
+as the setup is done entirely without any user
 engagement.
 
 Where we will play a role is with GenomeDK, as described below it is the
@@ -81,21 +83,21 @@ individual study teams to set this up correctly, but help can be
 requested from the GDK team (in particular to check that the folders
 have been set up correctly).
 
-Backups are initiated once per week and retained for 14 days and it is
-possible to review recent backup runs, it is recommended that larger
+Backups are conducted once per week and retained for 14 days and it is
+possible to review recent backup runs. Though, it is recommended that larger
 files are kept out of the backup structure and only added in compressed
 format. At present we don't believe that we will have any files that
 require this, but it will be something that we will keep under
 observation (see section on data volume).
 
-What we back up: Raw data that cannot be reproduced, cleaned data in
-parquet format, and metadata.
+What we back up the original raw data, the cleaned data in
+Parquet format, and the metadata.
 
 Where we put things: We will put metadata in `data/metadata/` and
 project documentation in `docs/`, and we will mark the appropriate
 parent directory with `BACKUP` so it is captured by GDK’s weekly backup.
 As we do not expect to do any analysis in the main study folder (see
-section on Sharing Data) we don't expect to be backing up any analysis
+section on [sharing](sharing.qmd) Data) we don't expect to be backing up any analysis
 scripts or results here. This will be done in separate project folders
 which will be set up to only back up scripts and results.
 
@@ -106,7 +108,7 @@ and recovery, but we have received the following reply from the team
 maintaining the servers in answer to our questions about the procedures
 in place.
 
-"AU-IT performs daily backups of the REDCap application and the data
+> "AU-IT performs daily backups of the REDCap application and the data
 contained within it. All backups are managed under TSM and stored in
 encrypted form. Ubuntu servers are configured to automatically install
 security updates. A monthly vulnerability scan is carried out using
@@ -116,15 +118,18 @@ once a year, followed by a risk assessment. In addition to the regular
 annual classification, a new risk assessment is carried out whenever
 significant changes are made to the system."
 
-As some of the study is being conducted using the REDCap facilities at
+::: content-hidden
+TODO: As some of the study is being conducted using the REDCap facilities at
 the University of Copenhagen, we will need to check that they are
 running a similar system.
-<!--TODO Check if REDCap CPH behaves in a similar fashion-->
+
+Check if REDCap CPH behaves in a similar fashion
+:::
 
 ### LIVA
 
 Backups, retention, recovery, and export options are governed by
-contract. The Liva contract draft should specify backup frequency,
+our contract with them. The Liva contract draft should specify backup frequency,
 encryption, location (EU/EEA), recovery time, and access/audit
 reporting. We will confirm these parameters during contract finalization
 and update this section once the contract is signed.
@@ -132,12 +137,12 @@ and update this section once the contract is signed.
 ## Access to the main data structures
 
 It should be a limited number of people who have access to the full set
-of research data. Ideally the project manager and the data architect. In
+of research data, which is currently the project manager and the [Seedcase Project](https://seedcase-project.org) team, which includes the data architect.
 the real world some members of staff from Steno will have access to the
 data held on REDCap as they will be doing most of the design and setup
-of instruments, and staff from the Seedcase project will have access to
+of instruments will have access to
 data on GDK as they will be helping with the transformation of raw data
-to parquet files, and the creation of metadata. It should be made clear
+to Parquet files, and the creation of metadata. It should be made clear
 that no data analysis is to take place using the data without prior
 approval from the Chief Investigator or the Project Manager. There will
 also be staff at LIVA which will have access to their back-end data,
