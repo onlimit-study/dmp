@@ -20,6 +20,12 @@ The final storage place for data will be GenomeDK, which also is the
 place where we are most responsible for setting up not only the storage,
 but also the subsequent safety and security of the data.
 
+Once we know more about the specific data points we will be able to
+expand this section to look in more detail at whether or not the nature
+of the data (mainly sensitivity) will have any impact on the choice of
+storage method. We don't expect there to be any major changes, but we
+may want to employ more encryption to some data while at rest.
+
 ### GenomeDK (GDK)
 
 GDK provides several storage areas. We will use the project storage in
@@ -137,21 +143,24 @@ approval from the Chief Investigator or the Project Manager. There will
 also be staff at LIVA which will have access to their back-end data,
 this is covered by the contract.
 
+<!--TODO We should write up a guide on who may access what data in both REDCap and GDK and how-->
+
 ### GDK
 
 Access is managed on a project folder basis. GDK maintains logs and
 states it records login and file access events to help ensure GDPR
 compliance. We have been informed that we will be receiving regular
-reports from the system once we start using the site.
+reports from the system once we start using the site. These will be
+reviewed and signed off by the project team when we receive them.
 
 ### REDCap
 
 REDCap provides a Logging module that automatically records
 project‑level activity (e.g., data exports, data changes, user
 creation/deletion). We will review logs on a monthly basis and after any
-major change. This will be done on the back of an automated email sent
-out by REDCap encouraging project owners to check through their log
-files and access controls.
+major change. This will be done by the project team on the back of an
+automated email sent out by REDCap encouraging project owners to check
+through their log files and access controls once a month.
 
 ### LIVA
 
