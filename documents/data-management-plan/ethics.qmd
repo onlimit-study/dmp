@@ -52,3 +52,6 @@ direct analysis. Following the conclusion of the feasibility study, we
 will evaluate whether to delete PID from REDCap or remove the entire
 dataset. A similar process will be applied to the main study once all
 data has been successfully transferred and verified on GDK.
+
+Any suspected breaches of data security must be escalated immediately to
+the relevant point of escalation or relevant authority.
