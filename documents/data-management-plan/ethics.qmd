@@ -2,9 +2,8 @@
 
 Ethical and legal considerations are central to responsible data
 management, particularly in health research involving sensitive personal
-information. This section outlines how ethical standards, legal
-obligations, and data security measures are upheld throughout the
-project.
+information. This section outlines how we are planning to handle ethical
+standards, legal obligations, and data security measures.
 
 ## Ethics and Privacy
 
