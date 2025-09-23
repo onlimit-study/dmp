@@ -9,7 +9,7 @@ Plan](https://en.wikipedia.org/wiki/Data_management_plan) (DMP) for the
 study.
 
 We follow a modified version of a DMP template from
-[DEiC](https://deic.dk/en/data-management), mainly around how we
+[DeiC](https://deic.dk/en/data-management), mainly around how we
 describe access to data.
 
 <!-- TODO Flesh this out more before publishing -->
