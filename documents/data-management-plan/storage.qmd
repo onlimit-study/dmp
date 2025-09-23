@@ -1,4 +1,4 @@
-# Storage, Backup, Recovery, and Access
+# Storage, backup, recovery, and access
 
 As part of a DMP, consideration should be given to the physical storage
 and security of the data that a research project generates. This should
@@ -16,7 +16,7 @@ stop working.
 ## Storage of data and metadata
 
 There are three main places we will store data from ON-LiMiT. The first
-two, where the data is generated are
+two, where the data is entered or generated are
 [REDCap](https://project-redcap.org) and the
 [LIVA](https://www.livahealthcare.com) application. These are not final
 storage areas, but they will hold data for long enough that we will need
@@ -167,7 +167,7 @@ reviewed and signed off by the project team when we receive them.
 
 ### REDCap
 
-REDCap provides a Logging module that automatically records
+REDCap provides a logging module that automatically records
 project‑level activity (e.g., data exports, data changes, user
 creation/deletion). We will review logs on a monthly basis and after any
 major change. This will be done by the project team on the back of an
