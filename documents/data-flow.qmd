@@ -18,33 +18,28 @@ to the GenomeDK HPC facility for further processing.
 Underneath the diagram is a more detailed description of the components
 and their interactions.
 
-![Data flow in the ON LiMiT study, who generates data, where is does it
-enter, and how is it transmitted to storage](/images/data-flow.png)
-
-::: content-hidden
 ```{mermaid}
 %%| label: fig-c4-context
 %%| fig-cap: "Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage."
+%%| column: page-right
 flowchart LR
 
-Lab@{shape: stadium, label: "<b>Lab staff</b><br> collecting and analysing biological samples from participants."}
-HP@{shape: stadium, label: "<b>Healthcare professional</b><br> working with the participants in the study."}
-Pt@{shape: stadium, label: "<b>Participant</b><br> participating in the study."}
-Red@{shape: cyl, label: "<b>REDCap db</b><br> database, main purpose is to collate data before it is uploaded onto GenomeDK."}
-Genome@{shape: lin-cyl, label: "<b>GenomeDK</b><br> HPC facility where the processed data will be stored. "}
+Lab(["<b>Lab staff</b><br> collecting and analysing biological samples from participants."])
+HP(["<b>Healthcare professional</b><br> working with the participants in the study."])
+Pt(["<b>Participant</b><br> participating in the study."])
+Red[("<b>REDCap db</b><br> database, main purpose is to collate data before it is uploaded onto GenomeDK.")]
+Genome[("<b>GenomeDK</b><br> HPC facility where the processed data will be stored. ")]
 
-Forms@{shape: proc, label: "<b>Forms in REDCap</b><br> multiple forms and questionnaires for both healthcare staff and participants"}
-Mons@{shape: proc, label: "<b>Liva</b><br> main study app which allows users to enter information about meals, activity, etc"}
-MyF@{shape: proc, label: "<b>MyFood24</b><br> app which helps users to register food ...."}
-iMo@{shape: proc, label: "<b>iMotions Food Preference</b><br> tracks eye movement of participants when looking at pictures of food."}
-Sen@{shape: proc, label: "<b>SENS</b><br> activity monitor, placed on the study participant and then collected and read in the clinic."}
-Lib@{shape: proc, label: "<b>Libre</b><br> Blinded CGM sensor from Abbott which participants will be wearing. Will be read in the clinic."}
-Watch@{shape: proc, label: "<b>Watch</b><br> smart watch which will connect to the Liva app."}
-Scales@{shape: proc, label: "<b>Scales</b><br> smart scales which will connect to the Liva app."}
-BP@{shape: proc, label: "<b>Blood Pressure monitor</b><br> the user will measure their blood pressure and enter it into the app."}
-MBox@{shape: proc, label: "<b>Meal Boxes</b><br> contains recipes and ingredients for two meals a day."}
-
-%%ID@{shape: proc, label: "<b>NAME</b><br> description ...."}
+Forms["<b>Forms in REDCap</b><br> multiple forms and questionnaires for both healthcare staff and participants"]
+Mons["<b>Liva</b><br> main study app which allows users to enter information about meals, activity, etc"]
+MyF["<b>MyFood24</b><br> app which helps users to register food ...."]
+iMo["<b>iMotions Food Preference</b><br> tracks eye movement of participants when looking at pictures of food."]
+Sen["<b>SENS</b><br> activity monitor, placed on the study participant and then collected and read in the clinic."]
+Lib["<b>Libre</b><br> Blinded CGM sensor from Abbott which participants will be wearing. Will be read in the clinic."]
+Watch["<b>Watch</b><br> smart watch which will connect to the Liva app."]
+Scales["<b>Scales</b><br> smart scales which will connect to the Liva app."]
+BP["<b>Blood Pressure monitor</b><br> the user will measure their blood pressure and enter it into the app."]
+MBox["<b>Meal Boxes</b><br> contains recipes and ingredients for two meals a day."]
 
 Lab -->|Uploads data from systems ?| Forms
 HP --> |Completes data forms| Forms
@@ -71,7 +66,6 @@ Mons --> |API ?| Genome
 MyF --> |API ?| Genome
 MBox --> |?? may also be to RedCap| Genome
 ```
-:::
 
 ## REDCap
 
