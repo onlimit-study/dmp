@@ -142,24 +142,18 @@ finalization and update this section once the contract is signed.
 It should be a limited number of people who have access to the full set
 of research data, which is currently the project manager and the
 [Seedcase Project](https://seedcase-project.org) team, which includes
-the data architect. the real world some members of staff from Steno will
-have access to the data held on REDCap as they will be doing most of the
-design and setup of instruments will have access to data on GDK as they
-will be helping with the transformation of raw data to Parquet files,
-and the creation of metadata. It should be made clear reporting.
+the data architect, will have access to data on GDK as they will be
+helping with the transformation of raw data to Parquet files, and the
+creation of metadata. It should be made clear that no data analysis is
+to take place using the data without prior approval from the Chief
+Investigator or the Project Manager. There will also be staff at LIVA
+which will have access to their back-end data, this is covered by the
+contract.
 
 ::: content-hidden
 TODO: Confirm these parameters during contract finalization and update
 this section once the contract is signed.
 :::
-
-::: content-hidden
-TODO: Confirm these parameters during contract finalization and update
-this section once the contract is signed.
-:::
-
-also be staff at LIVA which will have access to their back-end data,
-this is covered by the contract.
 
 <!--TODO We should write up a guide on who may access what data in both REDCap and GDK and how-->
 
