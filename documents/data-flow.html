@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="toc-actions"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/documents/data-flow.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/documents/data-flow.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -167,11 +167,64 @@ ul.task-list li input[type="checkbox"] {
 <p>Below is a data flow diagram for the ON LiMiT project. The diagram illustrates the flow of data between various components of the study, including participants, healthcare professionals, and data management systems.</p>
 <p>At present the diagram is a work in progress, and will be updated as the pilot study progresses. Most data will originate from the participants, who will enter data into various apps and systems. The healthcare professionals will also enter data into the system, and the lab staff will collect and analyse biological samples from the participants. Much of the data will be collated in a REDCap database before being uploaded to the GenomeDK HPC facility for further processing.</p>
 <p>Underneath the diagram is a more detailed description of the components and their interactions.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/data-flow.png" class="img-fluid figure-img"></p>
-<figcaption>Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage</figcaption>
+<div class="cell page-columns page-full" data-layout-align="default">
+<div class="cell-output-display column-page-right">
+<div id="fig-c4-context" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c4-context-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-c4-context">flowchart LR
+
+Lab(["&lt;b&gt;Lab staff&lt;/b&gt;&lt;br&gt; collecting and analysing biological samples from participants."])
+HP(["&lt;b&gt;Healthcare professional&lt;/b&gt;&lt;br&gt; working with the participants in the study."])
+Pt(["&lt;b&gt;Participant&lt;/b&gt;&lt;br&gt; participating in the study."])
+Red[("&lt;b&gt;REDCap db&lt;/b&gt;&lt;br&gt; database, main purpose is to collate data before it is uploaded onto GenomeDK.")]
+Genome[("&lt;b&gt;GenomeDK&lt;/b&gt;&lt;br&gt; HPC facility where the processed data will be stored. ")]
+
+Forms["&lt;b&gt;Forms in REDCap&lt;/b&gt;&lt;br&gt; multiple forms and questionnaires for both healthcare staff and participants"]
+Mons["&lt;b&gt;Liva&lt;/b&gt;&lt;br&gt; main study app which allows users to enter information about meals, activity, etc"]
+MyF["&lt;b&gt;MyFood24&lt;/b&gt;&lt;br&gt; app which helps users to register food ...."]
+iMo["&lt;b&gt;iMotions Food Preference&lt;/b&gt;&lt;br&gt; tracks eye movement of participants when looking at pictures of food."]
+Sen["&lt;b&gt;SENS&lt;/b&gt;&lt;br&gt; activity monitor, placed on the study participant and then collected and read in the clinic."]
+Lib["&lt;b&gt;Libre&lt;/b&gt;&lt;br&gt; Blinded CGM sensor from Abbott which participants will be wearing. Will be read in the clinic."]
+Watch["&lt;b&gt;Watch&lt;/b&gt;&lt;br&gt; smart watch which will connect to the Liva app."]
+Scales["&lt;b&gt;Scales&lt;/b&gt;&lt;br&gt; smart scales which will connect to the Liva app."]
+BP["&lt;b&gt;Blood Pressure monitor&lt;/b&gt;&lt;br&gt; the user will measure their blood pressure and enter it into the app."]
+MBox["&lt;b&gt;Meal Boxes&lt;/b&gt;&lt;br&gt; contains recipes and ingredients for two meals a day."]
+
+Lab --&gt;|Uploads data from systems ?| Forms
+HP --&gt; |Completes data forms| Forms
+Forms --- Red
+Red --&gt;|API| Genome
+
+Pt --&gt;|Enters data| Mons
+Pt --&gt;|Enters data| MyF
+Pt --&gt;|Enters data| iMo
+Pt --&gt;|Wears for a week| Sen
+Pt --&gt;|Wears for two weeks| Lib
+Pt --&gt;|Wears continuously| Watch
+Pt --&gt; |Uses| Scales
+Pt --&gt; |Uses|BP
+Pt --&gt; |Chooses| MBox
+
+iMo --&gt; |??| Red
+Sen --&gt;|Manual upload ?| Red
+Lib --&gt;|Manual upload| Red
+Watch --&gt;|transmits| Mons
+Scales --&gt;|transmits| Mons
+BP --&gt;|Participant enteres results| Mons
+Mons --&gt; |API ?| Genome
+MyF --&gt; |API ?| Genome
+MBox --&gt; |?? may also be to RedCap| Genome
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c4-context-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage.
+</figcaption>
 </figure>
+</div>
+</div>
 </div>
 <section id="redcap" class="level2">
 <h2 class="anchored" data-anchor-id="redcap">REDCap</h2>
