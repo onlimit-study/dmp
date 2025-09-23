@@ -6,7 +6,7 @@ be done to minimize the risk of accidental data loss, be it from
 overwriting raw data with an edited copy, or the loss of either a laptop
 or the breakdown of a disk. Some data will be easier to replace, data
 which contains measurements done in a clinic and entered directly on a
-laptop will be harder to replicate than a data set downloaded from an
+laptop will be harder to recover than a data set downloaded from an
 online repository. It is therefore important when looking at a data
 management plan that we are careful with how we store data we have
 generated within the study, and that we do our due diligence in making
