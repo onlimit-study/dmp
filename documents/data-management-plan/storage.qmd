@@ -65,7 +65,7 @@ Germany. The data will be made available to us via AWS on a ftp
 connection on request, we hope to transfer the data directly to folders
 on GDK, from where we will transform and load them into storage.
 
-## Backup and Recovery
+## Backup and recovery
 
 When looking at backup and recovery we again have two situations. With
 the LIVA system we will need to trust that what is stated in the
