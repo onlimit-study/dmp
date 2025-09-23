@@ -1,6 +1,6 @@
-# Ethics and Legal Compliance, and Data Security
+# Ethics, security, and legal compliance
 
-Ethical and legal considerations are central to responsible data
+Ethical and legal considerations, including related to security, are central to responsible data
 management, particularly in health research involving sensitive personal
 information. This section outlines how we are planning to handle ethical
 standards, legal obligations, and data security measures.
@@ -17,7 +17,7 @@ research institutions, but strictly for research purposes.
 To protect the privacy of our participant, personally identifiable data
 (PID) will never be made available to researchers during the analysis
 phase. PID will only be accessible to staff responsible for direct
-participant contact or those managing instruments within REDCap. For all
+participant contact, those managing instruments within REDCap, or for managing the final data structure. For all
 analytical purposes, anonymised data will be used. Requests for data
 extracts must be submitted via a formal application form, which requires
 applicants to justify their need for specific data points, especially if
@@ -52,5 +52,5 @@ will evaluate whether to delete PID from REDCap or remove the entire
 dataset. A similar process will be applied to the main study once all
 data has been successfully transferred and verified on GDK.
 
-Any suspected breaches of data security must be escalated immediately to
+Any suspected breaches of data security must and will be escalated immediately to
 the relevant point of escalation or relevant authority.
