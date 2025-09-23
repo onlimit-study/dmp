@@ -1,22 +1,50 @@
 project:
-  type: onlimit-theme
+  type: book
 
-website:
+book:
   title: "ON-LiMiT DMP"
   site-url: "https://onlimit-study.github.io/dmp/"
   repo-url: "https://github.com/onlimit-study/dmp"
+  author:
+    - name: "Kristiane Beicher"
+      affiliation: "Steno Diabetes Center Aarhus"
+      orcid: "0000-0001-7556-9566"
+    - name: "Daniel Ibsen"
+      affiliation: "Steno Diabetes Center Aarhus"
+      # TODO: Add ORCID
+      # orcid: ""
+    - name: "Luke Johnston"
+      affiliation: "Steno Diabetes Center Aarhus"
+      orcid: "0000-0003-4169-2616"
   repo-branch: main
   repo-actions: [issue, edit, source]
+  favicon: _extensions/onlimit-study/onlimit-theme/favicon/favicon.ico
   navbar:
-    left:
-      - text: "Design"
-        menu:
-          - documents/C4-level.qmd
-          - documents/data-flow.qmd
-    tools:
-      - icon: github
-        href: "https://github.com/onlimit-study/dmp"
-        aria-label: "GitHub icon: Source repository"
+    background: white
+    logo: _extensions/onlimit-study/onlimit-theme/images/logo.png
+    logo-alt: "ON-LiMiT logo, with apple in the O and a person running under the LIMIT text."
+    title: false
+    pinned: true
+  search:
+    location: navbar
+    type: textbox
+  chapters:
+    - index.qmd
+    - documents/C4-level.qmd
+    - documents/data-flow.qmd
+  appendices:
+    - CONTRIBUTING.md
+    - CHANGELOG.md
+    - text: "License"
+      href: LICENSE.md
+  tools:
+    - icon: github
+      href: "https://github.com/onlimit-study/dmp"
+      aria-label: "GitHub icon: Source repository"
+  page-footer:
+    center:
+      - text: "Licensed under CC BY 4.0"
+        href: "LICENSE.md"
 
 format:
   onlimit-theme-html:
