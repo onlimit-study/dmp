@@ -10,83 +10,123 @@
     ]
   },
   {
+    "objectID": "sections/storage.html",
+    "href": "sections/storage.html",
+    "title": "2  Storage, backup, recovery, and access",
+    "section": "",
+    "text": "2.1 Storage of data and metadata\nAs part of a DMP, consideration should be given to the physical storage and security of the data that a research project generates. This should be done to minimize the risk of accidental data loss, be it from overwriting raw data with an edited copy, or the loss of either a laptop or the breakdown of a disk. Some data will be easier to replace, data which contains measurements done in a clinic and entered directly on a laptop will be harder to recover than a data set downloaded from an online repository. It is therefore important when looking at a data management plan that we are careful with how we store data we have generated within the study, and that we do our due diligence in making sure that data we store is recoverable, should a disk fail, or a server stop working.\nThere are three main places we will store data from ON-LiMiT. The first two, where the data is entered or generated are REDCap and the LIVA application. These are not final storage areas, but they will hold data for long enough that we will need to take them into consideration. The final storage place for data will be GenomeDK, which also is the place where we are most responsible for setting up not only the storage, but also the subsequent safety and security of the data.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
+    ]
+  },
+  {
+    "objectID": "sections/storage.html#storage-of-data-and-metadata",
+    "href": "sections/storage.html#storage-of-data-and-metadata",
+    "title": "2  Storage, backup, recovery, and access",
+    "section": "",
+    "text": "2.1.1 GenomeDK (GDK)\nGDK provides several storage areas. We will use the project storage in their Open zone for the ON LiMiT project (see a description of the zones here). These locations are designed for collaborative data and are eligible for backup. We do not need a Data Processing Agreement with GenomeDK as our host organisations Aarhus University (AU) and Aarhus University Hospital (AUH) already have an agreement in place which will cover us.\n\n\n2.1.2 REDCap\nREDCap is a secure web application for research databases and e‑forms. It stores data in a PostreSQL database and related files in a controlled file area (“File Repository”). AU provides REDCap facilities for both the University and AUH employees. The File Repository is intended for storing data and study files, but it should not be the primary long‑term file storage for bulk data; we will export and archive data into our primary storage (GDK) using the API facility provided by REDCap. As with GDK we don’t need a Data Processing Agreement for the same reasons as above.\n\n\n2.1.3 LIVA\nLiva Healthcare states compliance with GDPR and ISO/IEC 27001/27002 and NHS Data Security & Protection standards on their website. We understand that data is being stored on AWS services that are physically based in Frankfurt, Germany. The data will be made available to us via AWS on a ftp connection on request, we hope to transfer the data directly to folders on GDK, from where we will transform and load them into storage.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
+    ]
+  },
+  {
+    "objectID": "sections/storage.html#backup-and-recovery",
+    "href": "sections/storage.html#backup-and-recovery",
+    "title": "2  Storage, backup, recovery, and access",
+    "section": "2.2 Backup and recovery",
+    "text": "2.2 Backup and recovery\nWhen looking at backup and recovery we again have two situations. With the LIVA system we will need to trust that what is stated in the contract is also what LIVA is doing, and that backup and recovery is possible without any significant loss of data. We also need to trust REDCap’s system, as the setup is done entirely without any user engagement.\nWhere we will play a role is with GenomeDK, as described below it is the responsibility of the user to set up the files for backup, although it is not possible for us to check that a recovery is possible, as backup is still done by the GDK team.\n\n2.2.1 GenomeDK\nGDK runs its own disk‑based backup at a remote site. By default nothing is backed up. There is guidance given on the GDK website which details how the backup should be set up. It is the responsibility of the individual study teams to set this up correctly, but help can be requested from the GDK team (in particular to check that the folders have been set up correctly).\nBackups are conducted once per week and retained for 14 days and it is possible to review recent backup runs. Though, it is recommended that larger files are kept out of the backup structure and only added in compressed format. At present we don’t believe that we will have any files that require this, but it will be something that we will keep under observation (see section on data volume).\nWe will back up the original raw data, the cleaned data in Parquet format, and the metadata. As we do not expect to do any analysis in the main study folder (see section on Sharing Data) we don’t expect to be backing up any analysis scripts or results here. This will be done in separate project folders which will be set up to only back up scripts and results.\n\n\n2.2.2 REDCap\nThere isn’t any information on the website for REDCap at AU about backup and recovery, but we have received the following reply from the team maintaining the servers in answer to our questions about the procedures in place.\n\n“AU-IT performs daily backups of the REDCap application and the data contained within it. All backups are managed under IBM’s Tivoli Storage Manager and stored in encrypted form. Ubuntu servers are configured to automatically install security updates. A monthly vulnerability scan is carried out using Tenable Security Centre. In accordance with Aarhus University’s annual information security cycle, a system and data classification is conducted at least once a year, followed by a risk assessment. In addition to the regular annual classification, a new risk assessment is carried out whenever significant changes are made to the system.”\n\n\n\n2.2.3 LIVA\nBackups, retention, recovery, and export options are governed by our contract with them. The Liva contract draft should specify backup frequency, encryption, location (EU/EEA), recovery time, and access/audit reporting. We will confirm these parameters during contract finalization and update this section once the contract is signed.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
+    ]
+  },
+  {
+    "objectID": "sections/storage.html#access-to-the-main-data-structures",
+    "href": "sections/storage.html#access-to-the-main-data-structures",
+    "title": "2  Storage, backup, recovery, and access",
+    "section": "2.3 Access to the main data structures",
+    "text": "2.3 Access to the main data structures\nIt should be a limited number of people who have access to the full set of research data, which is currently the project manager and the Seedcase Project team, which includes the data architect, will have access to data on GDK as they will be helping with the transformation of raw data to Parquet files, and the creation of metadata. It should be made clear that no data analysis is to take place using the data without prior approval of project synopsis from the Publication Panel and from Project Management Team. There will also be staff at LIVA which will have access to their back-end data, this is covered by the contract.\n\n\n2.3.1 GDK\nAccess is managed on a project folder basis. GDK maintains logs and states it records login and file access events to help ensure GDPR compliance. We have been informed that we will be receiving regular reports from the system once we start using the site. These will be reviewed and signed off by the project team when we receive them.\n\n\n2.3.2 REDCap\nREDCap provides a logging module that automatically records project‑level activity (e.g., data exports, data changes, user creation/deletion). We will review logs on a monthly basis and after any major change. This will be done by the project team on the back of an automated email sent out by REDCap encouraging project owners to check through their log files and access controls once a month.\n\n\n2.3.3 LIVA\nWe will rely on the Liva contract agreement for access control, audit reporting cadence, and data‑sharing/export mechanisms. We expect that Liva will be able to provide us with either access to a list of users with data viewing access, or will be able to provide such a list on demand.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
+    ]
+  },
+  {
     "objectID": "documents/C4-level.html",
     "href": "documents/C4-level.html",
-    "title": "2  C4 Models",
+    "title": "3  C4 Models",
     "section": "",
-    "text": "2.1 Context\nThis section contains the C4 Models for ON LiMiT data infrastructure. Even though the C4 model is primarily used for software architecture, we use it here to describe the data infrastructure and its components. We will use the first two levels of the C4 model, the Context and Container diagrams, to describe the data infrastructure and its components.\nON LiMiT is a research project that collects data from various sources, including biological samples, questionnaires, and other electronic data. The data is collected from participants in the study, healthcare professionals, and bioanalysts. The data is stored on GenomeDKs servers and will be made available for researchers to analyze. The following diagram shows the context of ON LiMiT, including the main users and data providers.",
+    "text": "3.1 Context\nThis section contains the C4 Models for ON LiMiT data infrastructure. Even though the C4 model is primarily used for software architecture, we use it here to describe the data infrastructure and its components. We will use the first two levels of the C4 model, the Context and Container diagrams, to describe the data infrastructure and its components.\nON LiMiT is a research project that collects data from various sources, including biological samples, questionnaires, and other electronic data. The data is collected from participants in the study, healthcare professionals, and bioanalysts. The data is stored on GenomeDKs servers and will be made available for researchers to analyze. The following diagram shows the context of ON LiMiT, including the main users and data providers.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>C4 Models</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>C4 Models</span>"
     ]
   },
   {
     "objectID": "documents/C4-level.html#context",
     "href": "documents/C4-level.html#context",
-    "title": "2  C4 Models",
+    "title": "3  C4 Models",
     "section": "",
     "text": "C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>C4 Models</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>C4 Models</span>"
     ]
   },
   {
     "objectID": "documents/C4-level.html#container",
     "href": "documents/C4-level.html#container",
-    "title": "2  C4 Models",
-    "section": "2.2 Container",
-    "text": "2.2 Container\nThe Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.\n\n\n\nC4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis",
+    "title": "3  C4 Models",
+    "section": "3.2 Container",
+    "text": "3.2 Container\nThe Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.\n\n\n\nC4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>C4 Models</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>C4 Models</span>"
     ]
   },
   {
     "objectID": "documents/data-flow.html",
     "href": "documents/data-flow.html",
-    "title": "3  Data Flows",
+    "title": "4  Data Flows",
     "section": "",
-    "text": "3.1 REDCap\nBelow is a data flow diagram for the ON LiMiT project. The diagram illustrates the flow of data between various components of the study, including participants, healthcare professionals, and data management systems.\nAt present the diagram is a work in progress, and will be updated as the pilot study progresses. Most data will originate from the participants, who will enter data into various apps and systems. The healthcare professionals will also enter data into the system, and the lab staff will collect and analyse biological samples from the participants. Much of the data will be collated in a REDCap database before being uploaded to the GenomeDK HPC facility for further processing.\nUnderneath the diagram is a more detailed description of the components and their interactions.\nREDCap is a secure web application for building and managing online surveys and databases. It is used to collect data from participants and healthcare professionals in the ON LiMiT project. REDCap will have two main functions, the first is to collect data from clinicians and participants via forms and questionnaires, and the second is to collate data from other systems, likely through APIs or csv uploads.",
+    "text": "4.1 REDCap\nBelow is a data flow diagram for the ON LiMiT project. The diagram illustrates the flow of data between various components of the study, including participants, healthcare professionals, and data management systems.\nAt present the diagram is a work in progress, and will be updated as the pilot study progresses. Most data will originate from the participants, who will enter data into various apps and systems. The healthcare professionals will also enter data into the system, and the lab staff will collect and analyse biological samples from the participants. Much of the data will be collated in a REDCap database before being uploaded to the GenomeDK HPC facility for further processing.\nUnderneath the diagram is a more detailed description of the components and their interactions.\nREDCap is a secure web application for building and managing online surveys and databases. It is used to collect data from participants and healthcare professionals in the ON LiMiT project. REDCap will have two main functions, the first is to collect data from clinicians and participants via forms and questionnaires, and the second is to collate data from other systems, likely through APIs or csv uploads.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Flows</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Flows</span>"
     ]
   },
   {
     "objectID": "documents/data-flow.html#imotions-food-preference",
     "href": "documents/data-flow.html#imotions-food-preference",
-    "title": "3  Data Flows",
-    "section": "3.2 iMotions Food Preference",
-    "text": "3.2 iMotions Food Preference\niMotion Food Preference is a system that tracks the eye movements of participants when they are looking at pictures of food. The data collected by this system can be pulled out as csv files and uploaded to the REDCap database or directly to the GenomeDK HPC facility.",
+    "title": "4  Data Flows",
+    "section": "4.2 iMotions Food Preference",
+    "text": "4.2 iMotions Food Preference\niMotion Food Preference is a system that tracks the eye movements of participants when they are looking at pictures of food. The data collected by this system can be pulled out as csv files and uploaded to the REDCap database or directly to the GenomeDK HPC facility.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Flows</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Flows</span>"
     ]
   },
   {
     "objectID": "documents/data-flow.html#sens",
     "href": "documents/data-flow.html#sens",
-    "title": "3  Data Flows",
-    "section": "3.3 SENS",
-    "text": "3.3 SENS\nSENS is an activity monitor that will be placed on the study participants for a week. The data collected by a SENS device will be extracted at clinic visits and the data will be uploaded to the REDCap database. The SENS device will track the participants’ physical activity levels in selected weeks of the study.",
+    "title": "4  Data Flows",
+    "section": "4.3 SENS",
+    "text": "4.3 SENS\nSENS is an activity monitor that will be placed on the study participants for a week. The data collected by a SENS device will be extracted at clinic visits and the data will be uploaded to the REDCap database. The SENS device will track the participants’ physical activity levels in selected weeks of the study.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Flows</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Flows</span>"
     ]
   },
   {
     "objectID": "documents/data-flow.html#libre",
     "href": "documents/data-flow.html#libre",
-    "title": "3  Data Flows",
-    "section": "3.4 Libre",
-    "text": "3.4 Libre\nLibre is a continuous glucose monitoring (CGM) sensor from Abbott that will be worn by the participants for a week. The data collected by the Libre device will be extracted at clinic visits and uploaded to the REDCap database. The Libre device will track the participants’ glucose levels in selected weeks of the study.",
+    "title": "4  Data Flows",
+    "section": "4.4 Libre",
+    "text": "4.4 Libre\nLibre is a continuous glucose monitoring (CGM) sensor from Abbott that will be worn by the participants for a week. The data collected by the Libre device will be extracted at clinic visits and uploaded to the REDCap database. The Libre device will track the participants’ glucose levels in selected weeks of the study.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Flows</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Flows</span>"
     ]
   },
   {
     "objectID": "documents/data-flow.html#liva",
     "href": "documents/data-flow.html#liva",
-    "title": "3  Data Flows",
-    "section": "3.5 Liva",
-    "text": "3.5 Liva\nLiva is a mobile app that will be used by the participants to track their physical activity (via Withings or Garmin activity watch), adherence to the assigned diet intervention (via short diet screener), body weight (via Withings or Gamin scale), answer other small questionnaires, follow the study schedule and interact with study personnel via a chat function. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.\n\n3.5.1 Withings or Garmin Watch and Scales\nThe Withings or Garmin Watch and Scales will be used by the participants to track their physical activity and weight. The data collected by these devices will be transmitted to the Monsenso app where it will be collated and then uploaded to the REDCap database. The watch will track the participants’ physical activity levels, while the scales will track their weight.",
+    "title": "4  Data Flows",
+    "section": "4.5 Liva",
+    "text": "4.5 Liva\nLiva is a mobile app that will be used by the participants to track their physical activity (via Withings or Garmin activity watch), adherence to the assigned diet intervention (via short diet screener), body weight (via Withings or Gamin scale), answer other small questionnaires, follow the study schedule and interact with study personnel via a chat function. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.\n\n4.5.1 Withings or Garmin Watch and Scales\nThe Withings or Garmin Watch and Scales will be used by the participants to track their physical activity and weight. The data collected by these devices will be transmitted to the Monsenso app where it will be collated and then uploaded to the REDCap database. The watch will track the participants’ physical activity levels, while the scales will track their weight.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Flows</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Flows</span>"
     ]
   },
   {
