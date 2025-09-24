@@ -145,8 +145,7 @@ of research data, which is currently the project manager and the
 the data architect, will have access to data on GDK as they will be
 helping with the transformation of raw data to Parquet files, and the
 creation of metadata. It should be made clear that no data analysis is
-to take place using the data without prior approval from the Chief
-Investigator or the Project Manager. There will also be staff at LIVA
+to take place using the data without prior approval of project synopsis from the Publication Panel and from Project Management Team. There will also be staff at LIVA
 which will have access to their back-end data, this is covered by the
 contract.
 
