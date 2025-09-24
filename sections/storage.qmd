@@ -25,6 +25,8 @@ be [GenomeDK](https://genome.au.dk), which also is the place where we
 are most responsible for setting up not only the storage, but also the
 subsequent safety and security of the data.
 
+<!--TODO #92 Add MyFood24 as they (like Liva) store data in AWS temporarily-->
+
 ::: content-hidden
 TODO: Once we know more about the specific data points we will be able
 to expand this section to look in more detail at whether or not the
@@ -145,9 +147,10 @@ of research data, which is currently the project manager and the
 the data architect, will have access to data on GDK as they will be
 helping with the transformation of raw data to Parquet files, and the
 creation of metadata. It should be made clear that no data analysis is
-to take place using the data without prior approval of project synopsis from the Publication Panel and from Project Management Team. There will also be staff at LIVA
-which will have access to their back-end data, this is covered by the
-contract.
+to take place using the data without prior approval of project synopsis
+from the Publication Panel and from Project Management Team. There will
+also be staff at LIVA which will have access to their back-end data,
+this is covered by the contract.
 
 ::: content-hidden
 TODO: Confirm these parameters during contract finalization and update
