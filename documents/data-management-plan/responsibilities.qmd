@@ -4,7 +4,7 @@ Effective data management relies to a great extent on clear guidelines
 as well as clear definitions of roles and responsibilities. By defining
 responsibilities and ensuring the right expertise and tools are in
 place, then data quality, compliance, and the long-term value of the
-project’s outputs should be ensured. This section outlines the key
+project's outputs should be ensured. This section outlines the key
 roles, and resources dedicated to managing data within the study.
 
 ## Responsibilities
@@ -26,14 +26,14 @@ make sure that data flows are secure and well-documented.
 ### REDCap Setup and Study Team Contributions
 
 While the DA is ultimately responsible for the setup and configuration
-of REDCap, much of the practical implementation will be carried out by a
-couple of members of the study team at Steno Diabetes Center Copenhagen
+of REDCap, much of the practical implementation will be carried out by
+some members of the study team at Steno Diabetes Center Copenhagen
 (SDCC). These team members will also contribute to identifying and
 describing specific data points registered in REDCap.
 
 ### Metadata and Documentation
 
-Metadata will be generated using [Seedcase
+Metadata will be organised using [Seedcase
 Sprout](https://sprout.seedcase-project.org), based on the data recorded
 in REDCap (for data registered there) and a data dictionary which will
 be developed in collaboration with the LIVA team as the study progresses
@@ -44,7 +44,7 @@ aligned with FAIR principles.
 ### Long-term Data Handling and Storage
 
 The DA is also responsible for overseeing the work carried out by the
-Seedcase team in converting raw data into parquet files for long-term
+Seedcase team in converting raw data into Parquet files for long-term
 storage. It is essential that this process preserves the integrity of
 the original data, and the DA will ensure that no information is lost or
 altered during the conversion. <!--TODO Check with Luke about this-->
