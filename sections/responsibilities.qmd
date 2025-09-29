@@ -36,21 +36,25 @@ identifying and describing specific data points registered in REDCap.
 Metadata will be organised using [Seedcase
 Sprout](https://sprout.seedcase-project.org), based on the data recorded
 in REDCap (for data registered there) and a data dictionary which will
-be developed in collaboration with the LIVA team as the study progresses
-(it remains to be determined what data points we will get from them).
-This will result in metadata that is consistent, comprehensive, and
-aligned with FAIR principles.
+be developed in collaboration with the LIVA team as the study
+progresses.
 
-### Long-term Data Handling and Storage
+<!--TODO write more here once we know what data points we will be getting from Liva -->
+
+This will result in metadata that is consistent, comprehensive, and
+aligned with [FAIR](https://en.wikipedia.org/wiki/FAIR_data) principles.
+
+### Long-term data handling and storage
 
 The data architect is also responsible for overseeing the work carried
 out by the Seedcase team in converting raw data into Parquet files for
 long-term storage. It is essential that this process preserves the
 integrity of the original data, and the data architect will ensure that
 no information is lost or altered during the conversion.
+
 <!--TODO Check with Luke about this-->
 
-### Sub-study Data Integration
+### Sub-study data integration
 
 Any sub-study that generates data is expected to submit its dataset in
 full to the main project, accompanied by appropriate metadata. Although
