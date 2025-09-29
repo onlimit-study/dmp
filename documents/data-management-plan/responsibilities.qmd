@@ -1,4 +1,4 @@
-# Responsibilities and Resources
+# Responsibilities and resources
 
 Effective data management relies to a great extent on clear guidelines
 as well as clear definitions of roles and responsibilities. By defining
@@ -14,22 +14,22 @@ handling (from collection and documentation to long-term storage and
 sharing) and how collaboration between people and institutions supports
 the integrity and usability of the data throughout the study.
 
-### Data Management Roles
+### Data management roles
 
-The project has appointed a dedicated Data Architect (DA) at Steno
-Diabetes Center Aarhus (SDCA) who holds primary responsibility for the
-overall data management strategy. This includes overseeing data capture,
+The project has appointed a dedicated Data Architect at Steno Diabetes
+Center Aarhus (SDCA) who holds primary responsibility for the overall
+data management strategy. This includes overseeing data capture,
 metadata production, data quality assurance, secure storage, backup and
-recovery procedures, long-term archiving, and data sharing. The DA will
-make sure that data flows are secure and well-documented.
+recovery procedures, long-term archiving, and data sharing. The data
+architect will make sure that data flows are secure and well-documented.
 
-### REDCap Setup and Study Team Contributions
+### REDCap setup and study team contributions
 
-While the DA is ultimately responsible for the setup and configuration
-of REDCap, much of the practical implementation will be carried out by
-some members of the study team at Steno Diabetes Center Copenhagen
-(SDCC). These team members will also contribute to identifying and
-describing specific data points registered in REDCap.
+While the data architect is ultimately responsible for the setup and
+configuration of REDCap, much of the practical implementation will be
+carried out by some members of the study team at Steno Diabetes Center
+Copenhagen (SDCC). These team members will also contribute to
+identifying and describing specific data points registered in REDCap.
 
 ### Metadata and Documentation
 
@@ -43,28 +43,29 @@ aligned with FAIR principles.
 
 ### Long-term Data Handling and Storage
 
-The DA is also responsible for overseeing the work carried out by the
-Seedcase team in converting raw data into Parquet files for long-term
-storage. It is essential that this process preserves the integrity of
-the original data, and the DA will ensure that no information is lost or
-altered during the conversion. <!--TODO Check with Luke about this-->
+The data architect is also responsible for overseeing the work carried
+out by the Seedcase team in converting raw data into Parquet files for
+long-term storage. It is essential that this process preserves the
+integrity of the original data, and the data architect will ensure that
+no information is lost or altered during the conversion.
+<!--TODO Check with Luke about this-->
 
 ### Sub-study Data Integration
 
 Any sub-study that generates data is expected to submit its dataset in
 full to the main project, accompanied by appropriate metadata. Although
-the SDCA team is not responsible for collecting this data, the DA and
-the Project Manager (PM) share responsibility for ensuring that
-sub-study teams understand their obligations. This includes verifying
-that all relevant data is submitted to the main study and properly
-integrated into the central repository on GenomeDK.
+the SDCA team is not responsible for collecting this data, the data
+architect and the Project Manager (PM) share responsibility for ensuring
+that sub-study teams understand their obligations. This includes
+verifying that all relevant data is submitted to the main study and
+properly integrated into the central repository on GenomeDK.
 
 ### Compliance
 
-The DA and PM will jointly ensure that the data management practices
-outlined in this plan are adhered to throughout the project lifecycle.
-Regular reviews will be conducted, and updates to the DMP will be made
-as needed.
+The data architect and project manager will jointly ensure that the data
+management practices outlined in this plan are adhered to throughout the
+project lifecycle. Regular reviews will be conducted, and updates to the
+DMP will be made as needed.
 
 ### Contingency planning
 
@@ -72,9 +73,10 @@ The study as a whole will run over 5 years, so it is unlikely that all
 original staff will still be present at the end of the study period. At
 present there is no formal guidance on how we expect to cover either
 long-term absence or people leaving the study, but it is expected that
-the core study team, DA and PM alongside the Project Secretary and the
-Chief Investigator will be able to cover most of the urgent tasks if
-needed. <!--TODO Get Daniel to write something here!-->
+the core study team, data architect and project manager alongside the
+Project Secretary and the Chief Investigator will be able to cover most
+of the urgent tasks if needed.
+<!--TODO Get Daniel to write something here!-->
 
 <!--TODO Ask Daniel about budget for training and upskilling of any replacement staff -->
 
