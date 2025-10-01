@@ -30,6 +30,7 @@ book:
     type: textbox
   chapters:
     - index.qmd
+    - sections/storage.qmd
     - documents/C4-level.qmd
     - documents/data-flow.qmd
   appendices:
