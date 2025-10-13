@@ -20,22 +20,27 @@ To protect the privacy of our participant, personally identifiable data
 phase. PID will only be accessible to staff responsible for direct
 participant contact, those managing instruments within REDCap, or for
 managing the final data structure. For all analytical purposes,
-anonymised data will be used. Requests for data extracts must be
-submitted via a formal application form, which requires applicants to
-justify their need for specific data points, especially if they involve
-PID.
+pseudonymised or anonymised data will be used. Requests for data
+extracts must be submitted via a formal application form, which requires
+applicants to justify their need for specific data points, especially if
+they involve PID.
 
-<!--TODO Make sure that the data access application form include a section stating that raw data must not be extracted from GenomeDK, and only results and scripts may be exported. -->
+In general, the principles for data extraction follows the current
+guidelines from Danmark's Statistics. Individual-level data cannot be
+exported from the project database at GenomeDK. Only aggregated results
+and analysis scripts not including any personal identifiable data can be
+extracted.
 
 ## Legal compliance
 
 The project complies with all relevant legal obligations concerning data
-handling and sharing. A data sharing agreement is in place between all
-participating sites, enabling secure and lawful data exchange within the
-main study and any sub-studies. Data from REDCap will be transferred to
-GenomeDK (GDK) via a secure API. Data from LIVA will be made available
-through an AWS FTP server and transferred directly to GDK. This should
-ensure that we comply with all legal requirements.
+handling and sharing. A joint data controller agreement is in place
+between all participating sites, enabling secure and lawful data
+exchange within the main study and any sub-studies. Data from REDCap
+will be transferred to GenomeDK (GDK) via a secure API. Data from LIVA
+will be made available through an AWS FTP server and transferred
+directly to GDK. This should ensure that we comply with all legal
+requirements.
 
 ## Data security
 
