@@ -9,7 +9,7 @@ security measures.
 ## Ethics and privacy
 
 All participants will provide informed consent, which includes a clear
-statement that their data will be retained for a minimum of 25 years.
+statement that their data will be retained for a minimum of 15 years.
 The consent form also specifies that data may be shared with other
 research institutions, but strictly for research purposes.
 
@@ -26,7 +26,7 @@ applicants to justify their need for specific data points, especially if
 they involve PID.
 
 In general, the principles for data extraction follows the current
-guidelines from Danmark's Statistics. Individual-level data cannot be
+guidelines from Statistics Denmark. Individual-level data cannot be
 exported from the project database at GenomeDK. Only aggregated results
 and analysis scripts not including any personal identifiable data can be
 extracted.
