@@ -30,6 +30,7 @@ book:
     type: textbox
   chapters:
     - index.qmd
+    - sections/ethics.qmd
     - sections/storage.qmd
     - sections/responsibilities.qmd
     - documents/C4-level.qmd

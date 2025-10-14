@@ -1,0 +1,65 @@
+# Ethics, security, and legal compliance
+
+Ethical and legal considerations, including related to security, are
+central to responsible data management, particularly in health research
+involving sensitive personal information. This section outlines how we
+are planning to handle ethical standards, legal obligations, and data
+security measures.
+
+## Ethics and privacy
+
+All participants will provide informed consent, which includes a clear
+statement that their data will be retained for a minimum of 15 years.
+The consent form also specifies that data may be shared with other
+research institutions, but strictly for research purposes.
+
+<!--TODO Check if consent form can be made publicly available. -->
+
+To protect the privacy of our participant, personally identifiable data
+(PID) will never be made available to researchers during the analysis
+phase. PID will only be accessible to staff responsible for direct
+participant contact, those managing instruments within REDCap, or for
+managing the final data structure. For all analytical purposes,
+pseudonymised or anonymised data will be used. Requests for data
+extracts must be submitted via a formal application form, which requires
+applicants to justify their need for specific data points, especially if
+they involve PID.
+
+In general, the principles for data extraction follows the current
+guidelines from Statistics Denmark. Individual-level data cannot be
+exported from the project database at GenomeDK. Only aggregated results
+and analysis scripts not including any personal identifiable data can be
+extracted.
+
+## Legal compliance
+
+The project complies with all relevant legal obligations concerning data
+handling and sharing. A joint data controller agreement is in place
+between all participating sites, enabling secure and lawful data
+exchange within the main study and any sub-studies. Data from REDCap
+will be transferred to GenomeDK (GDK) via a secure API. Data from LIVA
+will be made available through an AWS FTP server and transferred
+directly to GDK. This should ensure that we comply with all legal
+requirements.
+
+## Data security
+
+All data analysis will be conducted within the secure environment of
+GenomeDK (with the exception of the work that will take place in the
+secure environment at Statistics Denmark) . For each approved data
+access request, a dedicated project folder will be created. Researchers
+will be informed (via the data access application process) that raw data
+must not be extracted from GDK and that only analysis results and
+scripts may be exported. PID stored on GDK will be further protected
+through encryption using standard scripts available within the platform.
+If a study requires linkage with additional datasets from Statistics
+Denmark, PID will only be used for secure transfer purposes and not for
+direct analysis. Following the conclusion of the feasibility study, we
+will evaluate whether to delete PID from REDCap or remove the entire
+dataset. A similar process will be applied to the main study once all
+data has been successfully transferred and verified on GDK.
+
+Any suspected breaches of data security must and will be escalated
+immediately to the relevant point of escalation at Aarhus University or
+relevant
+[authority](https://www.datatilsynet.dk/english/report-a-breach).
