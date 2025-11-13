@@ -32,6 +32,7 @@ book:
     - index.qmd
     - sections/ethics.qmd
     - sections/storage.qmd
+    - sections/responsibilities.qmd
     - documents/C4-level.qmd
     - documents/data-flow.qmd
   appendices:
