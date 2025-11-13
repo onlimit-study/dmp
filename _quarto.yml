@@ -32,8 +32,11 @@ book:
     - index.qmd
     - sections/ethics.qmd
     - sections/storage.qmd
-    - documents/C4-level.qmd
-    - documents/data-flow.qmd
+    - sections/sharing.qmd
+    - text: "Extra: C4 Models"
+      href: documents/C4-level.qmd
+    - text: "Extra: Visual Data Flow"
+      href: documents/data-flow.qmd
   appendices:
     - CONTRIBUTING.md
     - CHANGELOG.md
