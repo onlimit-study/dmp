@@ -50,7 +50,7 @@ is to be uploaded to Denmark Statistics). We will develop a guide on
 the application process, including eligibility criteria and review
 procedures and that we will make available as a website.
 
-<!--TODO Write the guidance document mentioned above-->
+<!--TODO Write the guidance document mentioned above after the feasibility study is done-->
 
 ## How will the data be made available?
 
