@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; C4 Models – ON-LiMiT DMP</title>
+<title>4&nbsp; Data Sharing – ON-LiMiT DMP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../documents/data-flow.html" rel="next">
-<link href="../sections/responsibilities.html" rel="prev">
+<link href="../sections/responsibilities.html" rel="next">
+<link href="../sections/storage.html" rel="prev">
 <link href="../site_libs/quarto-contrib/quarto-project/onlimit-study/onlimit-theme/favicon/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -69,9 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -99,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../documents/C4-level.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">C4 Models</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sections/sharing.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Sharing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -131,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sections/sharing.html" class="sidebar-item-text sidebar-link">
+  <a href="../sections/sharing.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Sharing</span></span></a>
   </div>
 </li>
@@ -143,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../documents/C4-level.html" class="sidebar-item-text sidebar-link active">
+  <a href="../documents/C4-level.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">C4 Models</span></span></a>
   </div>
 </li>
@@ -192,17 +189,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context"><span class="header-section-number">6.1</span> Context</a></li>
-  <li><a href="#container" id="toc-container" class="nav-link" data-scroll-target="#container"><span class="header-section-number">6.2</span> Container</a></li>
+  <li><a href="#how-will-the-data-and-metadata-be-shared" id="toc-how-will-the-data-and-metadata-be-shared" class="nav-link active" data-scroll-target="#how-will-the-data-and-metadata-be-shared"><span class="header-section-number">4.1</span> How will the data and metadata be shared?</a></li>
+  <li><a href="#when-will-the-metadata-be-available" id="toc-when-will-the-metadata-be-available" class="nav-link" data-scroll-target="#when-will-the-metadata-be-available"><span class="header-section-number">4.2</span> When will the metadata be available?</a></li>
+  <li><a href="#who-is-the-audience-for-the-data" id="toc-who-is-the-audience-for-the-data" class="nav-link" data-scroll-target="#who-is-the-audience-for-the-data"><span class="header-section-number">4.3</span> Who is the audience for the data?</a></li>
+  <li><a href="#how-will-researchers-get-access-to-the-data" id="toc-how-will-researchers-get-access-to-the-data" class="nav-link" data-scroll-target="#how-will-researchers-get-access-to-the-data"><span class="header-section-number">4.4</span> How will researchers get access to the data?</a></li>
+  <li><a href="#how-will-the-data-be-made-available" id="toc-how-will-the-data-be-made-available" class="nav-link" data-scroll-target="#how-will-the-data-be-made-available"><span class="header-section-number">4.5</span> How will the data be made available?</a></li>
+  <li><a href="#how-will-access-be-controlled" id="toc-how-will-access-be-controlled" class="nav-link" data-scroll-target="#how-will-access-be-controlled"><span class="header-section-number">4.6</span> How will access be controlled?</a></li>
+  <li><a href="#what-kind-of-ip-or-license-will-be-used" id="toc-what-kind-of-ip-or-license-will-be-used" class="nav-link" data-scroll-target="#what-kind-of-ip-or-license-will-be-used"><span class="header-section-number">4.7</span> What kind of IP or license will be used?</a></li>
+  <li><a href="#additional-considerations" id="toc-additional-considerations" class="nav-link" data-scroll-target="#additional-considerations"><span class="header-section-number">4.8</span> Additional considerations</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/documents/C4-level.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/documents/C4-level.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/sections/sharing.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/sections/sharing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">C4 Models</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Sharing</span></h1>
 </div>
 
 
@@ -219,26 +222,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This section contains the <a href="https://c4model.com/">C4 Models</a> for ON LiMiT data infrastructure. Even though the C4 model is primarily used for software architecture, we use it here to describe the data infrastructure and its components. We will use the first two levels of the C4 model, the Context and Container diagrams, to describe the data infrastructure and its components.</p>
-<section id="context" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="context"><span class="header-section-number">6.1</span> Context</h2>
-<p>ON LiMiT is a research project that collects data from various sources, including biological samples, questionnaires, and other electronic data. The data is collected from participants in the study, healthcare professionals, and bioanalysts. The data is stored on GenomeDKs servers and will be made available for researchers to analyze. The following diagram shows the context of ON LiMiT, including the main users and data providers.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/c4_context.png" class="img-fluid figure-img"></p>
-<figcaption>C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers.</figcaption>
-</figure>
-</div>
+<p>Sharing data from research projects is essential for promoting transparency, reproducibility, and collaboration within the scientific community. By making data findable, accessible, interoperable, and reusable (FAIR), we enable other researchers to build upon existing work, validate and verify findings, and generate new insights. This section outlines how data and metadata from the project will be shared, under what conditions, and with what safeguards in place.</p>
+<section id="how-will-the-data-and-metadata-be-shared" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="how-will-the-data-and-metadata-be-shared"><span class="header-section-number">4.1</span> How will the data and metadata be shared?</h2>
+<p>We will make the metadata describing the structure, variables, and scope of the dataset publicly available through one of our project websites, using <a href="https://seedcase-project.org/">Seedcase software</a> to build and structure it. This will allow researchers (internal and external) to explore the metadata before submitting an access request. The actual research data will not be publicly accessible and will only be shared upon formal application and approval, and only through a secure server.</p>
 </section>
-<section id="container" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="container"><span class="header-section-number">6.2</span> Container</h2>
-<p>The Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/c4_container.png" class="img-fluid figure-img"></p>
-<figcaption>C4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis</figcaption>
-</figure>
-</div>
+<section id="when-will-the-metadata-be-available" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="when-will-the-metadata-be-available"><span class="header-section-number">4.2</span> When will the metadata be available?</h2>
+<p>We aim to start metadata publication as soon as data collection starts. A preliminary release will be based on the feasibility study, which we plan to use as a test case for the metadata infrastructure. While we primarily intend to use this dataset to identify any issues with the two most demanding arms of the study, it will also be used as a testing ground for the metadata sharing process. We do not expect high external demand for the feasibility data, but it will help ensure readiness for the main study.</p>
+</section>
+<section id="who-is-the-audience-for-the-data" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="who-is-the-audience-for-the-data"><span class="header-section-number">4.3</span> Who is the audience for the data?</h2>
+<p>We anticipate that most data access requests will come from researchers affiliated with the study or collaborating institutions. However, external researchers may also apply, provided they meet the criteria outlined in the data access guideline. The audience may include clinical researchers, epidemiologists, or data scientists researching diabetes-related topics, as well as anthropologist or other social scientists looking at behaviour in relation to food and exercise for people with type 2 diabetes.</p>
+</section>
+<section id="how-will-researchers-get-access-to-the-data" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="how-will-researchers-get-access-to-the-data"><span class="header-section-number">4.4</span> How will researchers get access to the data?</h2>
+<p>Researchers must submit a formal application detailing their planned use of the data, including which specific data points they require and why. Applications involving sensitive data categories must include a clear justification for their necessity (for instance in cases where the data is to be uploaded to Denmark Statistics). We will develop a guide on the application process, including eligibility criteria and review procedures and that we will make available as a website.</p>
+<!--TODO Write the guidance document mentioned above after the feasibility study is done-->
+</section>
+<section id="how-will-the-data-be-made-available" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="how-will-the-data-be-made-available"><span class="header-section-number">4.5</span> How will the data be made available?</h2>
+<p>Once the steering committee has approved an application, we’ll make the requested data available in a dedicated project folder on <a href="https://genome.au.dk">GenomeDK</a> (GDK). Raw data must remain on the GDK server, and only analysis scripts and results may be exported. Researchers will need to create an account with GDK to access the folder and work on their analysis environment. In some cases, it may be possible to upload a dataset to <a href="https://www.dst.dk/en">Statistics Denmark</a>, under the SCDA Statistics Denmark project database. We only consider this option for projects requiring linkage with other national datasets.</p>
+</section>
+<section id="how-will-access-be-controlled" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="how-will-access-be-controlled"><span class="header-section-number">4.6</span> How will access be controlled?</h2>
+<p>There are three main ways to access data, and only one is used for data analysis. Data will be available to a few members of the study team on REDCap where we do data collection. All data collected by the LIVA app will be available to clinicians involved with the running of the study in the LIVA system. Finally, the research data we have collected, cleaned, and stored on GDK servers is also where the analyses will take place. Access to the finalised research data will be controlled by the central study team on GDK, with each successful data application getting their own project folder with only the data requested. All the programming scripts used to create these data sets will be stored in the main study folder on GDK to ensure transparency and reproducibility. We expect that those who have access to the data collected within REDCap will not use the data for analysis and/or publication. The data collected by LIVA will be available through the use of the Clinician Portal and LIVA Reporting Module, which is encouraged for monitoring participant progress but should not be used for publication purposes.</p>
+</section>
+<section id="what-kind-of-ip-or-license-will-be-used" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="what-kind-of-ip-or-license-will-be-used"><span class="header-section-number">4.7</span> What kind of IP or license will be used?</h2>
+<p>A formal decision regarding intellectual property rights and licensing for shared data is still pending. This will be finalized before the main study data is made available to external researchers.</p>
+</section>
+<section id="additional-considerations" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="additional-considerations"><span class="header-section-number">4.8</span> Additional considerations</h2>
+<p>We may need to share some data from the feasibility study and analyse it before the launch of the main study, but the formal end points in the study registration on ClinicalTrials.com should help clarify what data points will be needed for this. This process should be planned and initiated as soon as possible. A data sharing agreement is already in place between the five participating centres, outlining responsibilities and procedures for internal data access and collaboration.</p>
+<!--TODO We need to sit down and write up the end points and the corresponding data -->
 
 
 </section>
@@ -646,13 +663,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../sections/responsibilities.html" class="pagination-link" aria-label="Responsibilities and resources">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Responsibilities and resources</span></span>
+      <a href="../sections/storage.html" class="pagination-link" aria-label="Storage, backup, recovery, and access">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Storage, backup, recovery, and access</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../documents/data-flow.html" class="pagination-link" aria-label="Data Flows">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Flows</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../sections/responsibilities.html" class="pagination-link" aria-label="Responsibilities and resources">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Responsibilities and resources</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -670,7 +687,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/documents/C4-level.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/documents/C4-level.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/sections/sharing.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/sections/sharing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
