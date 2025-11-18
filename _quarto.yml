@@ -30,11 +30,11 @@ book:
     type: textbox
   chapters:
     - index.qmd
+    - sections/collection.qmd
     - sections/ethics.qmd
     - sections/storage.qmd
     - sections/responsibilities.qmd
     - documents/C4-level.qmd
-    - documents/data-flow.qmd
   appendices:
     - CONTRIBUTING.md
     - CHANGELOG.md
