@@ -2,15 +2,15 @@
 
 Data for the ON LiMiT study will be collected from multiple sources,
 including participants, healthcare professionals, lab technicians, and
-electronic devices.
+electronic devices. This section describes what, where, and how these
+sources of data will be collected.
 
 ## Sources and methods
 
 Participants will provide data through a variety of sources, the primary
-being the Liva Healthcare app which will record lifestyle information
-such as meals and physical activity, and questionnaires/site visit forms
-in REDCap. In addition connected devices (smart watch, smart scales,
-blood pressure monitor) will transmit data directly to the Liva app.
+being the Liva Healthcare app which will record lifestyle information in
+REDCap. Connected devices such as smart watch and smart scales will
+transmit data directly to the Liva app.
 
 Additional data will be gathered with a SENS accelerometer and a blinded
 Libre CGM which will be uploaded either into REDCap or directly to
