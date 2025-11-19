@@ -43,50 +43,51 @@ soon as it is finished.
 
 ## Data formats
 
-REDCap: Structured tabular data in CSV imported to GenomeDK via API.\
-Liva app: CSV exports via FTP to GenomeDK.\
-- Watch, scales: Direct import into Liva app.\
-MyFood24: CSV import from secure website into GenomeDK.\
-Scanners: CSV files uploaded into REDCap or directly to GenomeDK.
+-   REDCap: Structured tabular data in CSV imported to GenomeDK via API.
+-   Liva app: CSV exports via FTP to GenomeDK. The watch and scales data
+    are directly imported into Liva app.
+-   MyFood24: CSV import from secure website into GenomeDK.
+-   Scanners: CSV files uploaded into REDCap or directly to GenomeDK.
 
 ## Estimated raw data volumes for the feasibility study
 
 REDCap clinical data: Unknown.\
-Liva app data: Unknown.\
-MyFood24 dietary logs: Unknown.\
-Sensor data (SENS, Libre): Unknown.\
-Scanner data:\
-- VO2Max: 20KB times 1 reading per visit, 4 visits = 20x4x24 = 2MB.\
-- Finapres: 60KB times 8 readings per visit, 6 visits = 60x8x6x24 =
-69MB.
-
-## Data aggregation and storage
+- REDCap clinical data: Unknown size at present. . Liva app data:
+Unknown size at present. - MyFood24 dietary logs: Unknown size at
+present. - Sensor data (SENS, Libre): Unknown size at present. - Scanner
+data: - VO2Max: 20KB times 1 reading per visit, 4 visits = 20x4x24 =
+2MB. - Finapres: 60KB times 8 readings per visit, 6 visits = 60x8x6x24 =
+69MB. \## Data aggregation and storage
 
 The REDCap database serves as the central hub for most clinical and
 scanner data, including manual uploads from devices such as SENS and
 Libre, and potentially iMotions. The Liva app aggregates participant
-lifestyle data and connected device readings. In addition there will be
-test results (like VO2Max and Finapres) which will be sent to GenomeDK
-directly, the same applies to data from MyFood24.
+lifestyle data and connected device readings. There will also be test
+results (like VO2Max and Finapres) that will be sent to GenomeDK
+directly, and this is the same as with data from MyFood24.
 
-GenomeDK's HPC facility will serve as the final repository for processed
-and collated data, ensuring secure storage and computational capacity
-for analysis.
+GenomeDK's servers will be the final repository for processed and
+collated data, ensuring a central location for secure storage of data
+and computational capacity for analysis.
 
 See the [Storage, backup, recovery, and access](storage.qmd) for further
 details.
 
 ## Quality assurance
 
-Validation checks: Automated checks in REDCap to ensure completeness and
-consistency of clinical data (Responsible: Data Architect).
+We will set up and run automated checks in REDCap to ensure completeness
+and consistency of clinical data. The person responsible will be the
+Data Architect.
 
-Device data verification: Uploaded sensor data will be checked against
-expected ranges and timestamps (Responsible: Site Staff using REDCap).
+Uploaded sensor device data will be checked against expected ranges and
+timestamps. The people responsible will be the on-site staff who are
+using REDCap during data collection.
 
-Monitoring for missing/anomalous data: Regular reports will identify
-gaps or anomalies, with follow-up procedures for correction and will be
-run during transfer to GenomeDK. (Responsible: Data Architect).
+We will run checks to identify any missingness in the data or any
+anomalies and report on the results (if any). We will do any follow-up
+procedures to correct for these issues, which we will run during
+transfer to GenomeDK. The person responsible for this will be the Data
+Architect.
 
 <!--TODO Do we need any checks on the API and FTP transfers?-->
 
@@ -101,22 +102,22 @@ and their interactions.
 %%| column: page-right
 flowchart LR
 
-Lab(["<b>Lab staff</b><br> collecting and analysing biological samples from participants."])
-HP(["<b>Healthcare professional</b><br> working with the participants in the study."])
-Pt(["<b>Participant</b><br> participating in the study."])
-Red[("<b>REDCap db</b><br> database, main purpose is to collate data before it is uploaded onto GenomeDK.")]
-Genome[("<b>GenomeDK</b><br> HPC facility where the processed data will be stored. ")]
+Lab(["<b>Lab staff</b><br>collecting and analysing biological samples from participants."])
+HP(["<b>Healthcare professional</b><br>working with the participants in the study."])
+Pt(["<b>Participant</b><br>participating in the study."])
+Red(["<b>REDCap db</b><br>database, main purpose is to collate data before it is uploaded onto GenomeDK."])
+Genome(["<b>GenomeDK</b><br>HPC facility where the processed data will be stored. "])
 
-Forms["<b>Forms in REDCap</b><br> multiple forms and questionnaires for both healthcare staff and participants"]
-Liva["<b>Liva</b><br> main study app which allows users to enter information about meals, activity, etc"]
-MyF["<b>MyFood24</b><br> website designed to register a detailed food diary"]
-iMo["<b>iMotions Food Preference</b><br> tracks eye movement of participants when looking at pictures of food."]
-Sen["<b>SENS</b><br> activity monitor, placed on the study participant and then collected and read in the clinic."]
-Lib["<b>Libre</b><br> Blinded CGM sensor from Abbott which participants will be wearing. Will be read in the clinic."]
-Watch["<b>Watch</b><br> smart watch which will connect to the Liva app."]
-Scales["<b>Scales</b><br> smart scales which will connect to the Liva app."]
-BP["<b>Blood Pressure monitor</b><br> the user will measure their blood pressure and enter it into the app."]
-%%MBox["<b>Meal Boxes</b><br> contains recipes and ingredients for two meals a day."]
+Forms["<b>Forms in REDCap</b><br>multiple forms and questionnaires for both healthcare staff and participants"]
+Liva["<b>Liva</b><br>main study app which allows users to enter information about meals, activity, etc"]
+MyF["<b>MyFood24</b><br>website designed to register a detailed food diary"]
+iMo["<b>iMotions Food Preference</b><br>tracks eye movement of participants when looking at pictures of food."]
+Sen["<b>SENS</b><br>activity monitor, placed on the study participant and then collected and read in the clinic."]
+Lib["<b>Libre</b><br>Blinded CGM sensor from Abbott which participants will be wearing. Will be read in the clinic."]
+Watch["<b>Watch</b><br>smart watch which will connect to the Liva app."]
+Scales["<b>Scales</b><br>smart scales which will connect to the Liva app."]
+BP["<b>Blood Pressure monitor</b><br>the user will measure their blood pressure and enter it into the app."]
+%%MBox["<b>Meal Boxes</b><br>contains recipes and ingredients for two meals a day."]
 
 Lab -->|Uploads data from systems ?| Forms
 HP --> |Completes data forms| Forms
@@ -158,7 +159,7 @@ data from other systems, likely through APIs or csv uploads.
 iMotion Food Preference is a system that tracks the eye movements of
 participants when they are looking at pictures of food. The data
 collected by this system can be pulled out as csv files and uploaded to
-the REDCap database or directly to the GenomeDK HPC facility.
+the REDCap database or directly to the GenomeDK server.
 
 ### SENS
 
@@ -182,13 +183,13 @@ Liva is a mobile app that will be used by the participants to track
 their physical activity (via Garmin activity watch), adherence to the
 assigned diet intervention (via short diet screener), body weight (via
 Gamin scale), answer other small questionnaires, follow the study
-schedule and interact with study personnel via a chat function. The app
+schedule, and interact with study personnel via a chat function. The app
 will likely connect to the REDCap database via an API, allowing the data
 to be automatically uploaded to the database.
 
-### Garmin Watch and Scales
+### Garmin watch and scales
 
-The Garmin Watch and Scales will be used by the participants to track
+The Garmin watch and scales will be used by the participants to track
 their physical activity and weight. The data collected by these devices
 will be transmitted to the Liva app where it will be collated and then
 transmitted to GenomeDK. The watch will track the participants' physical
