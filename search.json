@@ -10,263 +10,273 @@
     ]
   },
   {
+    "objectID": "sections/collection.html",
+    "href": "sections/collection.html",
+    "title": "2  Data collection",
+    "section": "",
+    "text": "2.1 Sources and methods\nData for the ON LiMiT study will be collected from multiple sources, including participants, healthcare professionals, lab technicians, and electronic devices. This section describes what, where, and how these sources of data will be collected.\nParticipants will provide data through a variety of sources, the primary being the Liva Healthcare app which will record lifestyle information in REDCap. Connected devices such as smart watch and smart scales will transmit data directly to the Liva app.\nAdditional data will be gathered with a SENS accelerometer and a blinded Libre CGM which will be uploaded either into REDCap or directly to GenomeDK. Some scanner results will be uploaded via REDCap (DXA and Fibro) others will be uploaded directly to GenomeDK (VO2Max and Finapres).\nWe will also be collecting data from MyFood24, which is a website where participants will be asked to keep a very detailed food diary for three days at a couple of points during the study. Some participants will also be asked to do a Food Preference test which we expect to upload into REDCap.\nHealthcare professionals and lab technicians will enter clinical and biological sample data into REDCap forms, and laboratory data may be uploaded from internal systems where applicable.\nFurther details can be seen in the diagram below.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data collection</span>"
+    ]
+  },
+  {
+    "objectID": "sections/collection.html#frequency-of-collection",
+    "href": "sections/collection.html#frequency-of-collection",
+    "title": "2  Data collection",
+    "section": "2.2 Frequency of collection",
+    "text": "2.2 Frequency of collection\nThe aim is to collect participant app and web based data (Liva, RECap, MyFood24) on a monthly basis.\nSensor and scanner data (SENS, Libre, Fibro scans, and DXA scans) will be uploaded at clinic visits, as we expect to sign off on a visit as soon as it is finished.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data collection</span>"
+    ]
+  },
+  {
+    "objectID": "sections/collection.html#data-formats",
+    "href": "sections/collection.html#data-formats",
+    "title": "2  Data collection",
+    "section": "2.3 Data formats",
+    "text": "2.3 Data formats\n\nREDCap: Structured tabular data in CSV imported to GenomeDK via API.\nLiva app: CSV exports via FTP to GenomeDK. The watch and scales data are directly imported into Liva app.\nMyFood24: CSV import from secure website into GenomeDK.\nScanners: CSV files uploaded into REDCap or directly to GenomeDK.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data collection</span>"
+    ]
+  },
+  {
+    "objectID": "sections/collection.html#estimated-raw-data-volumes-for-the-feasibility-study",
+    "href": "sections/collection.html#estimated-raw-data-volumes-for-the-feasibility-study",
+    "title": "2  Data collection",
+    "section": "2.4 Estimated raw data volumes for the feasibility study",
+    "text": "2.4 Estimated raw data volumes for the feasibility study\nREDCap clinical data: Unknown.\n- REDCap clinical data: Unknown size at present. . Liva app data: Unknown size at present. - MyFood24 dietary logs: Unknown size at present. - Sensor data (SENS, Libre): Unknown size at present. - Scanner data: - VO2Max: 20KB times 1 reading per visit, 4 visits = 20x4x24 = 2MB. - Finapres: 60KB times 8 readings per visit, 6 visits = 60x8x6x24 = 69MB. ## Data aggregation and storage\nThe REDCap database serves as the central hub for most clinical and scanner data, including manual uploads from devices such as SENS and Libre, and potentially iMotions. The Liva app aggregates participant lifestyle data and connected device readings. There will also be test results (like VO2Max and Finapres) that will be sent to GenomeDK directly, and this is the same as with data from MyFood24.\nGenomeDK’s servers will be the final repository for processed and collated data, ensuring a central location for secure storage of data and computational capacity for analysis.\nSee the Storage, backup, recovery, and access for further details.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data collection</span>"
+    ]
+  },
+  {
+    "objectID": "sections/collection.html#quality-assurance",
+    "href": "sections/collection.html#quality-assurance",
+    "title": "2  Data collection",
+    "section": "2.5 Quality assurance",
+    "text": "2.5 Quality assurance\nWe will set up and run automated checks in REDCap to ensure completeness and consistency of clinical data. The person responsible will be the Data Architect.\nUploaded sensor device data will be checked against expected ranges and timestamps. The people responsible will be the on-site staff who are using REDCap during data collection.\nWe will run checks to identify any missingness in the data or any anomalies and report on the results (if any). We will do any follow-up procedures to correct for these issues, which we will run during transfer to GenomeDK. The person responsible for this will be the Data Architect.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data collection</span>"
+    ]
+  },
+  {
+    "objectID": "sections/collection.html#visualisation-of-data-flow-in-on-limit",
+    "href": "sections/collection.html#visualisation-of-data-flow-in-on-limit",
+    "title": "2  Data collection",
+    "section": "2.6 Visualisation of data flow in ON LiMiT",
+    "text": "2.6 Visualisation of data flow in ON LiMiT\nUnderneath the diagram is a more detailed description of the components and their interactions.\n\n\n\n\n\n\nflowchart LR\n\nLab([\"&lt;b&gt;Lab staff&lt;/b&gt;&lt;br&gt;collecting and analysing biological samples from participants.\"])\nHP([\"&lt;b&gt;Healthcare professional&lt;/b&gt;&lt;br&gt;working with the participants in the study.\"])\nPt([\"&lt;b&gt;Participant&lt;/b&gt;&lt;br&gt;participating in the study.\"])\nRed([\"&lt;b&gt;REDCap db&lt;/b&gt;&lt;br&gt;database, main purpose is to collate data before it is uploaded onto GenomeDK.\"])\nGenome([\"&lt;b&gt;GenomeDK&lt;/b&gt;&lt;br&gt;HPC facility where the processed data will be stored. \"])\n\nForms[\"&lt;b&gt;Forms in REDCap&lt;/b&gt;&lt;br&gt;multiple forms and questionnaires for both healthcare staff and participants\"]\nLiva[\"&lt;b&gt;Liva&lt;/b&gt;&lt;br&gt;main study app which allows users to enter information about meals, activity, etc\"]\nMyF[\"&lt;b&gt;MyFood24&lt;/b&gt;&lt;br&gt;website designed to register a detailed food diary\"]\niMo[\"&lt;b&gt;iMotions Food Preference&lt;/b&gt;&lt;br&gt;tracks eye movement of participants when looking at pictures of food.\"]\nSen[\"&lt;b&gt;SENS&lt;/b&gt;&lt;br&gt;activity monitor, placed on the study participant and then collected and read in the clinic.\"]\nLib[\"&lt;b&gt;Libre&lt;/b&gt;&lt;br&gt;Blinded CGM sensor from Abbott which participants will be wearing. Will be read in the clinic.\"]\nWatch[\"&lt;b&gt;Watch&lt;/b&gt;&lt;br&gt;smart watch which will connect to the Liva app.\"]\nScales[\"&lt;b&gt;Scales&lt;/b&gt;&lt;br&gt;smart scales which will connect to the Liva app.\"]\nBP[\"&lt;b&gt;Blood Pressure monitor&lt;/b&gt;&lt;br&gt;the user will measure their blood pressure and enter it into the app.\"]\n%%MBox[\"&lt;b&gt;Meal Boxes&lt;/b&gt;&lt;br&gt;contains recipes and ingredients for two meals a day.\"]\n\nLab --&gt;|Uploads data from systems ?| Forms\nHP --&gt; |Completes data forms| Forms\nForms --- Red\nRed --&gt;|API| Genome\n\nPt --&gt;|Enters data| Liva\nPt --&gt;|Enters data| MyF\nPt --&gt;|Enters data| iMo\nPt --&gt;|Wears for a week| Sen\nPt --&gt;|Wears for two weeks| Lib\nPt --&gt;|Wears continuously| Watch\nPt --&gt; |Uses| Scales\nPt --&gt; |Uses|BP\n%%Pt --&gt; |Chooses| MBox\n\niMo --&gt; |??| Red\nSen --&gt;|Manual upload| Red\nLib --&gt;|Manual upload| Red\nWatch --&gt;|transmits| Liva\nScales --&gt;|transmits| Liva\nBP --&gt;|Participant enters results| Liva\nLiva --&gt; |ftp| Genome\nMyF --&gt; |website download| Genome\n%%MBox --&gt; |?? may also be to RedCap| Genome\n\n\n\n\nFigure 2.1: Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage.\n\n\n\n\n\n\n2.6.1 REDCap\nREDCap is a secure web application for building and managing online surveys and databases. It is used to collect data from participants and healthcare professionals in the ON LiMiT project. REDCap will have two main functions, the first is to collect data from clinicians and participants via forms and questionnaires, and the second is to collate data from other systems, likely through APIs or csv uploads.\n\n\n2.6.2 iMotions Food Preference\niMotion Food Preference is a system that tracks the eye movements of participants when they are looking at pictures of food. The data collected by this system can be pulled out as csv files and uploaded to the REDCap database or directly to the GenomeDK server.\n\n\n2.6.3 SENS\nSENS is an activity monitor that will be placed on the study participants for a week. The data collected by a SENS device will be extracted at clinic visits and the data will be uploaded to the REDCap database. The SENS device will track the participants’ physical activity levels in selected weeks of the study.\n\n\n2.6.4 Libre\nLibre is a blinded continuous glucose monitoring (CGM) sensor from Abbott that will be worn by the participants for a week. The data collected by the Libre device will be extracted at clinic visits and uploaded to the REDCap database. The Libre device will track the participants’ glucose levels in selected weeks of the study.\n\n\n2.6.5 Liva Healthcare app\nLiva is a mobile app that will be used by the participants to track their physical activity (via Garmin activity watch), adherence to the assigned diet intervention (via short diet screener), body weight (via Gamin scale), answer other small questionnaires, follow the study schedule, and interact with study personnel via a chat function. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.\n\n\n2.6.6 Garmin watch and scales\nThe Garmin watch and scales will be used by the participants to track their physical activity and weight. The data collected by these devices will be transmitted to the Liva app where it will be collated and then transmitted to GenomeDK. The watch will track the participants’ physical activity levels, while the scales will track their weight, both will submit their measurements to the Liva app.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data collection</span>"
+    ]
+  },
+  {
     "objectID": "sections/ethics.html",
     "href": "sections/ethics.html",
-    "title": "2  Ethics, security, and legal compliance",
+    "title": "3  Ethics, security, and legal compliance",
     "section": "",
-    "text": "2.1 Ethics and privacy\nEthical and legal considerations, including related to security, are central to responsible data management, particularly in health research involving sensitive personal information. This section outlines how we are planning to handle ethical standards, legal obligations, and data security measures.\nAll participants will provide informed consent, which includes a clear statement that their data will be retained for a minimum of 15 years. The consent form also specifies that data may be shared with other research institutions, but strictly for research purposes.\nTo protect the privacy of our participant, personally identifiable data (PID) will never be made available to researchers during the analysis phase. PID will only be accessible to staff responsible for direct participant contact, those managing instruments within REDCap, or for managing the final data structure. For all analytical purposes, pseudonymised or anonymised data will be used. Requests for data extracts must be submitted via a formal application form, which requires applicants to justify their need for specific data points, especially if they involve PID.\nIn general, the principles for data extraction follows the current guidelines from Statistics Denmark. Individual-level data cannot be exported from the project database at GenomeDK. Only aggregated results and analysis scripts not including any personal identifiable data can be extracted.",
+    "text": "3.1 Ethics and privacy\nEthical and legal considerations, including related to security, are central to responsible data management, particularly in health research involving sensitive personal information. This section outlines how we are planning to handle ethical standards, legal obligations, and data security measures.\nAll participants will provide informed consent, which includes a clear statement that their data will be retained for a minimum of 15 years. The consent form also specifies that data may be shared with other research institutions, but strictly for research purposes.\nTo protect the privacy of our participant, personally identifiable data (PID) will never be made available to researchers during the analysis phase. PID will only be accessible to staff responsible for direct participant contact, those managing instruments within REDCap, or for managing the final data structure. For all analytical purposes, pseudonymised or anonymised data will be used. Requests for data extracts must be submitted via a formal application form, which requires applicants to justify their need for specific data points, especially if they involve PID.\nIn general, the principles for data extraction follows the current guidelines from Statistics Denmark. Individual-level data cannot be exported from the project database at GenomeDK. Only aggregated results and analysis scripts not including any personal identifiable data can be extracted.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Ethics, security, and legal compliance</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ethics, security, and legal compliance</span>"
     ]
   },
   {
     "objectID": "sections/ethics.html#legal-compliance",
     "href": "sections/ethics.html#legal-compliance",
-    "title": "2  Ethics, security, and legal compliance",
-    "section": "2.2 Legal compliance",
-    "text": "2.2 Legal compliance\nThe project complies with all relevant legal obligations concerning data handling and sharing. A joint data controller agreement is in place between all participating sites, enabling secure and lawful data exchange within the main study and any sub-studies. Data from REDCap will be transferred to GenomeDK (GDK) via a secure API. Data from LIVA will be made available through an AWS FTP server and transferred directly to GDK. This should ensure that we comply with all legal requirements.",
+    "title": "3  Ethics, security, and legal compliance",
+    "section": "3.2 Legal compliance",
+    "text": "3.2 Legal compliance\nThe project complies with all relevant legal obligations concerning data handling and sharing. A joint data controller agreement is in place between all participating sites, enabling secure and lawful data exchange within the main study and any sub-studies. Data from REDCap will be transferred to GenomeDK (GDK) via a secure API. Data from LIVA will be made available through an AWS FTP server and transferred directly to GDK. This should ensure that we comply with all legal requirements.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Ethics, security, and legal compliance</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ethics, security, and legal compliance</span>"
     ]
   },
   {
     "objectID": "sections/ethics.html#data-security",
     "href": "sections/ethics.html#data-security",
-    "title": "2  Ethics, security, and legal compliance",
-    "section": "2.3 Data security",
-    "text": "2.3 Data security\nAll data analysis will be conducted within the secure environment of GenomeDK (with the exception of the work that will take place in the secure environment at Statistics Denmark) . For each approved data access request, a dedicated project folder will be created. Researchers will be informed (via the data access application process) that raw data must not be extracted from GDK and that only analysis results and scripts may be exported. PID stored on GDK will be further protected through encryption using standard scripts available within the platform. If a study requires linkage with additional datasets from Statistics Denmark, PID will only be used for secure transfer purposes and not for direct analysis. Following the conclusion of the feasibility study, we will evaluate whether to delete PID from REDCap or remove the entire dataset. A similar process will be applied to the main study once all data has been successfully transferred and verified on GDK.\nAny suspected breaches of data security must and will be escalated immediately to the relevant point of escalation at Aarhus University or relevant authority.",
+    "title": "3  Ethics, security, and legal compliance",
+    "section": "3.3 Data security",
+    "text": "3.3 Data security\nAll data analysis will be conducted within the secure environment of GenomeDK (with the exception of the work that will take place in the secure environment at Statistics Denmark) . For each approved data access request, a dedicated project folder will be created. Researchers will be informed (via the data access application process) that raw data must not be extracted from GDK and that only analysis results and scripts may be exported. PID stored on GDK will be further protected through encryption using standard scripts available within the platform. If a study requires linkage with additional datasets from Statistics Denmark, PID will only be used for secure transfer purposes and not for direct analysis. Following the conclusion of the feasibility study, we will evaluate whether to delete PID from REDCap or remove the entire dataset. A similar process will be applied to the main study once all data has been successfully transferred and verified on GDK.\nAny suspected breaches of data security must and will be escalated immediately to the relevant point of escalation at Aarhus University or relevant authority.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Ethics, security, and legal compliance</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ethics, security, and legal compliance</span>"
     ]
   },
   {
     "objectID": "sections/storage.html",
     "href": "sections/storage.html",
-    "title": "3  Storage, backup, recovery, and access",
+    "title": "4  Storage, backup, recovery, and access",
     "section": "",
-    "text": "3.1 Storage of data and metadata\nAs part of a DMP, consideration should be given to the physical storage and security of the data that a research project generates. This should be done to minimize the risk of accidental data loss, be it from overwriting raw data with an edited copy, or the loss of either a laptop or the breakdown of a disk. Some data will be easier to replace, data which contains measurements done in a clinic and entered directly on a laptop will be harder to recover than a data set downloaded from an online repository. It is therefore important when looking at a data management plan that we are careful with how we store data we have generated within the study, and that we do our due diligence in making sure that data we store is recoverable, should a disk fail, or a server stop working.\nThere are three main places we will store data from ON-LiMiT. The first two, where the data is entered or generated are REDCap and the LIVA application. These are not final storage areas, but they will hold data for long enough that we will need to take them into consideration. The final storage place for data will be GenomeDK, which also is the place where we are most responsible for setting up not only the storage, but also the subsequent safety and security of the data.",
+    "text": "4.1 Storage of data and metadata\nAs part of a DMP, consideration should be given to the physical storage and security of the data that a research project generates. This should be done to minimize the risk of accidental data loss, be it from overwriting raw data with an edited copy, or the loss of either a laptop or the breakdown of a disk. Some data will be easier to replace, data which contains measurements done in a clinic and entered directly on a laptop will be harder to recover than a data set downloaded from an online repository. It is therefore important when looking at a data management plan that we are careful with how we store data we have generated within the study, and that we do our due diligence in making sure that data we store is recoverable, should a disk fail, or a server stop working.\nThere are three main places we will store data from ON-LiMiT. The first two, where the data is entered or generated are REDCap and the LIVA application. These are not final storage areas, but they will hold data for long enough that we will need to take them into consideration. The final storage place for data will be GenomeDK, which also is the place where we are most responsible for setting up not only the storage, but also the subsequent safety and security of the data.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
     ]
   },
   {
     "objectID": "sections/storage.html#storage-of-data-and-metadata",
     "href": "sections/storage.html#storage-of-data-and-metadata",
-    "title": "3  Storage, backup, recovery, and access",
+    "title": "4  Storage, backup, recovery, and access",
     "section": "",
-    "text": "3.1.1 GenomeDK (GDK)\nGDK provides several storage areas. We will use the project storage in their Open zone for the ON LiMiT project (see a description of the zones here). These locations are designed for collaborative data and are eligible for backup. We do not need a Data Processing Agreement with GenomeDK as our host organisations Aarhus University (AU) and Aarhus University Hospital (AUH) already have an agreement in place which will cover us.\n\n\n3.1.2 REDCap\nREDCap is a secure web application for research databases and e‑forms. It stores data in a PostreSQL database and related files in a controlled file area (“File Repository”). AU provides REDCap facilities for both the University and AUH employees. The File Repository is intended for storing data and study files, but it should not be the primary long‑term file storage for bulk data; we will export and archive data into our primary storage (GDK) using the API facility provided by REDCap. As with GDK we don’t need a Data Processing Agreement for the same reasons as above.\n\n\n3.1.3 LIVA\nLiva Healthcare states compliance with GDPR and ISO/IEC 27001/27002 and NHS Data Security & Protection standards on their website. We understand that data is being stored on AWS services that are physically based in Frankfurt, Germany. The data will be made available to us via AWS on a ftp connection on request, we hope to transfer the data directly to folders on GDK, from where we will transform and load them into storage.",
+    "text": "4.1.1 GenomeDK (GDK)\nGDK provides several storage areas. We will use the project storage in their Open zone for the ON LiMiT project (see a description of the zones here). These locations are designed for collaborative data and are eligible for backup. We do not need a Data Processing Agreement with GenomeDK as our host organisations Aarhus University (AU) and Aarhus University Hospital (AUH) already have an agreement in place which will cover us.\n\n\n4.1.2 REDCap\nREDCap is a secure web application for research databases and e‑forms. It stores data in a PostreSQL database and related files in a controlled file area (“File Repository”). AU provides REDCap facilities for both the University and AUH employees. The File Repository is intended for storing data and study files, but it should not be the primary long‑term file storage for bulk data; we will export and archive data into our primary storage (GDK) using the API facility provided by REDCap. As with GDK we don’t need a Data Processing Agreement for the same reasons as above.\n\n\n4.1.3 LIVA\nLiva Healthcare states compliance with GDPR and ISO/IEC 27001/27002 and NHS Data Security & Protection standards on their website. We understand that data is being stored on AWS services that are physically based in Frankfurt, Germany. The data will be made available to us via AWS on a ftp connection on request, we hope to transfer the data directly to folders on GDK, from where we will transform and load them into storage.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
     ]
   },
   {
     "objectID": "sections/storage.html#backup-and-recovery",
     "href": "sections/storage.html#backup-and-recovery",
-    "title": "3  Storage, backup, recovery, and access",
-    "section": "3.2 Backup and recovery",
-    "text": "3.2 Backup and recovery\nWhen looking at backup and recovery we again have two situations. With the LIVA system we will need to trust that what is stated in the contract is also what LIVA is doing, and that backup and recovery is possible without any significant loss of data. We also need to trust REDCap’s system, as the setup is done entirely without any user engagement.\nWhere we will play a role is with GenomeDK, as described below it is the responsibility of the user to set up the files for backup, although it is not possible for us to check that a recovery is possible, as backup is still done by the GDK team.\n\n3.2.1 GenomeDK\nGDK runs its own disk‑based backup at a remote site. By default nothing is backed up. There is guidance given on the GDK website which details how the backup should be set up. It is the responsibility of the individual study teams to set this up correctly, but help can be requested from the GDK team (in particular to check that the folders have been set up correctly).\nBackups are conducted once per week and retained for 14 days and it is possible to review recent backup runs. Though, it is recommended that larger files are kept out of the backup structure and only added in compressed format. At present we don’t believe that we will have any files that require this, but it will be something that we will keep under observation (see section on data volume).\nWe will back up the original raw data, the cleaned data in Parquet format, and the metadata. As we do not expect to do any analysis in the main study folder (see section on Sharing Data) we don’t expect to be backing up any analysis scripts or results here. This will be done in separate project folders which will be set up to only back up scripts and results.\n\n\n3.2.2 REDCap\nThere isn’t any information on the website for REDCap at AU about backup and recovery, but we have received the following reply from the team maintaining the servers in answer to our questions about the procedures in place.\n\n“AU-IT performs daily backups of the REDCap application and the data contained within it. All backups are managed under IBM’s Tivoli Storage Manager and stored in encrypted form. Ubuntu servers are configured to automatically install security updates. A monthly vulnerability scan is carried out using Tenable Security Centre. In accordance with Aarhus University’s annual information security cycle, a system and data classification is conducted at least once a year, followed by a risk assessment. In addition to the regular annual classification, a new risk assessment is carried out whenever significant changes are made to the system.”\n\n\n\n3.2.3 LIVA\nBackups, retention, recovery, and export options are governed by our contract with them. The Liva contract draft should specify backup frequency, encryption, location (EU/EEA), recovery time, and access/audit reporting. We will confirm these parameters during contract finalization and update this section once the contract is signed.",
+    "title": "4  Storage, backup, recovery, and access",
+    "section": "4.2 Backup and recovery",
+    "text": "4.2 Backup and recovery\nWhen looking at backup and recovery we again have two situations. With the LIVA system we will need to trust that what is stated in the contract is also what LIVA is doing, and that backup and recovery is possible without any significant loss of data. We also need to trust REDCap’s system, as the setup is done entirely without any user engagement.\nWhere we will play a role is with GenomeDK, as described below it is the responsibility of the user to set up the files for backup, although it is not possible for us to check that a recovery is possible, as backup is still done by the GDK team.\n\n4.2.1 GenomeDK\nGDK runs its own disk‑based backup at a remote site. By default nothing is backed up. There is guidance given on the GDK website which details how the backup should be set up. It is the responsibility of the individual study teams to set this up correctly, but help can be requested from the GDK team (in particular to check that the folders have been set up correctly).\nBackups are conducted once per week and retained for 14 days and it is possible to review recent backup runs. Though, it is recommended that larger files are kept out of the backup structure and only added in compressed format. At present we don’t believe that we will have any files that require this, but it will be something that we will keep under observation (see section on data volume).\nWe will back up the original raw data, the cleaned data in Parquet format, and the metadata. As we do not expect to do any analysis in the main study folder (see section on Sharing Data) we don’t expect to be backing up any analysis scripts or results here. This will be done in separate project folders which will be set up to only back up scripts and results.\n\n\n4.2.2 REDCap\nThere isn’t any information on the website for REDCap at AU about backup and recovery, but we have received the following reply from the team maintaining the servers in answer to our questions about the procedures in place.\n\n“AU-IT performs daily backups of the REDCap application and the data contained within it. All backups are managed under IBM’s Tivoli Storage Manager and stored in encrypted form. Ubuntu servers are configured to automatically install security updates. A monthly vulnerability scan is carried out using Tenable Security Centre. In accordance with Aarhus University’s annual information security cycle, a system and data classification is conducted at least once a year, followed by a risk assessment. In addition to the regular annual classification, a new risk assessment is carried out whenever significant changes are made to the system.”\n\n\n\n4.2.3 LIVA\nBackups, retention, recovery, and export options are governed by our contract with them. The Liva contract draft should specify backup frequency, encryption, location (EU/EEA), recovery time, and access/audit reporting. We will confirm these parameters during contract finalization and update this section once the contract is signed.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
     ]
   },
   {
     "objectID": "sections/storage.html#access-to-the-main-data-structures",
     "href": "sections/storage.html#access-to-the-main-data-structures",
-    "title": "3  Storage, backup, recovery, and access",
-    "section": "3.3 Access to the main data structures",
-    "text": "3.3 Access to the main data structures\nIt should be a limited number of people who have access to the full set of research data, which is currently the project manager and the Seedcase Project team, which includes the data architect, will have access to data on GDK as they will be helping with the transformation of raw data to Parquet files, and the creation of metadata. It should be made clear that no data analysis is to take place using the data without prior approval of project synopsis from the Publication Panel and from Project Management Team. There will also be staff at LIVA which will have access to their back-end data, this is covered by the contract.\n\n\n3.3.1 GDK\nAccess is managed on a project folder basis. GDK maintains logs and states it records login and file access events to help ensure GDPR compliance. We have been informed that we will be receiving regular reports from the system once we start using the site. These will be reviewed and signed off by the project team when we receive them.\n\n\n3.3.2 REDCap\nREDCap provides a logging module that automatically records project‑level activity (e.g., data exports, data changes, user creation/deletion). We will review logs on a monthly basis and after any major change. This will be done by the project team on the back of an automated email sent out by REDCap encouraging project owners to check through their log files and access controls once a month.\n\n\n3.3.3 LIVA\nWe will rely on the Liva contract agreement for access control, audit reporting cadence, and data‑sharing/export mechanisms. We expect that Liva will be able to provide us with either access to a list of users with data viewing access, or will be able to provide such a list on demand.",
+    "title": "4  Storage, backup, recovery, and access",
+    "section": "4.3 Access to the main data structures",
+    "text": "4.3 Access to the main data structures\nIt should be a limited number of people who have access to the full set of research data, which is currently the project manager and the Seedcase Project team, which includes the data architect, will have access to data on GDK as they will be helping with the transformation of raw data to Parquet files, and the creation of metadata. It should be made clear that no data analysis is to take place using the data without prior approval of project synopsis from the Publication Panel and from Project Management Team. There will also be staff at LIVA which will have access to their back-end data, this is covered by the contract.\n\n\n4.3.1 GDK\nAccess is managed on a project folder basis. GDK maintains logs and states it records login and file access events to help ensure GDPR compliance. We have been informed that we will be receiving regular reports from the system once we start using the site. These will be reviewed and signed off by the project team when we receive them.\n\n\n4.3.2 REDCap\nREDCap provides a logging module that automatically records project‑level activity (e.g., data exports, data changes, user creation/deletion). We will review logs on a monthly basis and after any major change. This will be done by the project team on the back of an automated email sent out by REDCap encouraging project owners to check through their log files and access controls once a month.\n\n\n4.3.3 LIVA\nWe will rely on the Liva contract agreement for access control, audit reporting cadence, and data‑sharing/export mechanisms. We expect that Liva will be able to provide us with either access to a list of users with data viewing access, or will be able to provide such a list on demand.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Storage, backup, recovery, and access</span>"
     ]
   },
   {
     "objectID": "sections/sharing.html",
     "href": "sections/sharing.html",
-    "title": "4  Data Sharing",
+    "title": "5  Data Sharing",
     "section": "",
-    "text": "4.1 How will the data and metadata be shared?\nSharing data from research projects is essential for promoting transparency, reproducibility, and collaboration within the scientific community. By making data findable, accessible, interoperable, and reusable (FAIR), we enable other researchers to build upon existing work, validate and verify findings, and generate new insights. This section outlines how data and metadata from the project will be shared, under what conditions, and with what safeguards in place.\nWe will make the metadata describing the structure, variables, and scope of the dataset publicly available through one of our project websites, using Seedcase software to build and structure it. This will allow researchers (internal and external) to explore the metadata before submitting an access request. The actual research data will not be publicly accessible and will only be shared upon formal application and approval, and only through a secure server.",
+    "text": "5.1 How will the data and metadata be shared?\nSharing data from research projects is essential for promoting transparency, reproducibility, and collaboration within the scientific community. By making data findable, accessible, interoperable, and reusable (FAIR), we enable other researchers to build upon existing work, validate and verify findings, and generate new insights. This section outlines how data and metadata from the project will be shared, under what conditions, and with what safeguards in place.\nWe will make the metadata describing the structure, variables, and scope of the dataset publicly available through one of our project websites, using Seedcase software to build and structure it. This will allow researchers (internal and external) to explore the metadata before submitting an access request. The actual research data will not be publicly accessible and will only be shared upon formal application and approval, and only through a secure server.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Sharing</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Sharing</span>"
     ]
   },
   {
     "objectID": "sections/sharing.html#when-will-the-metadata-be-available",
     "href": "sections/sharing.html#when-will-the-metadata-be-available",
-    "title": "4  Data Sharing",
-    "section": "4.2 When will the metadata be available?",
-    "text": "4.2 When will the metadata be available?\nWe aim to start metadata publication as soon as data collection starts. A preliminary release will be based on the feasibility study, which we plan to use as a test case for the metadata infrastructure. While we primarily intend to use this dataset to identify any issues with the two most demanding arms of the study, it will also be used as a testing ground for the metadata sharing process. We do not expect high external demand for the feasibility data, but it will help ensure readiness for the main study.",
+    "title": "5  Data Sharing",
+    "section": "5.2 When will the metadata be available?",
+    "text": "5.2 When will the metadata be available?\nWe aim to start metadata publication as soon as data collection starts. A preliminary release will be based on the feasibility study, which we plan to use as a test case for the metadata infrastructure. While we primarily intend to use this dataset to identify any issues with the two most demanding arms of the study, it will also be used as a testing ground for the metadata sharing process. We do not expect high external demand for the feasibility data, but it will help ensure readiness for the main study.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Sharing</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Sharing</span>"
     ]
   },
   {
     "objectID": "sections/sharing.html#who-is-the-audience-for-the-data",
     "href": "sections/sharing.html#who-is-the-audience-for-the-data",
-    "title": "4  Data Sharing",
-    "section": "4.3 Who is the audience for the data?",
-    "text": "4.3 Who is the audience for the data?\nWe anticipate that most data access requests will come from researchers affiliated with the study or collaborating institutions. However, external researchers may also apply, provided they meet the criteria outlined in the data access guideline. The audience may include clinical researchers, epidemiologists, or data scientists researching diabetes-related topics, as well as anthropologist or other social scientists looking at behaviour in relation to food and exercise for people with type 2 diabetes.",
+    "title": "5  Data Sharing",
+    "section": "5.3 Who is the audience for the data?",
+    "text": "5.3 Who is the audience for the data?\nWe anticipate that most data access requests will come from researchers affiliated with the study or collaborating institutions. However, external researchers may also apply, provided they meet the criteria outlined in the data access guideline. The audience may include clinical researchers, epidemiologists, or data scientists researching diabetes-related topics, as well as anthropologist or other social scientists looking at behaviour in relation to food and exercise for people with type 2 diabetes.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Sharing</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Sharing</span>"
     ]
   },
   {
     "objectID": "sections/sharing.html#how-will-researchers-get-access-to-the-data",
     "href": "sections/sharing.html#how-will-researchers-get-access-to-the-data",
-    "title": "4  Data Sharing",
-    "section": "4.4 How will researchers get access to the data?",
-    "text": "4.4 How will researchers get access to the data?\nResearchers must submit a formal application detailing their planned use of the data, including which specific data points they require and why. Applications involving sensitive data categories must include a clear justification for their necessity (for instance in cases where the data is to be uploaded to Denmark Statistics). We will develop a guide on the application process, including eligibility criteria and review procedures and that we will make available as a website.",
+    "title": "5  Data Sharing",
+    "section": "5.4 How will researchers get access to the data?",
+    "text": "5.4 How will researchers get access to the data?\nResearchers must submit a formal application detailing their planned use of the data, including which specific data points they require and why. Applications involving sensitive data categories must include a clear justification for their necessity (for instance in cases where the data is to be uploaded to Denmark Statistics). We will develop a guide on the application process, including eligibility criteria and review procedures and that we will make available as a website.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Sharing</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Sharing</span>"
     ]
   },
   {
     "objectID": "sections/sharing.html#how-will-the-data-be-made-available",
     "href": "sections/sharing.html#how-will-the-data-be-made-available",
-    "title": "4  Data Sharing",
-    "section": "4.5 How will the data be made available?",
-    "text": "4.5 How will the data be made available?\nOnce the steering committee has approved an application, we’ll make the requested data available in a dedicated project folder on GenomeDK (GDK). Raw data must remain on the GDK server, and only analysis scripts and results may be exported. Researchers will need to create an account with GDK to access the folder and work on their analysis environment. In some cases, it may be possible to upload a dataset to Statistics Denmark, under the SCDA Statistics Denmark project database. We only consider this option for projects requiring linkage with other national datasets.",
+    "title": "5  Data Sharing",
+    "section": "5.5 How will the data be made available?",
+    "text": "5.5 How will the data be made available?\nOnce the steering committee has approved an application, we’ll make the requested data available in a dedicated project folder on GenomeDK (GDK). Raw data must remain on the GDK server, and only analysis scripts and results may be exported. Researchers will need to create an account with GDK to access the folder and work on their analysis environment. In some cases, it may be possible to upload a dataset to Statistics Denmark, under the SCDA Statistics Denmark project database. We only consider this option for projects requiring linkage with other national datasets.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Sharing</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Sharing</span>"
     ]
   },
   {
     "objectID": "sections/sharing.html#how-will-access-be-controlled",
     "href": "sections/sharing.html#how-will-access-be-controlled",
-    "title": "4  Data Sharing",
-    "section": "4.6 How will access be controlled?",
-    "text": "4.6 How will access be controlled?\nThere are three main ways to access data, and only one is used for data analysis. Data will be available to a few members of the study team on REDCap where we do data collection. All data collected by the LIVA app will be available to clinicians involved with the running of the study in the LIVA system. Finally, the research data we have collected, cleaned, and stored on GDK servers is also where the analyses will take place. Access to the finalised research data will be controlled by the central study team on GDK, with each successful data application getting their own project folder with only the data requested. All the programming scripts used to create these data sets will be stored in the main study folder on GDK to ensure transparency and reproducibility. We expect that those who have access to the data collected within REDCap will not use the data for analysis and/or publication. The data collected by LIVA will be available through the use of the Clinician Portal and LIVA Reporting Module, which is encouraged for monitoring participant progress but should not be used for publication purposes.",
+    "title": "5  Data Sharing",
+    "section": "5.6 How will access be controlled?",
+    "text": "5.6 How will access be controlled?\nThere are three main ways to access data, and only one is used for data analysis. Data will be available to a few members of the study team on REDCap where we do data collection. All data collected by the LIVA app will be available to clinicians involved with the running of the study in the LIVA system. Finally, the research data we have collected, cleaned, and stored on GDK servers is also where the analyses will take place. Access to the finalised research data will be controlled by the central study team on GDK, with each successful data application getting their own project folder with only the data requested. All the programming scripts used to create these data sets will be stored in the main study folder on GDK to ensure transparency and reproducibility. We expect that those who have access to the data collected within REDCap will not use the data for analysis and/or publication. The data collected by LIVA will be available through the use of the Clinician Portal and LIVA Reporting Module, which is encouraged for monitoring participant progress but should not be used for publication purposes.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Sharing</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Sharing</span>"
     ]
   },
   {
     "objectID": "sections/sharing.html#what-kind-of-ip-or-license-will-be-used",
     "href": "sections/sharing.html#what-kind-of-ip-or-license-will-be-used",
-    "title": "4  Data Sharing",
-    "section": "4.7 What kind of IP or license will be used?",
-    "text": "4.7 What kind of IP or license will be used?\nA formal decision regarding intellectual property rights and licensing for shared data is still pending. This will be finalized before the main study data is made available to external researchers.",
+    "title": "5  Data Sharing",
+    "section": "5.7 What kind of IP or license will be used?",
+    "text": "5.7 What kind of IP or license will be used?\nA formal decision regarding intellectual property rights and licensing for shared data is still pending. This will be finalized before the main study data is made available to external researchers.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Sharing</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Sharing</span>"
     ]
   },
   {
     "objectID": "sections/sharing.html#additional-considerations",
     "href": "sections/sharing.html#additional-considerations",
-    "title": "4  Data Sharing",
-    "section": "4.8 Additional considerations",
-    "text": "4.8 Additional considerations\nWe may need to share some data from the feasibility study and analyse it before the launch of the main study, but the formal end points in the study registration on ClinicalTrials.com should help clarify what data points will be needed for this. This process should be planned and initiated as soon as possible. A data sharing agreement is already in place between the five participating centres, outlining responsibilities and procedures for internal data access and collaboration.",
+    "title": "5  Data Sharing",
+    "section": "5.8 Additional considerations",
+    "text": "5.8 Additional considerations\nWe may need to share some data from the feasibility study and analyse it before the launch of the main study, but the formal end points in the study registration on ClinicalTrials.com should help clarify what data points will be needed for this. This process should be planned and initiated as soon as possible. A data sharing agreement is already in place between the five participating centres, outlining responsibilities and procedures for internal data access and collaboration.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Sharing</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Sharing</span>"
     ]
   },
   {
     "objectID": "sections/responsibilities.html",
     "href": "sections/responsibilities.html",
-    "title": "5  Responsibilities and resources",
+    "title": "6  Responsibilities and resources",
     "section": "",
-    "text": "5.1 Responsibilities\nEffective data management relies to a great extent on clear guidelines as well as clear definitions of roles and responsibilities. By defining responsibilities and ensuring the right expertise and tools are in place, then data quality, compliance, and the long-term value of the project’s outputs should be ensured. This section outlines the key roles, and resources dedicated to managing data within the study.\nThis section outlines who is responsible for key aspects of data handling (from collection and documentation to long-term storage and sharing) and how collaboration between people and institutions supports the integrity and usability of the data throughout the study. For now we’ll be looking at the first 6 years of the study (the active phase), but data will be stored for at least 9 years more (minimum of 15 years in total), and this will need to be addressed further down the line.",
+    "text": "6.1 Responsibilities\nEffective data management relies to a great extent on clear guidelines as well as clear definitions of roles and responsibilities. By defining responsibilities and ensuring the right expertise and tools are in place, then data quality, compliance, and the long-term value of the project’s outputs should be ensured. This section outlines the key roles, and resources dedicated to managing data within the study.\nThis section outlines who is responsible for key aspects of data handling (from collection and documentation to long-term storage and sharing) and how collaboration between people and institutions supports the integrity and usability of the data throughout the study. For now we’ll be looking at the first 6 years of the study (the active phase), but data will be stored for at least 9 years more (minimum of 15 years in total), and this will need to be addressed further down the line.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Responsibilities and resources</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Responsibilities and resources</span>"
     ]
   },
   {
     "objectID": "sections/responsibilities.html#responsibilities",
     "href": "sections/responsibilities.html#responsibilities",
-    "title": "5  Responsibilities and resources",
+    "title": "6  Responsibilities and resources",
     "section": "",
-    "text": "5.1.1 Data management roles\nThe project has appointed a dedicated Data Architect at Steno Diabetes Center Aarhus (SDCA) who holds primary responsibility for the overall data management strategy. This includes overseeing data capture, metadata production, data quality assurance, secure storage, backup and recovery procedures, long-term archiving, and data sharing. The data architect will make sure that data flows are secure and well-documented.\n\n\n5.1.2 REDCap setup and study team contributions\nWhile the data architect is ultimately responsible for the setup and configuration of REDCap, much of the practical implementation will be carried out by some members of the study team at Steno Diabetes Center. These team members will also contribute to identifying and describing specific data points registered in REDCap.\n\n\n5.1.3 Metadata and Documentation\nMetadata will be organised using Seedcase Sprout, based on the data recorded in REDCap (for data registered there) and a data dictionary which will be developed in collaboration with the LIVA team as the study progresses.\n\nThis will result in metadata that is consistent, comprehensive, and aligned with FAIR principles.\n\n\n5.1.4 Long-term data handling and storage\nThe data architect is also responsible for overseeing the work carried out by the Seedcase team in converting raw data into Parquet files for long-term storage. It is essential that this process preserves the integrity of the original data, and the data architect will ensure that no information is lost or altered during the conversion.\n\n\n\n5.1.5 Sub-study data integration\nAny sub-study that generates data is expected to submit its dataset in full to the main project, accompanied by appropriate metadata. Although the SDCA team is not responsible for collecting this data, the data architect and the Publications Panel share responsibility for ensuring that sub-study teams understand their obligations. This includes verifying that all relevant data is submitted to the main study and properly integrated into the central repository on GenomeDK.\n\n\n5.1.6 Compliance\nThe data architect and project manager will jointly ensure that the data management practices outlined in this plan are adhered to throughout the project lifecycle. Regular reviews will be conducted, and updates to the DMP will be made as needed.\n\n\n5.1.7 Contingency planning\nThe study as a whole will run over 6 years, so it is unlikely that all original staff will still be present at the end of the study period. At present there is no formal guidance on how we expect to cover either long-term absence or people leaving the study, but it is expected that the core study team, data architect and project manager alongside the Project Secretary and the Chief Investigator will be able to cover most of the urgent tasks if needed.\nA core principle of the project is documentation and this is ensured by using GitHub and sharepoint across study sites. A minimum of documentation from each team member, depending on role, is required in case of people leaving.\nFunding has been obtained from the Novo Nordisk Foundation to conduct the study. Funding for training and upskilling any replacement staff is part of this funding. However, as the project is ongoing, further funding will also be sought to accompany future needs. This is the responsibility of the Project Management Panel to ensure.",
+    "text": "6.1.1 Data management roles\nThe project has appointed a dedicated Data Architect at Steno Diabetes Center Aarhus (SDCA) who holds primary responsibility for the overall data management strategy. This includes overseeing data capture, metadata production, data quality assurance, secure storage, backup and recovery procedures, long-term archiving, and data sharing. The data architect will make sure that data flows are secure and well-documented.\n\n\n6.1.2 REDCap setup and study team contributions\nWhile the data architect is ultimately responsible for the setup and configuration of REDCap, much of the practical implementation will be carried out by some members of the study team at Steno Diabetes Center. These team members will also contribute to identifying and describing specific data points registered in REDCap.\n\n\n6.1.3 Metadata and Documentation\nMetadata will be organised using Seedcase Sprout, based on the data recorded in REDCap (for data registered there) and a data dictionary which will be developed in collaboration with the LIVA team as the study progresses.\n\nThis will result in metadata that is consistent, comprehensive, and aligned with FAIR principles.\n\n\n6.1.4 Long-term data handling and storage\nThe data architect is also responsible for overseeing the work carried out by the Seedcase team in converting raw data into Parquet files for long-term storage. It is essential that this process preserves the integrity of the original data, and the data architect will ensure that no information is lost or altered during the conversion.\n\n\n\n6.1.5 Sub-study data integration\nAny sub-study that generates data is expected to submit its dataset in full to the main project, accompanied by appropriate metadata. Although the SDCA team is not responsible for collecting this data, the data architect and the Publications Panel share responsibility for ensuring that sub-study teams understand their obligations. This includes verifying that all relevant data is submitted to the main study and properly integrated into the central repository on GenomeDK.\n\n\n6.1.6 Compliance\nThe data architect and project manager will jointly ensure that the data management practices outlined in this plan are adhered to throughout the project lifecycle. Regular reviews will be conducted, and updates to the DMP will be made as needed.\n\n\n6.1.7 Contingency planning\nThe study as a whole will run over 6 years, so it is unlikely that all original staff will still be present at the end of the study period. At present there is no formal guidance on how we expect to cover either long-term absence or people leaving the study, but it is expected that the core study team, data architect and project manager alongside the Project Secretary and the Chief Investigator will be able to cover most of the urgent tasks if needed.\nA core principle of the project is documentation and this is ensured by using GitHub and sharepoint across study sites. A minimum of documentation from each team member, depending on role, is required in case of people leaving.\nFunding has been obtained from the Novo Nordisk Foundation to conduct the study. Funding for training and upskilling any replacement staff is part of this funding. However, as the project is ongoing, further funding will also be sought to accompany future needs. This is the responsibility of the Project Management Panel to ensure.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Responsibilities and resources</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Responsibilities and resources</span>"
     ]
   },
   {
     "objectID": "sections/responsibilities.html#resources",
     "href": "sections/responsibilities.html#resources",
-    "title": "5  Responsibilities and resources",
-    "section": "5.2 Resources",
-    "text": "5.2 Resources",
+    "title": "6  Responsibilities and resources",
+    "section": "6.2 Resources",
+    "text": "6.2 Resources",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Responsibilities and resources</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Responsibilities and resources</span>"
     ]
   },
   {
     "objectID": "documents/C4-level.html",
     "href": "documents/C4-level.html",
-    "title": "6  C4 Models",
+    "title": "7  C4 Models",
     "section": "",
-    "text": "6.1 Context\nThis section contains the C4 Models for ON LiMiT data infrastructure. Even though the C4 model is primarily used for software architecture, we use it here to describe the data infrastructure and its components. We will use the first two levels of the C4 model, the Context and Container diagrams, to describe the data infrastructure and its components.\nON LiMiT is a research project that collects data from various sources, including biological samples, questionnaires, and other electronic data. The data is collected from participants in the study, healthcare professionals, and bioanalysts. The data is stored on GenomeDKs servers and will be made available for researchers to analyze. The following diagram shows the context of ON LiMiT, including the main users and data providers.",
+    "text": "7.1 Context\nThis section contains the C4 Models for ON LiMiT data infrastructure. Even though the C4 model is primarily used for software architecture, we use it here to describe the data infrastructure and its components. We will use the first two levels of the C4 model, the Context and Container diagrams, to describe the data infrastructure and its components.\nON LiMiT is a research project that collects data from various sources, including biological samples, questionnaires, and other electronic data. The data is collected from participants in the study, healthcare professionals, and bioanalysts. The data is stored on GenomeDKs servers and will be made available for researchers to analyze. The following diagram shows the context of ON LiMiT, including the main users and data providers.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>C4 Models</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>C4 Models</span>"
     ]
   },
   {
     "objectID": "documents/C4-level.html#context",
     "href": "documents/C4-level.html#context",
-    "title": "6  C4 Models",
+    "title": "7  C4 Models",
     "section": "",
     "text": "C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>C4 Models</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>C4 Models</span>"
     ]
   },
   {
     "objectID": "documents/C4-level.html#container",
     "href": "documents/C4-level.html#container",
-    "title": "6  C4 Models",
-    "section": "6.2 Container",
-    "text": "6.2 Container\nThe Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.\n\n\n\nC4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis",
+    "title": "7  C4 Models",
+    "section": "7.2 Container",
+    "text": "7.2 Container\nThe Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.\n\n\n\nC4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>C4 Models</span>"
-    ]
-  },
-  {
-    "objectID": "documents/data-flow.html",
-    "href": "documents/data-flow.html",
-    "title": "7  Data Flows",
-    "section": "",
-    "text": "7.1 REDCap\nBelow is a data flow diagram for the ON LiMiT project. The diagram illustrates the flow of data between various components of the study, including participants, healthcare professionals, and data management systems.\nAt present the diagram is a work in progress, and will be updated as the pilot study progresses. Most data will originate from the participants, who will enter data into various apps and systems. The healthcare professionals will also enter data into the system, and the lab staff will collect and analyse biological samples from the participants. Much of the data will be collated in a REDCap database before being uploaded to the GenomeDK HPC facility for further processing.\nUnderneath the diagram is a more detailed description of the components and their interactions.\nREDCap is a secure web application for building and managing online surveys and databases. It is used to collect data from participants and healthcare professionals in the ON LiMiT project. REDCap will have two main functions, the first is to collect data from clinicians and participants via forms and questionnaires, and the second is to collate data from other systems, likely through APIs or csv uploads.",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Flows</span>"
-    ]
-  },
-  {
-    "objectID": "documents/data-flow.html#imotions-food-preference",
-    "href": "documents/data-flow.html#imotions-food-preference",
-    "title": "7  Data Flows",
-    "section": "7.2 iMotions Food Preference",
-    "text": "7.2 iMotions Food Preference\niMotion Food Preference is a system that tracks the eye movements of participants when they are looking at pictures of food. The data collected by this system can be pulled out as csv files and uploaded to the REDCap database or directly to the GenomeDK HPC facility.",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Flows</span>"
-    ]
-  },
-  {
-    "objectID": "documents/data-flow.html#sens",
-    "href": "documents/data-flow.html#sens",
-    "title": "7  Data Flows",
-    "section": "7.3 SENS",
-    "text": "7.3 SENS\nSENS is an activity monitor that will be placed on the study participants for a week. The data collected by a SENS device will be extracted at clinic visits and the data will be uploaded to the REDCap database. The SENS device will track the participants’ physical activity levels in selected weeks of the study.",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Flows</span>"
-    ]
-  },
-  {
-    "objectID": "documents/data-flow.html#libre",
-    "href": "documents/data-flow.html#libre",
-    "title": "7  Data Flows",
-    "section": "7.4 Libre",
-    "text": "7.4 Libre\nLibre is a continuous glucose monitoring (CGM) sensor from Abbott that will be worn by the participants for a week. The data collected by the Libre device will be extracted at clinic visits and uploaded to the REDCap database. The Libre device will track the participants’ glucose levels in selected weeks of the study.",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Flows</span>"
-    ]
-  },
-  {
-    "objectID": "documents/data-flow.html#liva",
-    "href": "documents/data-flow.html#liva",
-    "title": "7  Data Flows",
-    "section": "7.5 Liva",
-    "text": "7.5 Liva\nLiva is a mobile app that will be used by the participants to track their physical activity (via Withings or Garmin activity watch), adherence to the assigned diet intervention (via short diet screener), body weight (via Withings or Gamin scale), answer other small questionnaires, follow the study schedule and interact with study personnel via a chat function. The app will likely connect to the REDCap database via an API, allowing the data to be automatically uploaded to the database.\n\n7.5.1 Withings or Garmin Watch and Scales\nThe Withings or Garmin Watch and Scales will be used by the participants to track their physical activity and weight. The data collected by these devices will be transmitted to the Monsenso app where it will be collated and then uploaded to the REDCap database. The watch will track the participants’ physical activity levels, while the scales will track their weight.",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Flows</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>C4 Models</span>"
     ]
   },
   {
