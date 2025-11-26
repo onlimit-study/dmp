@@ -31,6 +31,7 @@ book:
   chapters:
     - index.qmd
     - sections/collection.qmd
+    - sections/metadata.qmd
     - sections/ethics.qmd
     - sections/storage.qmd
     - sections/sharing.qmd

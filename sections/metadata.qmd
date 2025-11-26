@@ -1,0 +1,93 @@
+# Documentation and Metadata
+
+Clear and comprehensive documentation is essential to ensure that the
+data collected during the study is both findable, usable, and reusable
+not only today but also in five years time. This section outlines the
+approach to documenting all datasets and associated metadata, including
+the tools, standards, and processes that will be applied. By maintaining
+detailed descriptions of variables, data sources, and collection
+methods, and by implementing robust metadata management practices, we
+want to support data integrity, making it easier to use the data, and
+comply with FAIR principles.
+
+## Documentation
+
+All data stored on the GenomeDK servers will be generated during the
+study, either by study staff or directly by participants. No external
+datasets (such as national registers) will be stored within the ON LiMiT
+environment. The primary sources of data include:
+
+-   Participant input via the Liva Healthcare app and responses to
+    questionnaires.
+-   Medical devices and scanners, which will produce structured data
+    files. A detailed list of scanners and devices will be maintained as
+    part of the technical documentation.
+-   Additional sensors and site-level data collection, uploaded as CSV
+    files by study staff.
+
+Data generation will occur throughout the two-year participation period
+for each individual. While there are plans to link study data with
+register data, this work will take place on Statistics Denmark's
+servers. Access to the data will be strictly controlled through
+GenomeDK. Researchers must submit an application to the Publications
+Panel to gain access, ensuring transparency and governance.
+
+<!--TODO Do we want to publish the publications guidance somewhere, and if so, do we want to link it here-->
+
+## Metadata Strategy
+
+To ensure data usability and interoperability, comprehensive metadata
+will be created and maintained throughout the study:
+
+<!--TODO Consider if this should be changed from a list to heading 3-->
+
+-   Field-Level Documentation: Detailed variable descriptions has been
+    written using the Field Annotation functionality in REDCap. This
+    includes adherence to naming conventions defined by internal rules.
+
+    <!--TODO Check with Anne-Ditte if they are happy for those guidelines to be made public-->
+
+-   Supplier Data Dictionaries: All external data providers (e.g., Liva
+    Healthcare, MyFood24) will supply data dictionaries in CSV format.
+    These will be integrated into the metadata repository by the data
+    architect.
+
+-   Device and Sensor Data: CSV files originating from scanners and
+    sensors will be documented collaboratively by site staff and the
+    data architect to ensure completeness and clarity.
+
+-   Metadata Packaging: The Seedcase Sprout software will be used to
+    generate and store metadata in a standardized data package format.
+    These packages will be stored alongside the corresponding datasets
+    on GenomeDK, ensuring location and version control.
+
+    <!--TODO Get Luke to re-write the Packaging bit-->
+
+## Versioning and Updates
+
+Metadata will be treated as a living resource. Updates will occur
+whenever new variables are introduced, existing fields are modified, or
+additional data sources are integrated. Version control will be
+implemented through Seedcase Sprout, ensuring that:
+
+-   Each metadata package is assigned a unique version identifier.
+-   Changes are logged with timestamps and descriptions.
+-   Previous versions remain accessible for audit and reproducibility
+    purposes.
+
+This approach guarantees traceability and supports long-term data
+integrity.
+
+## Data Discovery and Accessibility
+
+To facilitate data discovery, a dedicated website will be developed.
+This site will provide:
+
+-   A searchable catalog of all variables.
+-   Clear descriptions and metadata for each variable.
+-   A foundation for the Publications Panel application process,
+    ensuring researchers can identify relevant data before requesting
+    access.
+
+This approach guarantees that data is well-documented, discoverable, and
+compliant with FAIR principles.
