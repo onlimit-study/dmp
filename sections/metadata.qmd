@@ -1,4 +1,4 @@
-# Documentation and Metadata
+# Documentation and metadata
 
 Clear and comprehensive documentation is essential to ensure that the
 data collected during the study is both findable, usable, and reusable
@@ -34,7 +34,7 @@ Panel to gain access, ensuring transparency and governance.
 
 <!--TODO Do we want to publish the publications guidance somewhere, and if so, do we want to link it here-->
 
-## Metadata Strategy
+## Metadata strategy
 
 To ensure data usability and interoperability, comprehensive metadata
 will be created and maintained throughout the study:
@@ -63,7 +63,7 @@ will be created and maintained throughout the study:
 
     <!--TODO Get Luke to re-write the Packaging bit-->
 
-## Versioning and Updates
+## Versioning and updates
 
 Metadata will be treated as a living resource. Updates will occur
 whenever new variables are introduced, existing fields are modified, or
@@ -78,7 +78,7 @@ implemented through Seedcase Sprout, ensuring that:
 This approach guarantees traceability and supports long-term data
 integrity.
 
-## Data Discovery and Accessibility
+## Data discovery and accessibility
 
 To facilitate data discovery, a dedicated website will be developed.
 This site will provide:
