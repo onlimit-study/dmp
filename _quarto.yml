@@ -30,6 +30,7 @@ book:
     type: textbox
   chapters:
     - index.qmd
+    - sections/sources.qmd
     - sections/collection.qmd
     - sections/ethics.qmd
     - sections/storage.qmd
