@@ -2,7 +2,7 @@
 
 Clear and comprehensive documentation is essential to ensure that the
 data collected during the study is FAIR (Findable, Accessible,
-Interoperabble, and Reusable) not only today but also in the future.
+Interoperable, and Reusable) not only today but also in the future.
 This section outlines the approach to documenting all datasets and
 associated metadata, including the tools, standards, and processes that
 will be applied. By maintaining detailed descriptions of variables, data
@@ -62,7 +62,7 @@ will be created and maintained throughout the study:
     checks on the data to confirm that it corresponds to the metadata.
     The data package will be stored on GenomeDK, where the data will be
     version controlled and a backup kept in case of errors or issues.
-    The metadata will be connected to GitHub to increaseaccessibility
+    The metadata will be connected to GitHub to increase accessibility
     and discoverability as well as improve future collaboration on
     analyses of the data.
 
