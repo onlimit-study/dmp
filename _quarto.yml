@@ -36,7 +36,6 @@ book:
     - sections/storage.qmd
     - sections/sharing.qmd
     - sections/responsibilities.qmd
-    - documents/C4-level.qmd
   appendices:
     - CONTRIBUTING.md
     - CHANGELOG.md
