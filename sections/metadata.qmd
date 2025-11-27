@@ -51,9 +51,9 @@ will be created and maintained throughout the study:
     These will be integrated into the metadata repository by the data
     architect.
 
--   Device and Sensor Data: The site staff and the data architect will
-    collaboratively document the CSV files originating from scanners and
-    sensors to ensure completeness and clarity.
+-   Device and sensor data: The site staff and the data architect will
+    collaboratively document the CSV filesoriginating from scanners and
+    sensors to ensure completenessand clarity.
 
 -   Metadata packaging: We will use software developed from the
     [Seedcase Project](https://seedcase-project.org) to generate and
@@ -62,7 +62,7 @@ will be created and maintained throughout the study:
     checks on the data to confirm that it corresponds to the metadata.
     The data package will be stored on GenomeDK, where the data will be
     version controlled and a backup kept in case of errors or issues.
-    The metadata will be connected to GitHub to increase accessibility
+    The metadata will be connected to GitHub to increaseaccessibility
     and discoverability as well as improve future collaboration on
     analyses of the data.
 
