@@ -2,42 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://onlimit-study.github.io/dmp/index.html</loc>
-    <lastmod>2025-11-25T13:28:36.676Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.548Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/sections/collection.html</loc>
-    <lastmod>2025-11-25T13:28:36.677Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://onlimit-study.github.io/dmp/sections/metadata.html</loc>
+    <lastmod>2025-11-27T14:51:43.549Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/sections/ethics.html</loc>
-    <lastmod>2025-11-25T13:28:36.677Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.549Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/sections/storage.html</loc>
-    <lastmod>2025-11-25T13:28:36.677Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.549Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/sections/sharing.html</loc>
-    <lastmod>2025-11-25T13:28:36.677Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.549Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/sections/responsibilities.html</loc>
-    <lastmod>2025-11-25T13:28:36.677Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.549Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/documents/C4-level.html</loc>
-    <lastmod>2025-11-25T13:28:36.672Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.544Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/CONTRIBUTING.html</loc>
-    <lastmod>2025-11-25T13:28:36.669Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.543Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/CHANGELOG.html</loc>
-    <lastmod>2025-11-25T13:28:36.669Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.542Z</lastmod>
   </url>
   <url>
     <loc>https://onlimit-study.github.io/dmp/LICENSE.html</loc>
-    <lastmod>2025-11-25T13:28:36.670Z</lastmod>
+    <lastmod>2025-11-27T14:51:43.543Z</lastmod>
   </url>
 </urlset>
