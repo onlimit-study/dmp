@@ -41,34 +41,38 @@ will be created and maintained throughout the study:
 
 <!--TODO Consider if this should be changed from a list to heading 3-->
 
--   Field-Level Documentation: Detailed variable descriptions has been
-    written using the Field Annotation functionality in REDCap. This
+-   Field-level documentation: We will write detailed variable descriptions
+    using the *Field Annotation* functionality in REDCap. This
     includes adherence to naming conventions defined by internal rules.
 
     <!--TODO Check with Anne-Ditte if they are happy for those guidelines to be made public-->
 
--   Supplier Data Dictionaries: All external data providers (e.g., Liva
+-   Supplier data dictionaries: All external data providers (e.g., Liva
     Healthcare, MyFood24) will supply data dictionaries in CSV format.
     These will be integrated into the metadata repository by the data
     architect.
 
--   Device and Sensor Data: CSV files originating from scanners and
-    sensors will be documented collaboratively by site staff and the
-    data architect to ensure completeness and clarity.
+-   Device and Sensor Data: The site staff and the
+    data architect will collaboratively document the CSV files 
+    originating from scanners and sensors to ensure completeness 
+    and clarity.
 
--   Metadata Packaging: The Seedcase Sprout software will be used to
+-   Metadata packaging: We will use software developed from the [Seedcase Project](https://seedcase-project.org) to
     generate and store metadata in a standardized data package format.
-    These packages will be stored alongside the corresponding datasets
-    on GenomeDK, ensuring location and version control.
-
-    <!--TODO Get Luke to re-write the Packaging bit-->
+    These software will also structure the data in a standardized format
+    and will run checks on the data to confirm that it corresponds to
+    the metadata. The data package will be stored on GenomeDK, where the
+    data will be version controlled and a backup kept in case of errors
+    or issues. The metadata will be connected to GitHub to increase 
+    accessibility and discoverability as well as improve future collaboration
+    on analyses of the data.
 
 ## Versioning and updates
 
 Metadata will be treated as a living resource. Updates will occur
 whenever new variables are introduced, existing fields are modified, or
 additional data sources are integrated. Version control will be
-implemented through Seedcase Sprout, ensuring that:
+implemented through the Seedcase software, ensuring that:
 
 -   Each metadata package is assigned a unique version identifier.
 -   Changes are logged with timestamps and descriptions.
