@@ -1,14 +1,14 @@
 # Documentation and metadata
 
 Clear and comprehensive documentation is essential to ensure that the
-data collected during the study is both findable, usable, and reusable
-not only today but also in five years time. This section outlines the
-approach to documenting all datasets and associated metadata, including
-the tools, standards, and processes that will be applied. By maintaining
-detailed descriptions of variables, data sources, and collection
-methods, and by implementing robust metadata management practices, we
-want to support data integrity, making it easier to use the data, and
-comply with FAIR principles.
+data collected during the study is FAIR (Findable, Accessible,
+Interoperabble, and Reusable) not only today but also in the future.
+This section outlines the approach to documenting all datasets and
+associated metadata, including the tools, standards, and processes that
+will be applied. By maintaining detailed descriptions of variables, data
+sources, and collection methods, and by implementing robust metadata
+management practices, we want to support data integrity, making it
+easier to use the data, and comply with FAIR principles.
 
 ## Documentation
 
@@ -39,11 +39,10 @@ Panel to gain access, ensuring transparency and governance.
 To ensure data usability and interoperability, comprehensive metadata
 will be created and maintained throughout the study:
 
-<!--TODO Consider if this should be changed from a list to heading 3-->
-
--   Field-level documentation: We will write detailed variable descriptions
-    using the *Field Annotation* functionality in REDCap. This
-    includes adherence to naming conventions defined by internal rules.
+-   Field-level documentation: We will write detailed variable
+    descriptions using the *Field Annotation* functionality in REDCap.
+    This includes adherence to naming conventions defined by internal
+    rules.
 
     <!--TODO Check with Anne-Ditte if they are happy for those guidelines to be made public-->
 
@@ -52,20 +51,20 @@ will be created and maintained throughout the study:
     These will be integrated into the metadata repository by the data
     architect.
 
--   Device and Sensor Data: The site staff and the
-    data architect will collaboratively document the CSV files 
-    originating from scanners and sensors to ensure completeness 
-    and clarity.
+-   Device and Sensor Data: The site staff and the data architect will
+    collaboratively document the CSV files originating from scanners and
+    sensors to ensure completeness and clarity.
 
--   Metadata packaging: We will use software developed from the [Seedcase Project](https://seedcase-project.org) to
-    generate and store metadata in a standardized data package format.
-    These software will also structure the data in a standardized format
-    and will run checks on the data to confirm that it corresponds to
-    the metadata. The data package will be stored on GenomeDK, where the
-    data will be version controlled and a backup kept in case of errors
-    or issues. The metadata will be connected to GitHub to increase 
-    accessibility and discoverability as well as improve future collaboration
-    on analyses of the data.
+-   Metadata packaging: We will use software developed from the
+    [Seedcase Project](https://seedcase-project.org) to generate and
+    store metadata in a standardized data package format. These software
+    will also structure the data in a standardized format and will run
+    checks on the data to confirm that it corresponds to the metadata.
+    The data package will be stored on GenomeDK, where the data will be
+    version controlled and a backup kept in case of errors or issues.
+    The metadata will be connected to GitHub to increase accessibility
+    and discoverability as well as improve future collaboration on
+    analyses of the data.
 
 ## Versioning and updates
 
