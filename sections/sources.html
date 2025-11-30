@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix A — Contributing – ON-LiMiT DMP</title>
+<title>2&nbsp; Illustrated data sources and flow – ON-LiMiT DMP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,64 +20,29 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./CHANGELOG.html" rel="next">
-<link href="./sections/responsibilities.html" rel="prev">
-<link href="site_libs/quarto-contrib/quarto-project/onlimit-study/onlimit-theme/favicon/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-982c3b04a350921fa87cc9bb75823609.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../sections/collection.html" rel="next">
+<link href="../index.html" rel="prev">
+<link href="../site_libs/quarto-contrib/quarto-project/onlimit-study/onlimit-theme/favicon/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-982c3b04a350921fa87cc9bb75823609.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,6 +69,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -115,9 +83,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="site_libs/quarto-contrib/quarto-project/onlimit-study/onlimit-theme/images/logo.png" alt="ON-LiMiT logo, with apple in the O and a person running under the LIMIT text." class="navbar-logo light-content">
-    <img src="site_libs/quarto-contrib/quarto-project/onlimit-study/onlimit-theme/images/logo.png" alt="ON-LiMiT logo, with apple in the O and a person running under the LIMIT text." class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../site_libs/quarto-contrib/quarto-project/onlimit-study/onlimit-theme/images/logo.png" alt="ON-LiMiT logo, with apple in the O and a person running under the LIMIT text." class="navbar-logo light-content">
+    <img src="../site_libs/quarto-contrib/quarto-project/onlimit-study/onlimit-theme/images/logo.png" alt="ON-LiMiT logo, with apple in the O and a person running under the LIMIT text." class="navbar-logo dark-content">
     </a>
   </div>
         <div class="quarto-navbar-tools tools-end">
@@ -131,7 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CONTRIBUTING.html">Appendices</a></li><li class="breadcrumb-item"><a href="./CONTRIBUTING.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Contributing</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sections/sources.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Illustrated data sources and flow</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -145,49 +113,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome!</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sections/sources.html" class="sidebar-item-text sidebar-link">
+  <a href="../sections/sources.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Illustrated data sources and flow</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sections/collection.html" class="sidebar-item-text sidebar-link">
+  <a href="../sections/collection.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data collection</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sections/metadata.html" class="sidebar-item-text sidebar-link">
+  <a href="../sections/metadata.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Documentation and metadata</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sections/ethics.html" class="sidebar-item-text sidebar-link">
+  <a href="../sections/ethics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Ethics, security, and legal compliance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sections/storage.html" class="sidebar-item-text sidebar-link">
+  <a href="../sections/storage.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Storage, backup, recovery, and access</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sections/sharing.html" class="sidebar-item-text sidebar-link">
+  <a href="../sections/sharing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data Sharing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sections/responsibilities.html" class="sidebar-item-text sidebar-link">
+  <a href="../sections/responsibilities.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Responsibilities and resources</span></span></a>
   </div>
 </li>
@@ -202,19 +170,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./CONTRIBUTING.html" class="sidebar-item-text sidebar-link active">
+  <a href="../CONTRIBUTING.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./CHANGELOG.html" class="sidebar-item-text sidebar-link">
+  <a href="../CHANGELOG.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Changelog</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./LICENSE.html" class="sidebar-item-text sidebar-link">
+  <a href="../LICENSE.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">License</span></span></a>
   </div>
 </li>
@@ -230,17 +198,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#issues-and-bugs" id="toc-issues-and-bugs" class="nav-link active" data-scroll-target="#issues-and-bugs"><span class="header-section-number">A.1</span> Issues and bugs <span class="emoji" data-emoji="bug">🐛</span></a></li>
-  <li><a href="#adding-or-modifying-content" id="toc-adding-or-modifying-content" class="nav-link" data-scroll-target="#adding-or-modifying-content"><span class="header-section-number">A.2</span> Adding or modifying content <span class="emoji" data-emoji="pencil2">✏️</span></a></li>
+  <li><a href="#technical-infrastructure" id="toc-technical-infrastructure" class="nav-link active" data-scroll-target="#technical-infrastructure"><span class="header-section-number">2.1</span> Technical infrastructure</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/CONTRIBUTING.md" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/CONTRIBUTING.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/sections/sources.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/sections/sources.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CONTRIBUTING.html">Appendices</a></li><li class="breadcrumb-item"><a href="./CONTRIBUTING.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Contributing</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix A — Contributing</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Illustrated data sources and flow</span></h1>
 </div>
 
 
@@ -257,20 +224,107 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="issues-and-bugs" class="level2" data-number="A.1">
-<h2 data-number="A.1" class="anchored" data-anchor-id="issues-and-bugs"><span class="header-section-number">A.1</span> Issues and bugs <span class="emoji" data-emoji="bug">🐛</span></h2>
-<p>The easiest way to contribute is to report issues or bugs that you might find while reading through the website. You can do this by creating a <a href="https://github.com/onlimit-study/dmp/issues/new/choose">new</a> issue on our GitHub repository.</p>
-</section>
-<section id="adding-or-modifying-content" class="level2" data-number="A.2">
-<h2 data-number="A.2" class="anchored" data-anchor-id="adding-or-modifying-content"><span class="header-section-number">A.2</span> Adding or modifying content <span class="emoji" data-emoji="pencil2">✏️</span></h2>
-<p>To contribute to <code>dmp</code>, you first need to install <a href="https://docs.astral.sh/uv/">uv</a> and <a href="https://just.systems/man/en/packages.html">justfile</a>. We use uv and justfile to manage our project, such as to run checks and test the template. Both the uv and justfile websites have a more detailed guide on using uv, but below are some simple instructions to get you started.</p>
-<p>It’s easiest to install uv and justfile using <a href="https://pypa.github.io/pipx/">pipx</a>, so install that first. Then, install uv and justfile by running:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pipx</span> install uv rust-just</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>We keep all our development workflows in the <code>justfile</code>, so you can explore it to see what commands are available. To see a list of commands available, run:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">just</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>As you contribute, make sure your changes will pass our checks by opening a terminal so that the working directory is the root of this project’s repository and running:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">just</span> run-all</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>When committing changes, please follow the <a href="https://decisions.seedcase-project.org/why-conventional-commits">Conventional Commits specification</a> in your commit messages. Using this convention allows us to be able to automatically create releases based on the commit message by using <a href="https://decisions.seedcase-project.org/why-semantic-release-with-commitizen">Commitizen</a>. If you don’t use Conventional Commits when making a commit, we will revise the pull request title to follow that format, as we use <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/squashing-commits/about-squash-merges">squash merges</a> when merging pull requests, so all other commits in the pull request will be squashed into one commit.</p>
+<p>ON LiMiT collects data from multiple sources, including biological samples, questionnaires, and electronic tools. Data originates from participants, healthcare professionals, and bioanalysts, and is stored securely on GenomeDK servers for subsequent analysis. The diagram below illustrates the context of ON LiMiT, key users, and data providers:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-c4-context" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c4-context-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-c4-context">flowchart TD
+
+Bioanalyst(["&lt;b&gt;Bioanalyst&lt;/b&gt;&lt;br&gt;&lt;i&gt;[person]&lt;/i&gt;&lt;br&gt;working with the analysis of physical samples."])
+Healthprof(["&lt;b&gt;Healthcare professional&lt;/b&gt;&lt;br&gt;&lt;i&gt;[person]&lt;/i&gt;&lt;br&gt;working with the participants in the study."])
+Participant(["&lt;b&gt;Participant&lt;/b&gt;&lt;br&gt;&lt;i&gt;[person]&lt;/i&gt;&lt;br&gt;participating in the study."])
+Datamanager(["&lt;b&gt;Data Manager&lt;/b&gt;&lt;br&gt;&lt;i&gt;[person]&lt;/i&gt;&lt;br&gt;working with retrieval and storage of data."])
+Researcher(["&lt;b&gt;Researcher&lt;/b&gt;&lt;br&gt;&lt;i&gt;[person]&lt;/i&gt;&lt;br&gt;interested in doing additional analysis of existing data."])
+
+onlimit[["&lt;b&gt;ON LiMiT&lt;/b&gt;&lt;br&gt;&lt;i&gt;[system]&lt;/i&gt;&lt;br&gt;the ON LiMiT system will be comprised of REDCap and GenomeDK.&lt;br&gt;REDCap receives raw data; GenomeDK stores cleaned data."]]
+DS[["&lt;b&gt;Denmark Statistics&lt;/b&gt;&lt;br&gt;&lt;i&gt;[system]&lt;/i&gt;&lt;br&gt;Closed analysis tool where data from ON LiMiT can be uploaded."]]
+DP[["&lt;b&gt;Data Collectors&lt;/b&gt;&lt;br&gt;&lt;i&gt;[systems]&lt;/i&gt;&lt;br&gt;Monsenso, MyFood24,&lt;br&gt;Food preferences app,&lt;br&gt;SENS, Libre CGM,&lt;br&gt;Clinic: biological samples."]]
+
+onlimit:::system
+DP:::external
+DS:::external
+Bioanalyst --&gt; DP
+Healthprof --&gt; DP
+Participant --&gt; DP
+Datamanager --&gt; DP
+DP --&gt; onlimit
+Researcher --&gt; onlimit
+onlimit --&gt; DS
+Researcher --&gt; DS
+
+classDef system stroke-width:4pt
+classDef external fill:lightgrey
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c4-context-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: C4 Context diagram showing a basic overview of ON LiMiT, its anticipated users, and data providers.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="technical-infrastructure" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="technical-infrastructure"><span class="header-section-number">2.1</span> Technical infrastructure</h2>
+<p>The Container diagram shows the main components of the ON LiMiT data infrastructure, including data sources, storage, and analysis tools. It provides an overview of how the data is collected, stored, and made available for analysis.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-c4-container" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c4-container-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-c4-container">flowchart TD
+Data[("Data&lt;br&gt;[Software system]&lt;br&gt;all electronic data generated by staff and participants using various tools" )]
+Samples(["Biological samples&lt;br&gt;[objects]&lt;br&gt;collected from study participants and stored on ice" ])
+Redcap[("REDCap&lt;br&gt;[database]&lt;br&gt;database mainly used for collecting data from staff about participants" )]
+Biobank[["Biobank&lt;br&gt;[facility]&lt;br&gt;storage-facility for biological samples" ]]
+Sprout[["Seedcase Sprout&lt;br&gt;[software]&lt;br&gt;software package aiding in documenting and storage of data" ]]
+Genome[("GenomeDK&lt;br&gt;[system]&lt;br&gt;HPC facility where processed data will be stored" )]
+Analysis[["Analysis Area on GenomeDK&lt;br&gt;[system]&lt;br&gt;facility via GenomeDK where data can be made available for researchers" ]]
+DS[["Denmark Statistics&lt;br&gt;[system]&lt;br&gt;closed analysis tool where data from ON LiMiT can be uploaded" ]]
+Flower[["Seedcase Flower&lt;br&gt;[software]&lt;br&gt;software package aiding with creating an overview of the ON LiMiT dataset" ]]
+Website[("Website&lt;br&gt;[systems]&lt;br&gt;website showing the data dictionary for ON LiMiT data" )]
+Researcher(["Researcher&lt;br&gt;[person]&lt;br&gt;interested in doing additional analysis of existing data" ])
+
+subgraph i1 [&lt;b&gt;ON LiMiT environment&lt;/b&gt;]
+    Redcap --&gt; Sprout
+    Biobank ~~~ Sprout
+    subgraph i2 [ ]
+        Sprout --&gt; Genome
+        Genome --&gt; Flower
+        Genome -.-&gt; Analysis
+    end
+    Genome --&gt; DS
+    Flower --&gt; Website
+end
+
+Data:::external --&gt; Sprout
+Data --&gt; Redcap
+i1:::system
+i2:::hidden
+Samples:::external --&gt; Redcap
+Samples --&gt; Biobank
+Researcher:::external
+Researcher --&gt; DS
+Researcher --&gt; Analysis
+Researcher --&gt; Website
+
+classDef system fill:none
+classDef external fill:lightgrey
+classDef hidden fill:none, stroke-width:0
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c4-container-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: C4 Container diagram showing the main components of ON LiMiT data infrastructure, including data sources, storage, and analysis tools.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -678,13 +732,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./sections/responsibilities.html" class="pagination-link" aria-label="Responsibilities and resources">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Responsibilities and resources</span></span>
+      <a href="../index.html" class="pagination-link" aria-label="Welcome!">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome!</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./CHANGELOG.html" class="pagination-link" aria-label="Changelog">
-        <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Changelog</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../sections/collection.html" class="pagination-link" aria-label="Data collection">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data collection</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -697,12 +751,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link active" href="./LICENSE.html" aria-current="page">
+    <a class="nav-link active" href="../LICENSE.html" aria-current="page">
 <p>Licensed under CC BY 4.0</p>
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/CONTRIBUTING.md" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/CONTRIBUTING.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/onlimit-study/dmp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/onlimit-study/dmp/edit/main/sections/sources.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/onlimit-study/dmp/blob/main/sections/sources.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
