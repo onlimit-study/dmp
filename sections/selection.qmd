@@ -46,7 +46,6 @@ subject to an application and approval process.
 
 <!--TODO Daniel to check if we can publish the publication guidance (and the correct name)-->
 
-<!--TODO Consider if some curated data sets should be made available on Zenodo or the likes-->
 
 ## Long-term strategy
 
