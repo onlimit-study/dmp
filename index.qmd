@@ -2,14 +2,41 @@
 title: "Welcome!"
 ---
 
-This website contains the documentation for the design and architecture
-of ON-LiMiT's data collection, processing, and storage. Mostly it
-contains the [Data Management
-Plan](https://en.wikipedia.org/wiki/Data_management_plan) (DMP) for the
-study.
+# ON LiMiT Data Management Plan (DMP)
+
+ON LiMiT (Optimal Non-pharmacological Lifestyle Modifications in people
+with Type 2 diabetes) is a large Danish intervention study investigating
+the maintenance of remission of type 2 diabetes through weight loss,
+diet, and exercise. The project runs from 2025 to 2030 and will involve
+1,500 participants with type 2 diabetes.
+
+The project has been awarded approximately DKK 102 million by the Novo
+Nordisk Foundation (Grant Number NNF24SA0097844).
+
+## Collaborations
+
+The project is being conducted in Aarhus, Odense, and Copenhagen and is
+a collaboration between Steno Diabetes Center Aarhus, Steno Diabetes
+Center Odense, Steno Diabetes Center Copenhagen, Bispebjerg Hospital,
+and the Department of Nutrition, Exercise and Sports and the Center for
+Basic Metabolic Research at the University of Copenhagen.
+
+## Purpose of the data management plan
+
+Although the ON LiMiT study has been classified as not being a clinical
+drug trial by the Danish Medical Agency (DMA), we have chosen to align
+with best practices for clinical trials wherever possible. While a Data
+Management Plan (DMP) is not mandatory for a study such as ON LiMiT, it
+is strongly recommended for all research studies. This DMP ensures
+transparency, compliance, and integrity in handling participant data
+throughout the project lifecycle.
+
+## Governance and maintenance
 
 We follow a modified version of a DMP template from
 [DeiC](https://deic.dk/en/data-management), mainly around how we
 describe access to data.
 
-<!-- TODO Flesh this out more before publishing -->
+This document will be maintained by members of the study team and has
+been approved for publication on the project website by the Project
+Manager on behalf of the Chief Investigator.
