@@ -32,7 +32,6 @@ two-year participation window per participant, with the last
 participant's final visit expected in 2032. Retention commitments extend
 well beyond this timeline to support future research.
 
-
 ## Access and future use
 
 To maximise reuse, we will develop a searchable website to enable
@@ -42,8 +41,6 @@ access is expected to be of particular interest to the study team. In
 accordance with the Publications Guidance, data will be made available
 to a wider research community once primary findings have been published,
 subject to an application and approval process.
-
-
 
 ## Long-term strategy
 
