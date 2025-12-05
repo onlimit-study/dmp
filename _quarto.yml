@@ -35,6 +35,7 @@ book:
     - sections/metadata.qmd
     - sections/ethics.qmd
     - sections/storage.qmd
+    - sections/selection.qmd
     - sections/sharing.qmd
     - sections/responsibilities.qmd
   appendices:
