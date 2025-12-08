@@ -36,7 +36,7 @@ well beyond this timeline to support future research.
 
 To maximise reuse, we will develop a searchable website to enable
 discovery of available variables and datasets, as described in the
-[Documentation and metadata section](sections/metadata.qmd). Initially,
+[Documentation and metadata section](/sections/metadata.qmd). Initially,
 access is expected to be of particular interest to the study team. In
 accordance with the Publications Guidance, data will be made available
 to a wider research community once primary findings have been published,
