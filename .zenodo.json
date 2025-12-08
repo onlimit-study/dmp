@@ -16,8 +16,8 @@
       "orcid": "0000-0003-4169-2616"
     }
   ],
-  "title": "TODO: The title of the website, shown as the landing page on Zenodo",
-  "description": "TODO: Fill in abstract of website, will be shown on Zenodo landing page",
+  "title": "Data management plan for the ON LiMiT dietary intervention study",
+  "description": "ON LiMiT (Optimal Non-pharmacological Lifestyle Modifications in people with Type 2 diabetes) is a large Danish intervention study investigating the maintenance of remission of type 2 diabetes through weight loss, diet, and exercise. The project runs from 2025 to 2030 and will involve 1,500 participants with type 2 diabetes. This contains the data management plan for the study.",
   "access_right": "open",
   "related_identifiers": [
     {
@@ -27,7 +27,7 @@
     }
   ],
   "keywords": [
-    "quarto website",
+    "dietary intervention",
     "data management plan",
     "data management"
   ],
