@@ -47,10 +47,10 @@ The name of the forms (instruments) must indicate whether:
 -   The form is used during a visit to record participant data.
 
 All variable names and descriptions must indicate the visit to which
-they belong. This should be specified: 
+they belong. This should be specified:
 
 - At the end of the variable name
-(e.g., `_v1`, `_v2`, etc.), or 
+(e.g., `_v1`, `_v2`, etc.), or
 
 - In the description (e.g., *Visit X*).
 
