@@ -11,8 +11,7 @@ book:
       orcid: "0000-0001-7556-9566"
     - name: "Daniel Ibsen"
       affiliation: "Steno Diabetes Center Aarhus"
-      # TODO: Add ORCID
-      # orcid: ""
+      orcid: "0000-0002-7038-4770"
     - name: "Luke Johnston"
       affiliation: "Steno Diabetes Center Aarhus"
       orcid: "0000-0003-4169-2616"
