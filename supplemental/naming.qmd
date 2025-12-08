@@ -117,15 +117,15 @@ the following elements:
 -   **Who** the value belongs to (optional). Used only if it is not the
     participant (e.g., staff member)
 
--   **What** – What is being measured (mandatory) Provide a short and
+-   **What** is being measured (mandatory). Provide a short and
     precise description of the measurement
 
--   **Unit** – Measurement unit (if relevant) e.g., kg, mmol/L, minutes
+-   **Unit** of measurement (if relevant), e.g., kg, mmol/L, minutes
 
--   **Where/How** – Where or how it was measured (if possible) e.g.,
-    “measured with digital scale”
+-   **Where or how** it was measured (if possible), e.g.,
+    "measured with digital scale"
 
--   **Visit** – Visit number (mandatory) Used to distinguish between
+-   **Visit** number (mandatory). Used to distinguish between
     repeated measurements and to place the variable on the study
     timeline
 
@@ -138,8 +138,8 @@ the following elements:
 
 | Category | Rule | Example |
 |------------------|---------------------------|---------------------------|
-| **File Naming** | `[participantID]_v[visit]-[repeat]_[dataorigin].ext` | `3_v4_dxa.csv` or `3_v4-5_finapres.csv` |
-| **Variable Naming** | `[descriptive_name]_vX` for visit data<br>`[descriptive_name]_wfvX` for workflow | `weight_v1`<br>`bloodsamples_wfv1` |
-| **Visit Description** | Always include visit number in description | `Visit 1` |
-| **Workflow Description** | Preparations: `Workflow. Preparations for visit X`<br>During visit: `Workflow. Visit X` | `Workflow. Preparations for visit 1`<br>`Workflow. Visit 1` |
-| **Variable Description Elements** | Who (optional), What (mandatory), Unit (if relevant), Where/How (if possible), Visit (mandatory) | `Participant’s weight in kilograms, measured wearing light clothing using a digital scale. Measured to the nearest 0.1 kg. Visit 1.` |
+| **File naming** | `[participantID]_v[visit]-[repeat]_[dataorigin].ext` | `3_v4_dxa.csv` or `3_v4-5_finapres.csv` |
+| **Variable naming** | `[descriptive_name]_vX` for visit data, `[descriptive_name]_wfvX` for workflow | `weight_v1` or `bloodsamples_wfv1` |
+| **Visit description** | Always include visit number in description | `Visit 1` |
+| **Workflow description** | Preparations: "Workflow. Preparations for visit X". During visit: "Workflow. Visit X" | "Workflow. Preparations for visit 1" or "Workflow. Visit 1" |
+| **Variable description elements** | Who (optional), what (mandatory), unit (if relevant), where or how (if possible), visit (mandatory) | "Participant's weight in kilograms, measured wearing light clothing using a digital scale. Measured to the nearest 0.1 kg. Visit 1." |
