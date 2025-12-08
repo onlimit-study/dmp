@@ -29,14 +29,16 @@ book:
     type: textbox
   chapters:
     - index.qmd
-    - sections/sources.qmd
-    - sections/collection.qmd
-    - sections/metadata.qmd
-    - sections/ethics.qmd
-    - sections/storage.qmd
-    - sections/selection.qmd
-    - sections/sharing.qmd
-    - sections/responsibilities.qmd
+    - part: "Sections"
+      chapters:
+      - sections/sources.qmd
+      - sections/collection.qmd
+      - sections/metadata.qmd
+      - sections/ethics.qmd
+      - sections/storage.qmd
+      - sections/selection.qmd
+      - sections/sharing.qmd
+      - sections/responsibilities.qmd
   appendices:
     - CONTRIBUTING.md
     - CHANGELOG.md
