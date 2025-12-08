@@ -1,56 +1,60 @@
-# How to name and describe research data files and variables in ON LiMiT
+# Naming of files and variables
 
-The purpose of this instruction is to ensure consistent and systematic
-naming and description of research data in **ON LiMiT**. A uniform
+The purpose of this section is to ensure we follow a consistent and systematic
+naming and description of our research data. A uniform
 structure makes it easier to identify, understand, and analyse data
 across visits and preparatory activities. It also supports correct
 workflow configuration and contributes to data quality and traceability
 in the study.
 
-**Language Requirements:** All names and descriptions must be written in
-**UK English**.
+All names and descriptions must be written in
+UK English.
 
 ## Files
 
-In general, a file uploaded either to **REDCap** or directly to
-**GenomeDK** should contain:
+In general, a file uploaded either to REDCap or directly to
+GenomeDK should contain:
 
 -   The ID of the participant
 -   The origin of the data (often a sensor or a scanner)
 -   Which visit the data originates from
 -   Which repeat of the test it shows (where relevant)
 
-**Examples:**
+For example:
 
-`3_v4_dxa.csv` *(Participant 3, visit 4, DXA scanning)*
+- `3_v4_dxa.csv`: Participant 3, visit 4, DXA scanning
 
-`3_v4-5_finapres.csv` *(Participant 3, visit 4, run number 5 of the
-finapres scanning)*
+- `3_v4-5_finapres.csv`: Participant 3, visit 4, run number 5 of the
+finapres scanning
 
 **Naming Rules:**
 
--   Use an **underscore** to separate individual items (who, when,
+-   Use an underscore (`_`) to separate individual items (who, when,
     what).
--   Use a **hyphen** to indicate multiple measurements at the same
+-   Use a hyphen (`-`) to indicate multiple measurements at the same
     visit.
 
 ## Variables
 
-This section assumes **REDCap** is used for data collection. Instruments
-(forms) contain fields for each variable, with both a **field name** and
-a **field annotation** for descriptions.
+This section assumes REDCap is used for data collection. Instruments
+(forms) contain fields for each variable, with both a field name and
+a field annotation for descriptions.
 
 The name of the forms (instruments) must indicate whether:
 
--   The form is used **for preparations** before a participant’s visit,
+-   The form is used for preparation before a participant's visit,
     or
--   The form is used **during a visit** to record participant data.
+-   The form is used during a visit to record participant data.
 
 All variable names and descriptions must indicate the visit to which
-they belong. This should be specified: - At the end of the variable name
-(e.g., `_v1`, `_v2`, etc.), or - In the description (e.g., *Visit X*).
+they belong. This should be specified: 
 
-::: {.callout-tip appearance="default"}
+- At the end of the variable name
+(e.g., `_v1`, `_v2`, etc.), or 
+
+- In the description (e.g., *Visit X*).
+
+::: {.callout-tip}
 In REDCap you can use the Action Tag / Field Annotation section
 (currently situated at the bottom left) to capture the variable
 descriptions.
@@ -58,7 +62,7 @@ descriptions.
 
 ### General requirements for all visits
 
-Each visit must **begin** by recording:
+Each visit must begin by recording:
 
 -   Date of the visit
 -   Initials for the project visit
@@ -66,16 +70,16 @@ Each visit must **begin** by recording:
 -   Whether a relative is present
 -   Who the relative is
 
-It is important to use the **same variable names** for these items, only
+It is important to use the same variable names for these items, only
 changing the visit number as appropriate.
 
-Each visit must **end** with:
+Each visit must end with:
 
 -   A description of any points of attention prior to the next visit (if
     any)
 -   A summary and general comments on the visit
 
-::: {.callout-tip appearance="default"}
+::: {.callout-tip}
 In REDCap these can be copied from one visit to another, but ensure that
 for instance `v1` / `visit 1` is updated to the correct visit number.
 :::
@@ -84,8 +88,8 @@ for instance `v1` / `visit 1` is updated to the correct visit number.
 
 It is important to distinguish between:
 
--   Instruments/variables belonging to **the actual visit**
--   Instruments/variables related to **preparations for the visit**
+-   Instruments/variables belonging to the actual visit
+-   Instruments/variables related to preparations for the visit
     (These are mainly for internal workflows and practicalities)
 
 ### Naming conventions
@@ -111,7 +115,7 @@ It is important to distinguish between:
 Action tags should follow a streamlined description, ideally including
 the following elements:
 
--   **Who** – Who the value belongs to (optional) Used only if it is not
+-   **Who** the value belongs to (optional). Used only if it is not
     the participant (e.g., staff member)
 
 -   **What** – What is being measured (mandatory) Provide a short and
@@ -128,16 +132,16 @@ the following elements:
 
 **Example:**
 
-Participant’s weight in kilograms, measured wearing light clothing using
+- Participant's weight in kilograms, measured wearing light clothing using
 a digital scale. Measured to the nearest 0.1 kg. Visit 1.
 
 ------------------------------------------------------------------------
 
 ## Quick reference
 
-| **Category** | **Rule** | **Example** |
+| Category | Rule | Example |
 |------------------|---------------------------|---------------------------|
-| **File Naming** | `[participantID]_v[visit]-[repeat]_[dataorigin].ext` | `3_v4_dxa.csv`<br>`3_v4-5_finapres.csv` |
+| **File Naming** | `[participantID]_v[visit]-[repeat]_[dataorigin].ext` | `3_v4_dxa.csv` or `3_v4-5_finapres.csv` |
 | **Variable Naming** | `[descriptive_name]_vX` for visit data<br>`[descriptive_name]_wfvX` for workflow | `weight_v1`<br>`bloodsamples_wfv1` |
 | **Visit Description** | Always include visit number in description | `Visit 1` |
 | **Workflow Description** | Preparations: `Workflow. Preparations for visit X`<br>During visit: `Workflow. Visit X` | `Workflow. Preparations for visit 1`<br>`Workflow. Visit 1` |
