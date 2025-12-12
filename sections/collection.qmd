@@ -51,13 +51,15 @@ soon as it is finished.
 
 ## Estimated raw data volumes for the feasibility study
 
-- REDCap clinical data: Unknown size at present.
-- Liva app data: Unknown size at present.
-- MyFood24 dietary logs: Unknown size at present.
-- Sensor data (SENS, Libre): Unknown size at present.
-- Scanner data:
-    - VO2Max: 20KB times 1 reading per visit, 4 visits = 20x4x24 = 2MB.
-    - Finapres: 60KB times 8 readings per visit, 6 visits = 60x8x6x24 = 69MB.
+-   REDCap clinical data: Unknown size at present.
+-   Liva app data: Unknown size at present.
+-   MyFood24 dietary logs: Unknown size at present.
+-   Sensor data (SENS, Libre): Unknown size at present.
+-   Scanner data:
+    -   VO2Max: 20KB times 1 reading per visit, 4 visits = 20x4x24 =
+        2MB.
+    -   Finapres: 60KB times 8 readings per visit, 6 visits = 60x8x6x24
+        = 69MB.
 
 ## Data aggregation and storage
 
