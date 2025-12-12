@@ -1,4 +1,4 @@
-# Data Sharing
+# Data sharing
 
 Sharing data from research projects is essential for promoting
 transparency, reproducibility, and collaboration within the scientific
