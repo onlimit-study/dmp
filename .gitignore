@@ -17,6 +17,7 @@ _temp/
 /.quarto/
 docs/.quarto/
 **/*.quarto_ipynb
+*_files
 
 # Website generation
 _site
