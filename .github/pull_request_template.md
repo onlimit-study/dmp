@@ -4,7 +4,7 @@ EXPLANATION
 
 Closes #
 
-This PR needs a quick/an in-depth review.
+Needs a quick/thorough review.
 
 ## Checklist
 
