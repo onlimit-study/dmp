@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "ON-LiMiT DMP"
+  title: "ON LiMiT Data Management Plan"
   site-url: "https://onlimit-study.github.io/dmp/"
   repo-url: "https://github.com/onlimit-study/dmp"
   author:
@@ -11,8 +11,7 @@ book:
       orcid: "0000-0001-7556-9566"
     - name: "Daniel Ibsen"
       affiliation: "Steno Diabetes Center Aarhus"
-      # TODO: Add ORCID
-      # orcid: ""
+      orcid: "0000-0002-7038-4770"
     - name: "Luke Johnston"
       affiliation: "Steno Diabetes Center Aarhus"
       orcid: "0000-0003-4169-2616"
@@ -22,7 +21,7 @@ book:
   navbar:
     background: white
     logo: _extensions/onlimit-study/onlimit-theme/images/logo.png
-    logo-alt: "ON-LiMiT logo, with apple in the O and a person running under the LIMIT text."
+    logo-alt: "ON LiMiT logo, with apple in the O and a person running under the LIMIT text."
     title: false
     pinned: true
   search:
@@ -30,14 +29,16 @@ book:
     type: textbox
   chapters:
     - index.qmd
-    - sections/sources.qmd
-    - sections/collection.qmd
-    - sections/metadata.qmd
-    - sections/ethics.qmd
-    - sections/storage.qmd
-    - sections/selection.qmd
-    - sections/sharing.qmd
-    - sections/responsibilities.qmd
+    - part: "Sections"
+      chapters:
+      - sections/sources.qmd
+      - sections/collection.qmd
+      - sections/metadata.qmd
+      - sections/ethics.qmd
+      - sections/storage.qmd
+      - sections/selection.qmd
+      - sections/sharing.qmd
+      - sections/responsibilities.qmd
   appendices:
     - CONTRIBUTING.md
     - CHANGELOG.md

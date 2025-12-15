@@ -97,6 +97,8 @@ responsibility of the Project Management Panel to ensure.
 
 <!--TODO The guidance from DeiC recommends that individuals are named where possible, do we want to do that here?-->
 
+::: content-hidden
 ## Resources
 
 <!--TODO List specific tools used for backup and recovery as well as apps etc. Will need input from Daniel -->
+:::
