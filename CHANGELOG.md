@@ -9,6 +9,22 @@ often, sometimes several in a day. It also means any individual release
 will not have many changes within it. Below is a list of releases along
 with what was changed within it.
 
+## 0.3.0 (2025-12-15)
+
+### Feat
+
+- :sparkles: naming convention for files and variables (#146)
+
+### Fix
+
+- :bug: correct list formatting (#160)
+
+## 0.2.1 (2025-12-12)
+
+### Fix
+
+- :bug: section should be hidden for now (#161)
+
 ## 0.2.0 (2025-12-08)
 
 ### Feat
