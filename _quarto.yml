@@ -57,6 +57,14 @@ format:
     theme:
       - brand
   pdf:
+    include-in-header:
+      text: |
+        \usepackage{scrlayer-scrpage}
+        \pagestyle{scrheadings}
+        \clearpairofpagestyles
+        \rohead*{\today}
+        \cofoot*{\pagemark}
+        \rofoot*{CC-BY 4.0}
     from: markdown+emoji
     fontsize: 11pt
     papersize: a4
