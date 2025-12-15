@@ -2,12 +2,41 @@
 
 Since we follow [Conventional
 Commits](https://decisions.seedcase-project.org/why-conventional-commits),
-we're able to automatically create a release with
+we're able to automatically create formal "releases" of the website
+based on our commit messages. Releases in the context of websites are
+simply snapshots in time of the website content. We use
 [Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen)
-based on the commit messages. This means that releases can happen quite
-often, sometimes several in a day. It also means any individual release
-will not have many changes within it. Below is a list of releases along
-with what was changed within it.
+to automatically create these releases using
+[SemVer](https://semverdoc.org) as the version numbering scheme.
+
+Because releases are created based on commit messages, a new release is
+created quite often---sometimes several times in a day. This also means
+that any individual release will not have many changes within it. Below
+is a list of the releases we've made so far, along with what was changed
+within each release.
+
+## 0.3.1 (2025-12-15)
+
+### Refactor
+
+- :recycle: rearrange content on the landing page (#148)
+- :recycle: match the headers with the others to be consistent (#154)
+
+## 0.3.0 (2025-12-15)
+
+### Feat
+
+- :sparkles: naming convention for files and variables (#146)
+
+### Fix
+
+- :bug: correct list formatting (#160)
+
+## 0.2.1 (2025-12-12)
+
+### Fix
+
+- :bug: section should be hidden for now (#161)
 
 ## 0.2.0 (2025-12-08)
 
