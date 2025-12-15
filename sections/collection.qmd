@@ -103,7 +103,7 @@ and their interactions.
 ```{mermaid}
 %%| label: fig-c4-context
 %%| fig-cap: "Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage."
-%%| column: page-right
+%%| fig-width: 100%
 flowchart LR
 
 Lab(["<b>Lab staff</b><br>collecting and analysing biological samples from participants."])
