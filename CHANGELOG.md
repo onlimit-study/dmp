@@ -15,6 +15,12 @@ that any individual release will not have many changes within it. Below
 is a list of the releases we've made so far, along with what was changed
 within each release.
 
+## 0.4.1 (2025-12-15)
+
+### Fix
+
+- :bug: set `fig-width` explicitly to fix PDF sizing (#167)
+
 ## 0.4.0 (2025-12-15)
 
 ### Feat
