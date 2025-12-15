@@ -3,7 +3,7 @@ project:
 
 book:
   title: "ON LiMiT Data Management Plan"
-  site-url: "https://onlimit-study.github.io/dmp/"
+  site-url: "https://dmp.onlimit.org/"
   repo-url: "https://github.com/onlimit-study/dmp"
   author:
     - name: "Kristiane Beicher"
