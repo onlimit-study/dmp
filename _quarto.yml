@@ -27,6 +27,7 @@ book:
   search:
     location: navbar
     type: textbox
+  downloads: [pdf]
   chapters:
     - index.qmd
     - part: "Sections"
@@ -42,8 +43,6 @@ book:
   appendices:
     - CONTRIBUTING.md
     - CHANGELOG.md
-    - text: "License"
-      href: LICENSE.md
   tools:
     - icon: github
       href: "https://github.com/onlimit-study/dmp"
@@ -57,6 +56,23 @@ format:
   onlimit-theme-html:
     theme:
       - brand
+  pdf:
+    include-in-header:
+      text: |
+        \usepackage{scrlayer-scrpage}
+        \pagestyle{scrheadings}
+        \clearpairofpagestyles
+        \rohead*{\today}
+        \cofoot*{\pagemark}
+        \rofoot*{CC-BY 4.0}
+    from: markdown+emoji
+    fontsize: 11pt
+    papersize: a4
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
 
 editor:
   markdown:
