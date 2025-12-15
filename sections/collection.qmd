@@ -95,7 +95,7 @@ Architect.
 
 <!--TODO Do we need any checks on the API and FTP transfers?-->
 
-## Visualisation of data flow in ON LiMiT
+## Visualisation of data flow
 
 Underneath the diagram is a more detailed description of the components
 and their interactions.

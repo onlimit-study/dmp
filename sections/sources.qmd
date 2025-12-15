@@ -1,4 +1,4 @@
-# Illustrated data sources and flow
+# Data sources and flow
 
 ON LiMiT collects data from multiple sources, including biological
 samples, questionnaires, and electronic tools. Data originates from
