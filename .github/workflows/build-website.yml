@@ -11,5 +11,9 @@ permissions: read-all
 jobs:
   build-website:
     uses: seedcase-project/.github/.github/workflows/reusable-build-docs.yml@main
+    with:
+      tinytex: true
     secrets:
       netlify-token: ${{ secrets.NETLIFY_TOKEN }}
+      # For installing TinyTex
+      github-token: ${{ secrets.GITHUB_TOKEN }}
