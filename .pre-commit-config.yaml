@@ -19,7 +19,7 @@ repos:
         args: [--assume-in-merge]
 
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.11.2
+    rev: v4.12.0
     hooks:
       - id: commitizen
 
