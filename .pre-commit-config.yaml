@@ -19,7 +19,7 @@ repos:
         args: [--assume-in-merge]
 
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.12.0
+    rev: v4.12.1
     hooks:
       - id: commitizen
 
@@ -27,6 +27,6 @@ repos:
   # sub-packages, which confuses pre-commit when it tries to find the latest
   # version
   - repo: https://github.com/adhtruong/mirrors-typos
-    rev: v1.42.0
+    rev: v1.42.1
     hooks:
       - id: typos
