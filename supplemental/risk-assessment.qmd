@@ -7,7 +7,7 @@ date-modified: 2026-02-24
 
 ::: callout-note
 This document was converted from Aarhus University's official form that
-was a Word document into Markdown and mostly reflects the content from 
+was a Word document into Markdown and mostly reflects the content from
 that document. Some content in the original form was not relevant for
 this website and so was removed.
 :::
