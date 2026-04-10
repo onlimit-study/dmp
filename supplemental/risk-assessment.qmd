@@ -68,17 +68,16 @@ _**Are you processing some of the following data in the project? (*Please tick r
 - [ ] Data relating to criminal offences
 - [ ] Data indirectly indicating criminal acts
 
-Description: None of the above
+Description: None of the above.
 
 _**Does your project include confidential personal data?**_
 
-(*such as civil registration no. (CPR no.) and data considered confidential under other legislation*)
+For example, civil registration no. (CPR no.) and data considered confidential under other legislation.
 
 - [X] Yes
-
 - [ ] No
 
-Description: We will be collecting and storing cpr numbers, with a view to linking the collected health data with register data at a later date. We will not be collecting information about work or education, but this will be available through the registers.
+Description: We will be collecting and storing CPR numbers, with a view to linking the collected health data with register data at a later date. We will not be collecting information about work or education, but this will be available through the registers.
 
 Describe the identifiability of the data subject's personal data. *E.g. directly identifiable data such as name and address, or more indirectly identifiable data such as CPR no., photos, biometrics, genetics*
 
@@ -89,7 +88,6 @@ The data will be collected using REDCap, where all of the above-mentioned person
 _**Has the personal data been pseudonymised or encrypted? (*Please tick relevant box*)**_
 
 - [X] Yes
-
 - [ ] No
 
 If yes, how? The data will be available to a small group of staff members while the study is ongoing, this can't be helped as data will have to be collected over a two-year period. This data will be available through REDCap. Once data is moved to GenomeDK all data mentioned in this assessment will be stored separately and with encryption applied using a tool developed at GenomeDK.
@@ -101,7 +99,6 @@ Description: People with Type 2 Diabetes diagnosed within the last 6 years.
 _**Are you collecting personal data with or without consent pursuant to data protection laws on the processing of data? (*Please tick relevant box*)**_
 
 - [X] With consent pursuant to data protection laws
-
 - [ ] Without consent pursuant to data protection laws
 
 _**From where are you collecting personal data if not from the data subject himself or herself? E.g. Statistics Denmark, registers, public authorities and universities abroad**_
@@ -111,55 +108,49 @@ Description: The main data will be collected directly from participants. We subs
 _**Has the information duty been fulfilled in relation to the data subjects? (*Please tick relevant box*)**_
 
 - [X] Yes
-
 - [ ] No
 
 If yes, how? They have received a description of what we will be doing with their data as part of the informed consent process.
 
-## 4 Data processor, shared data responsibility and sharing personal data with external parties
+## Data processor, shared data responsibility and sharing personal data with external parties
 
 _**Are you planning to use an external data processor? (*Please tick relevant box*)**_
 
 - [X] Yes
-
 - [ ] No
 
 **Data processor: **
 
-LIVA Healthcare <br>
-Danneskiold Samsøes Allé 41 <br>
-1434 København K <br>
+LIVA Healthcare\
+Danneskiold Samsøes Allé 41\
+1434 København K\
 Denmark
 
-Email: info\@livahealth.com
-
-Central business registration number: 38737368
+- Email: info\@livahealth.com
+- Central business registration number: 38737368
 
 Is the data processor within or outside the EU/EEA?
 
 - [X] Within the EU/EEA
-
 - [ ] Outside the EU/EEA
 
 What processing will the data processor be performing? LIVA Healthcare provides an app which will allow staff and participants to communicate with each other in a secure electronic way. It will facilitate online sessions, push of information, completion of questionnaires, as well as peer support within randomisation groups. The app will hold basic personal information as well as a few pieces of health data (blood pressure, finger prick results, etc).
 
 **Data processor: **
 
-MyFood24 <br>
-University of Leeds <br>
-Discovery Way <br>
-Leeds <br>
-LS2 3AA <br>
+MyFood24\
+University of Leeds\
+Discovery Way\
+Leeds\
+LS2 3AA\
 United Kingdom
 
-Email: www.myfood24.org/contact-us/
-
-Registration with Companies House (CH) 10568730
+- Email: www.myfood24.org/contact-us/
+- Registration with Companies House (CH) 10568730
 
 Is the data processor within or outside the EU/EEA?
 
 - [X] Within the EU/EEA (The data is stored and processes by Coherent (CH no 08659933) with servers located in Dublin, Ireland)
-
 - [ ] Outside the EU/EEA
 
 What processing will the data processor be performing? MyFood24 will provide an interface which will allow participants to register in minute details everything they consume over
