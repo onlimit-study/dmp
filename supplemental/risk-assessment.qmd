@@ -160,42 +160,36 @@ a couple of set time periods. The company has a very large database of food prod
 _**Are you planning to enter into an agreement on shared data responsibility? (*Please tick relevant box*)**_
 
 - [X] Yes
-
 - [ ] No
 
 If yes, with whom?
 
 Joint Data Controller:
 
-Steno Diabetes Centre Copenhagen <br>
-Borgmester Ib Juuls vej 83 <br>
-2730 Herlev <br>
-Denmark
-
-Central business registration number: CVR 2919 0623
+Steno Diabetes Centre Copenhagen\
+Borgmester Ib Juuls vej 83\
+2730 Herlev\
+Denmark\
+CVR: 2919 0623
 
 _**Are you planning to share (disclose) personal data with others within the EU/EEA? (*Please tick relevant box*)**_
 
 - [ ] Yes
-
 - [X] No
 
 _**Are you planning to share (disclose) personal data with others outside the EU/EEA? (*Please tick relevant box*)**_
 
 - [ ] Yes
-
 - [X] No
 
 _**Are you planning to share (disclose) biological material with others [outside AU and without consent from the data subject pursuant to data protection laws? (*Please tick relevant box*)**_
 
 - [ ] Yes
-
 - [X] No
 
-_**Are you planning to publish personal data in a recognised scientific journal or similar [without consent from the data subject pursuant to data protection laws]{.underline}? (*Please tick relevant box*)**_
+_**Are you planning to publish personal data in a recognised scientific journal or similar without consent from the data subject pursuant to data protection laws? (*Please tick relevant box*)**_
 
 - [ ] Yes
-
 - [X] No
 
 ## 5 Storage of personal data
@@ -203,18 +197,12 @@ _**Are you planning to publish personal data in a recognised scientific journal 
 _**How are you planning to store personal data? (*Please tick relevant box*)**_
 
 - [ ] SIF
-
 - [ ] Personal network drive at AU (U drive)/OneDrive
-
 - [X] SurveyXact, [REDCap]{.underline}, O drive, Sharepoint, etc. (see [data
 classification](https://medarbejdere.au.dk/informationssikkerhed/klassifikation-af-data/))
-
 - [ ] Statistics Denmark's servers in pseudonymised form
-
 - [ ] Locked cabinet/drawer/freezer in locked room
-
 - [ ] Ad hoc solutions approved by AU IT
-
 - [X] Other, please state: GenomeDK server at AU
 
 _**Will there be structured pseudonymisation, deletion or full anonymisation of the data subject's personal data?**_
@@ -245,18 +233,15 @@ When? As above.
 
 If you cannot specify a date, describe the procedure for deletion: We have a contract with MyFood24 which specifies that once we request that data is deleted it will be removed from their systems without delay.
 
-## 6 Assessment of the risks of violating the rights and freedoms of the data subject
+## Assessment of the risks of violating the rights and freedoms of the data subject
 
 ### Confidentiality
 
 How likely is it that others will have unintentional access to personal data? *This also applies to personal data processed by a data processor* (*please tick relevant box*)
 
 - [X] Unlikely (1)
-
 - [ ] Not very likely (2)
-
 - [ ] Likely (3)
-
 - [ ] Expected (imminent) (4)
 
 State reason: Data will be kept in two locations that both have access control. In addition, very few members of staff will have access to the full data set. We will ensure that before new staff members understands the rules and responsibilities with regards to data handling prior to them gaining access to the system.
@@ -264,11 +249,8 @@ State reason: Data will be kept in two locations that both have access control. 
 What will be the consequences of unintentional access to personal data for the people whose data is being processed in the project? (*Please tick relevant box*)
 
 - [ ] No or insignificant consequences (1)
-
 - [X] Inconvenient consequences (2)
-
 - [ ] Critical consequences (3)
-
 - [ ] Unacceptable consequences (4)
 
 State reason: The health data we expect to collect will mainly relate to a participants diabetes diagnosis and their weight/activity levels. This data is in our opinion not as sensitive as other categories of health data (eg. mental health journal entries, STDs), adherence to a weight-loss regime is unlikely to cause problems for the participant if someone got their hands on it.
@@ -296,11 +278,8 @@ Staff will be assigned to groups within REDCap which will ensure that only a few
 How likely is it that personal data will be inadvertently changed? *This also applies to personal data processed by a data processor* (*please tick relevant box*)
 
 - [ ] Unlikely (1)
-
 - [X] Not very likely (2)
-
 - [ ] Likely (3)
-
 - [ ] Expected (imminent) (4)
 
 State reason: Both REDCap and Liva have been set up in a way that will make it difficult to inadvertently change personal data, as there will be very few reasons for staff to access the data in a way that will allow them to change it by accident. The REDCap instruments have been designed so that were it is necessary to review/check personal data it is mirrored in the relevant instrument in a read-only way. The same applies to the Liva app.
@@ -308,11 +287,8 @@ State reason: Both REDCap and Liva have been set up in a way that will make it d
 What will be the consequences of inadvertently changing personal data for the people whose data is being processed in the project? (*Please tick relevant box*)
 
 - [ ] No or insignificant consequences (1)
-
 - [X] Inconvenient consequences (2)
-
 - [ ] Critical consequences (3)
-
 - [ ] Unacceptable consequences (4)
 
 State reason: In event of changes to the personal data in REDCap there is no immediate risk to the individual in terms of exposure of data to a third party as only staff will have access to the data, we also do not expect to alter treatment of participants based on the collected data, so no immediate risk of either excess or lack of treatment.
@@ -341,11 +317,8 @@ There will be access control for staff, and no access to edit data for participa
 How likely is it that personal data will not be accessible, e.g. due to an IT failure or the bankruptcy of a data processor? *This also applies to personal data processed by a data processor* (*please tick relevant box*)
 
 - [ ] Unlikely (1)
-
 - [ ] Not very likely (2)
-
 - [X] Likely (3)
-
 - [ ] Expected (imminent) (4)
 
 State reason: All main systems will be run on AU or KU infrastructure and are therefore unlikely to go down due to bankruptcy. There is a slight possibility that we may lose data and functionality if Liva Healthcare for some reason stops working, but we are at present confident that they are solvent and reliable.
@@ -355,11 +328,8 @@ IT failure is of a greater concern when it comes to the REDCap systems. It would
 What will be the consequences of lack of access to personal data for the people whose data is being processed in the project? (*Please tick relevant box*)
 
 - [ ] No or insignificant consequences (1)
-
 - [ ] Inconvenient consequences (2)
-
 - [X] Critical consequences (3)
-
 - [ ] Unacceptable consequences (4)
 
 State reason: There will be no problem with temporary glitches when it comes to data stored on GenomeDK as that is all data which has been stored for reporting.
