@@ -1,61 +1,51 @@
-# ON LiMiT Feasibility data protection risk assessment
+---
+date: 2026-02-01
+date-modified: 2026-02-24
+---
 
-Date of risk assessment: 24-02-2026
+# Data protection risk assessment
 
-Prepared by: Kristiane Beicher
+::: callout-note
+This document was converted from Aarhus University's official form that
+was a Word document into Markdown and mostly reflects the content from 
+that document. Some content in the original form was not relevant for
+this website and so was removed.
+:::
 
-Last revised : 01-02-2026
-
-## 1 Responsible parties
+## Responsible parties
 
 Data controller:
 
-Aarhus University
-
-Nordre Ringgade 1
-
-DK-8000 Aarhus
-
+Aarhus University\
+Nordre Ringgade 1\
+DK-8000 Aarhus\
 CVR no.: 31119103
 
-Has the project been reported to AU's record? (*Please tick relevant box*)
+Has the project been reported to AU's record?
 
 - [ ] Yes
-
 - [X] No (it is registered with Central Jutland Region through Aarhus University Hospital)
 
 Person responsible for registering the project:
 
-Name: Søren Gregersen
-
-Department: Department of Clinical Medicine / Steno Diabetes Centre Aarhus
+- Name: Søren Gregersen
+- Department: Department of Clinical Medicine / Steno Diabetes Center Aarhus
 
 If the person named above is not the project manager, please state the
 name of the project manager here: Daniel Borch Ibsen
 
-## 2 Information about the research project:
-<!--TODO Complete fields in section 2-->
-Title of the research project: ON LiMiT
 
-Purpose of the research project: Remission of T2D using diet and
-exercise
-
-Start date of the research project: Jan 2026
-
-## 3 Information about personal data, categories of data subjects and legal basis for processing
+## Information about personal data, categories of data subjects and legal basis for processing
 
 _**What types of personal data will be processed in the project:**_
 
-General personal data (name, dob, contact information, etc).
-
-Sensitive personal data (health data)
-
-Confidential personal data (cpr)
+- General personal data (for example, name, date of birth, contact information).
+- Sensitive personal data (personal health data).
+- Confidential personal data (CPR, which is the civil registration ID).
 
 _**Are you processing personal data about many people or a large quantity of personal data? (*Please tick relevant box*)**_
 
 - [X] Yes
-
 - [ ] No
 
 Description: We are planning to recruit 1500 people and collect personal and sensitive data about all of them. All will be people with a diagnosis of T2D within the last six years, recruitment will be limited to participants living within commuting distance of the centres in Copenhagen, Aarhus, and Odense.
@@ -63,28 +53,20 @@ Description: We are planning to recruit 1500 people and collect personal and sen
 _**Are you processing sensitive personal data in the project? (*Please tick relevant box(es)*):**_
 
 - [X] Health-related information
-
 - [ ] Trade union membership
-
 - [ ] Matters relating to racial or ethnic origin
-
 - [ ] Political opinions, religious beliefs or philosophical beliefs
-
 - [ ] Sex life or sexual orientation
-
 - [ ] Genetic data
-
 - [ ] Biometric data for the purpose of uniquely identifying a natural person
 
 Description: The health data collected will all be related to diabetes and weight management, it will include questionnaire replies detailing eating and exercise habits, general physical and mental health, and any problems/issues that the participants encounter during the 1 (pilot study) or 2 (main study) year(s) they participate in the study.
 
 _**Are you processing some of the following data in the project? (*Please tick relevant box(es)*):**_
 
-- [ ]Data relating to criminal convictions
-
-- [ ]Data relating to criminal offences
-
-- [ ]Data indirectly indicating criminal acts
+- [ ] Data relating to criminal convictions
+- [ ] Data relating to criminal offences
+- [ ] Data indirectly indicating criminal acts
 
 Description: None of the above
 
