@@ -16,15 +16,15 @@ this website and so was removed.
 
 Data controller:
 
-Aarhus University\
-Nordre Ringgade 1\
-DK-8000 Aarhus\
-CVR no.: 31119103
+Region Midtjylland\
+Skottenborg 26\
+DK-8800 Viborg\
+CVR No. 2919 0925
 
-Has the project been reported to AU's record?
+Has the project been reported to RM's internal register?
 
-- [ ] Yes
-- [X] No (it is registered with Central Jutland Region through Aarhus University Hospital)
+- [X] Yes 
+- [ ] No
 
 Person responsible for registering the project:
 
@@ -167,10 +167,50 @@ If yes, with whom?
 Joint Data Controller:
 
 Steno Diabetes Centre Copenhagen\
+v/ Region Hovedstaden\
 Borgmester Ib Juuls vej 83\
 2730 Herlev\
 Denmark\
-CVR: 2919 0623
+CVR: 2919 0623\
+(”SDCC”)
+
+and
+
+Steno Diabetes Center Odense\
+v/ Region Syddanmark\
+Indgang 112, Kløvervænget 10\
+5000 Odense C\
+CVR no. 2919 0909\
+(”SDCO”)
+
+and
+
+Copenhagen University Hospital Bispebjerg\
+v/ Region Hovedstaden\
+Department of Endocrinology\
+Bispebjerg Bakke 23\
+2400 København NV\
+CVR no. 2919 0623\
+(“BH”)
+
+and
+
+Novo Nordisk Foundation Center for Basic Metabolic Research\
+University of Copenhagen\
+Blegdamsvej 3B, Building\ 7
+2200 København N\
+CVR no. 2997 9812\
+(“CBMR”)
+
+and
+
+Department of Nutrition, Exercise and Sports\
+Copenhagen University\
+Nørre Allé 51\
+2200 København N\
+CVR no. 2997 9812\
+(“NEXS”)
+
 
 _**Are you planning to share (disclose) personal data with others within the EU/EEA? (*Please tick relevant box*)**_
 
