@@ -23,7 +23,7 @@ CVR No. 2919 0925
 
 Has the project been reported to RM's internal register?
 
-- [X] Yes 
+- [X] Yes
 - [ ] No
 
 Person responsible for registering the project:
