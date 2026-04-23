@@ -295,20 +295,6 @@ What will be the consequences of unintentional access to personal data for the p
 
 State reason: The health data we expect to collect will mainly relate to a participants diabetes diagnosis and their weight/activity levels. This data is in our opinion not as sensitive as other categories of health data (eg. mental health journal entries, STDs), adherence to a weight-loss regime is unlikely to cause problems for the participant if someone got their hands on it.
 
-Likelihood times consequences (e.g. unlikely x inconvenient consequences = *1x2 =2) (tick the table)*
-
-+------------+------------+------------+------------+------------+
-| Consequences X Likelihood | No or insignificant consequences | Inconvenient consequences | Critical consequences | Unacceptable consequences |
-+============+============+============+============+============+
-| Unlikely   | 1☐         | 2☐         | 3☐         | 4☐         |
-+------------+------------+------------+------------+------------+
-| Not very likely  | 2☐         | 4☒         | 6☐         | 8☐         |
-+------------+------------+------------+------------+------------+
-| Likely     | 3☐         | 6☐         | 9☐         | 12☐        |
-+------------+------------+------------+------------+------------+
-| Expected imminent  | 4☐         | 8☐         | 12☐        | 16☐        |
-+------------+------------+------------+------------+------------+
-
 _**What has been done to limit the likelihood and the consequences?**_
 
 Staff will be assigned to groups within REDCap which will ensure that only a few key staff members will have access to the complete data set, most staff members will only be able to access data for the participants they work directly with.
@@ -332,21 +318,6 @@ What will be the consequences of inadvertently changing personal data for the pe
 - [ ] Unacceptable consequences (4)
 
 State reason: In event of changes to the personal data in REDCap there is no immediate risk to the individual in terms of exposure of data to a third party as only staff will have access to the data, we also do not expect to alter treatment of participants based on the collected data, so no immediate risk of either excess or lack of treatment.
-
-Likelihood times consequences (e.g. unlikely x inconvenient consequences
-= *1x2 =2) (tick the table)*
-
-+------------+------------+------------+------------+------------+
-| Consequences X Likelihood | No or insignificant consequences | Inconvenient consequences | Critical consequences | Unacceptable consequences |
-+============+============+============+============+============+
-| Unlikely   | 1☐         | 2☐         | 3☐         | 4☐         |
-+------------+------------+------------+------------+------------+
-| Not very likely  | 2☐         | 4☒         | 6☐         | 8☐         |
-+------------+------------+------------+------------+------------+
-| Likely     | 3☐         | 6☐         | 9☐         | 12☐        |
-+------------+------------+------------+------------+------------+
-| Expected imminent  | 4☐         | 8☐         | 12☐        | 16☐        |
-+------------+------------+------------+------------+------------+
 
 _**What has been done to limit the likelihood and the consequences?**_
 
@@ -375,20 +346,6 @@ What will be the consequences of lack of access to personal data for the people 
 State reason: There will be no problem with temporary glitches when it comes to data stored on GenomeDK as that is all data which has been stored for reporting.
 
 The data stored in REDCap will be more problematic if a break in service occurs when participants are due to visit on study days.
-
-Likelihood times consequences (e.g. unlikely x inconvenient consequences = *1x2 =2) (tick the table)*
-
-+------------+------------+------------+------------+------------+
-| Consequences X Likelihood | No or insignificant consequences | Inconvenient consequences | Critical consequences | Unacceptable consequences |
-+============+============+============+============+============+
-| Unlikely   | 1☐         | 2☐         | 3☐         | 4☐         |
-+------------+------------+------------+------------+------------+
-| Not very likely  | 2☐         | 4☐         | 6☐         | 8☐         |
-+------------+------------+------------+------------+------------+
-| Likely     | 3☐         | 6☐         | 9☒         | 12☐        |
-+------------+------------+------------+------------+------------+
-| Expected imminent  | 4☐         | 8☐         | 12☐        | 16☐        |
-+------------+------------+------------+------------+------------+
 
 _**What has been done to limit the likelihood and the consequences?**_
 
