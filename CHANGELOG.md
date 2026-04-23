@@ -15,6 +15,12 @@ that any individual release will not have many changes within it. Below
 is a list of the releases we've made so far, along with what was changed
 within each release.
 
+## 0.5.0 (2026-04-23)
+
+### Feat
+
+- :sparkles: first draft of the risk assessment (#200)
+
 ## 0.4.1 (2025-12-15)
 
 ### Fix
