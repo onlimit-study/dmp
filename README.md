@@ -79,8 +79,8 @@ to abide by its terms.
 The following people have contributed to this project by submitting pull
 requests :tada:
 
-[@K-Beicher](https://github.com/K-Beicher),
 [@lwjohnst86](https://github.com/lwjohnst86),
+[@K-Beicher](https://github.com/K-Beicher),
 [@danielibsen](https://github.com/danielibsen),
 [@signekb](https://github.com/signekb)
 

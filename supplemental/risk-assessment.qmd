@@ -1,0 +1,352 @@
+---
+date: 2026-02-01
+date-modified: 2026-02-24
+---
+
+# Data protection risk assessment
+
+::: callout-note
+This document was converted from Aarhus University's official form that
+was a Word document into Markdown and mostly reflects the content from
+that document. Some content in the original form was not relevant for
+this website and so was removed.
+:::
+
+## Responsible parties
+
+Data controller:
+
+Region Midtjylland\
+Skottenborg 26\
+DK-8800 Viborg\
+CVR No. 2919 0925
+
+Has the project been reported to RM's internal register?
+
+- [X] Yes
+- [ ] No
+
+Person responsible for registering the project:
+
+- Name: Søren Gregersen
+- Department: Department of Clinical Medicine / Steno Diabetes Center Aarhus
+
+If the person named above is not the project manager, please state the
+name of the project manager here: Daniel Borch Ibsen
+
+
+## Information about personal data, categories of data subjects and legal basis for processing
+
+_**What types of personal data will be processed in the project:**_
+
+- General personal data (for example, name, date of birth, contact information).
+- Sensitive personal data (personal health data).
+- Confidential personal data (CPR, which is the civil registration ID).
+
+_**Are you processing personal data about many people or a large quantity of personal data? (*Please tick relevant box*)**_
+
+- [X] Yes
+- [ ] No
+
+Description: We are planning to recruit 1500 people and collect personal and sensitive data about all of them. All will be people with a diagnosis of T2D within the last six years, recruitment will be limited to participants living within commuting distance of the centres in Copenhagen, Aarhus, and Odense.
+
+_**Are you processing sensitive personal data in the project? (*Please tick relevant box(es)*):**_
+
+- [X] Health-related information
+- [ ] Trade union membership
+- [ ] Matters relating to racial or ethnic origin
+- [ ] Political opinions, religious beliefs or philosophical beliefs
+- [ ] Sex life or sexual orientation
+- [ ] Genetic data
+- [ ] Biometric data for the purpose of uniquely identifying a natural person
+
+Description: The health data collected will all be related to diabetes and weight management, it will include questionnaire replies detailing eating and exercise habits, general physical and mental health, and any problems/issues that the participants encounter during the 1 (pilot study) or 2 (main study) year(s) they participate in the study.
+
+_**Are you processing some of the following data in the project? (*Please tick relevant box(es)*):**_
+
+- [ ] Data relating to criminal convictions
+- [ ] Data relating to criminal offences
+- [ ] Data indirectly indicating criminal acts
+
+Description: None of the above.
+
+_**Does your project include confidential personal data?**_
+
+For example, civil registration no. (CPR no.) and data considered confidential under other legislation.
+
+- [X] Yes
+- [ ] No
+
+Description: We will be collecting and storing CPR numbers, with a view to linking the collected health data with register data at a later date. We will not be collecting information about work or education, but this will be available through the registers.
+
+Describe the identifiability of the data subject's personal data. *E.g. directly identifiable data such as name and address, or more indirectly identifiable data such as CPR no., photos, biometrics, genetics*
+
+Description: The data will be stored in two systems while the study is ongoing, the plan is to subsequently only store it in one system.
+
+The data will be collected using REDCap, where all of the above-mentioned personal data will be stored, there will be access control applied to this data set. During/after the study the data will be transferred to GenomeDK where it will be stored for later analysis.
+
+_**Has the personal data been pseudonymised or encrypted? (*Please tick relevant box*)**_
+
+- [X] Yes
+- [ ] No
+
+If yes, how? The data will be available to a small group of staff members while the study is ongoing, this can't be helped as data will have to be collected over a two-year period. This data will be available through REDCap. Once data is moved to GenomeDK all data mentioned in this assessment will be stored separately and with encryption applied using a tool developed at GenomeDK.
+
+Categories of people whose personal data is being processed in the project. *E.g. people with a diagnosis, relatives, control subjects, children of a certain age, vulnerable citizens, people with reduced functional capacity, etc.*
+
+Description: People with Type 2 Diabetes diagnosed within the last 6 years.
+
+_**Are you collecting personal data with or without consent pursuant to data protection laws on the processing of data? (*Please tick relevant box*)**_
+
+- [X] With consent pursuant to data protection laws
+- [ ] Without consent pursuant to data protection laws
+
+_**From where are you collecting personal data if not from the data subject himself or herself? E.g. Statistics Denmark, registers, public authorities and universities abroad**_
+
+Description: The main data will be collected directly from participants. We subsequently intend to create links from our data to Statistics Denmark, but this will be done by uploading our data to their platform.
+
+_**Has the information duty been fulfilled in relation to the data subjects? (*Please tick relevant box*)**_
+
+- [X] Yes
+- [ ] No
+
+If yes, how? They have received a description of what we will be doing with their data as part of the informed consent process.
+
+## Data processor, shared data responsibility and sharing personal data with external parties
+
+_**Are you planning to use an external data processor? (*Please tick relevant box*)**_
+
+- [X] Yes
+- [ ] No
+
+**Data processor: **
+
+LIVA Healthcare\
+Danneskiold Samsøes Allé 41\
+1434 København K\
+Denmark
+
+- Email: info\@livahealth.com
+- Central business registration number: 38737368
+
+Is the data processor within or outside the EU/EEA?
+
+- [X] Within the EU/EEA
+- [ ] Outside the EU/EEA
+
+What processing will the data processor be performing? LIVA Healthcare provides an app which will allow staff and participants to communicate with each other in a secure electronic way. It will facilitate online sessions, push of information, completion of questionnaires, as well as peer support within randomisation groups. The app will hold basic personal information as well as a few pieces of health data (blood pressure, finger prick results, etc).
+
+**Data processor: **
+
+MyFood24\
+University of Leeds\
+Discovery Way\
+Leeds\
+LS2 3AA\
+United Kingdom
+
+- Email: www.myfood24.org/contact-us/
+- Registration with Companies House (CH) 10568730
+
+Is the data processor within or outside the EU/EEA?
+
+- [X] Within the EU/EEA (The data is stored and processes by Coherent (CH no 08659933) with servers located in Dublin, Ireland)
+- [ ] Outside the EU/EEA
+
+What processing will the data processor be performing? MyFood24 will provide an interface which will allow participants to register in minute details everything they consume over
+a couple of set time periods. The company has a very large database of food products and can analyse pictures of food on a plate and suggest what the content is. They will hold basic identifying details on the participant and extensive data on what the participant consumed within the time frames where they are asked to register their intake.
+
+
+_**Are you planning to enter into an agreement on shared data responsibility? (*Please tick relevant box*)**_
+
+- [X] Yes
+- [ ] No
+
+If yes, with whom?
+
+Joint Data Controller:
+
+Steno Diabetes Centre Copenhagen\
+v/ Region Hovedstaden\
+Borgmester Ib Juuls vej 83\
+2730 Herlev\
+Denmark\
+CVR: 2919 0623\
+(”SDCC”)
+
+and
+
+Steno Diabetes Center Odense\
+v/ Region Syddanmark\
+Indgang 112, Kløvervænget 10\
+5000 Odense C\
+CVR no. 2919 0909\
+(”SDCO”)
+
+and
+
+Copenhagen University Hospital Bispebjerg\
+v/ Region Hovedstaden\
+Department of Endocrinology\
+Bispebjerg Bakke 23\
+2400 København NV\
+CVR no. 2919 0623\
+(“BH”)
+
+and
+
+Novo Nordisk Foundation Center for Basic Metabolic Research\
+University of Copenhagen\
+Blegdamsvej 3B, Building\ 7
+2200 København N\
+CVR no. 2997 9812\
+(“CBMR”)
+
+and
+
+Department of Nutrition, Exercise and Sports\
+Copenhagen University\
+Nørre Allé 51\
+2200 København N\
+CVR no. 2997 9812\
+(“NEXS”)
+
+
+_**Are you planning to share (disclose) personal data with others within the EU/EEA? (*Please tick relevant box*)**_
+
+- [ ] Yes
+- [X] No
+
+_**Are you planning to share (disclose) personal data with others outside the EU/EEA? (*Please tick relevant box*)**_
+
+- [ ] Yes
+- [X] No
+
+_**Are you planning to share (disclose) biological material with others [outside AU and without consent from the data subject pursuant to data protection laws? (*Please tick relevant box*)**_
+
+- [ ] Yes
+- [X] No
+
+_**Are you planning to publish personal data in a recognised scientific journal or similar without consent from the data subject pursuant to data protection laws? (*Please tick relevant box*)**_
+
+- [ ] Yes
+- [X] No
+
+## 5 Storage of personal data
+
+_**How are you planning to store personal data? (*Please tick relevant box*)**_
+
+- [ ] SIF
+- [ ] Personal network drive at AU (U drive)/OneDrive
+- [X] SurveyXact, [REDCap]{.underline}, O drive, Sharepoint, etc. (see [data
+classification](https://medarbejdere.au.dk/informationssikkerhed/klassifikation-af-data/))
+- [ ] Statistics Denmark's servers in pseudonymised form
+- [ ] Locked cabinet/drawer/freezer in locked room
+- [ ] Ad hoc solutions approved by AU IT
+- [X] Other, please state: GenomeDK server at AU
+
+_**Will there be structured pseudonymisation, deletion or full anonymisation of the data subject's personal data?**_
+
+**REDCap:**
+
+No anonymisation or pseudonymisation will be undertaken with the data stored on REDCap as this is a working collection tool where staff will need access to the information concerning a named participant. We do though plan to delete data from REDCap once we are sure we have everything transferred to our safe storage area on GenomeDK.
+
+On GenomeDK we plan to store person identifiable data in a separate file which will be store on its own with additional encryption. This data will only be decrypted when a researcher is in need of moving data to Statistics Denmark, and even then, the transfer will not be done by the individual researcher.
+
+When? Deletion of data from REDCap will happen when data has been transferred, checked for data quality and signed off at the end of the feasibility study in the Spring of 2027.
+
+If you cannot specify a date, describe the procedure for deletion: We will request that the project is delete by the administrators of REDCap.
+
+**LIVA Health:**
+
+Data will be stored with personal identifiers on the LIVA Healthcare ecosystem (AWS servers and individual apps) for the duration of the study. The data will be transferred on a regular basis, and at the end of the study a final full data set will be requested. Like above the data will be transferred to GenomeDK where it will be cleaned of personal identifiers before being stored alongside the data from REDCap. Once we have ensured that we have all the data we need we will give LIVA the go-ahead to delete all study data from their systems.
+
+When? As above.
+
+If you cannot specify a date, describe the procedure for deletion: We have a contract with LIVA which specifies that once we request that data is deleted it will be removed from their systems without delay.
+
+**MyFood24:**
+
+The data generated in the MyFood24 ecosystem will be handled in the same way as the data from LIVA. Minimal personal information will be stored by the provider, the only difference is that there are no health data involved, only nutritional intake.
+
+When? As above.
+
+If you cannot specify a date, describe the procedure for deletion: We have a contract with MyFood24 which specifies that once we request that data is deleted it will be removed from their systems without delay.
+
+## Assessment of the risks of violating the rights and freedoms of the data subject
+
+### Confidentiality
+
+How likely is it that others will have unintentional access to personal data? *This also applies to personal data processed by a data processor* (*please tick relevant box*)
+
+- [X] Unlikely (1)
+- [ ] Not very likely (2)
+- [ ] Likely (3)
+- [ ] Expected (imminent) (4)
+
+State reason: Data will be kept in two locations that both have access control. In addition, very few members of staff will have access to the full data set. We will ensure that before new staff members understands the rules and responsibilities with regards to data handling prior to them gaining access to the system.
+
+What will be the consequences of unintentional access to personal data for the people whose data is being processed in the project? (*Please tick relevant box*)
+
+- [ ] No or insignificant consequences (1)
+- [X] Inconvenient consequences (2)
+- [ ] Critical consequences (3)
+- [ ] Unacceptable consequences (4)
+
+State reason: The health data we expect to collect will mainly relate to a participants diabetes diagnosis and their weight/activity levels. This data is in our opinion not as sensitive as other categories of health data (eg. mental health journal entries, STDs), adherence to a weight-loss regime is unlikely to cause problems for the participant if someone got their hands on it.
+
+_**What has been done to limit the likelihood and the consequences?**_
+
+Staff will be assigned to groups within REDCap which will ensure that only a few key staff members will have access to the complete data set, most staff members will only be able to access data for the participants they work directly with.
+
+### Integrity
+
+How likely is it that personal data will be inadvertently changed? *This also applies to personal data processed by a data processor* (*please tick relevant box*)
+
+- [ ] Unlikely (1)
+- [X] Not very likely (2)
+- [ ] Likely (3)
+- [ ] Expected (imminent) (4)
+
+State reason: Both REDCap and Liva have been set up in a way that will make it difficult to inadvertently change personal data, as there will be very few reasons for staff to access the data in a way that will allow them to change it by accident. The REDCap instruments have been designed so that were it is necessary to review/check personal data it is mirrored in the relevant instrument in a read-only way. The same applies to the Liva app.
+
+What will be the consequences of inadvertently changing personal data for the people whose data is being processed in the project? (*Please tick relevant box*)
+
+- [ ] No or insignificant consequences (1)
+- [X] Inconvenient consequences (2)
+- [ ] Critical consequences (3)
+- [ ] Unacceptable consequences (4)
+
+State reason: In event of changes to the personal data in REDCap there is no immediate risk to the individual in terms of exposure of data to a third party as only staff will have access to the data, we also do not expect to alter treatment of participants based on the collected data, so no immediate risk of either excess or lack of treatment.
+
+_**What has been done to limit the likelihood and the consequences?**_
+
+There will be access control for staff, and no access to edit data for participants. Where staff has a need to check personal data it will be displayed in a read-only format.
+
+### Availability
+
+How likely is it that personal data will not be accessible, e.g. due to an IT failure or the bankruptcy of a data processor? *This also applies to personal data processed by a data processor* (*please tick relevant box*)
+
+- [ ] Unlikely (1)
+- [ ] Not very likely (2)
+- [X] Likely (3)
+- [ ] Expected (imminent) (4)
+
+State reason: All main systems will be run on AU or KU infrastructure and are therefore unlikely to go down due to bankruptcy. There is a slight possibility that we may lose data and functionality if Liva Healthcare for some reason stops working, but we are at present confident that they are solvent and reliable.
+
+IT failure is of a greater concern when it comes to the REDCap systems. It would impede work greatly if the system went down during a visit day.
+
+What will be the consequences of lack of access to personal data for the people whose data is being processed in the project? (*Please tick relevant box*)
+
+- [ ] No or insignificant consequences (1)
+- [ ] Inconvenient consequences (2)
+- [X] Critical consequences (3)
+- [ ] Unacceptable consequences (4)
+
+State reason: There will be no problem with temporary glitches when it comes to data stored on GenomeDK as that is all data which has been stored for reporting.
+
+The data stored in REDCap will be more problematic if a break in service occurs when participants are due to visit on study days.
+
+_**What has been done to limit the likelihood and the consequences?**_
+
+Two mitigation strategies have been written up and implemented at site (SDCC) and will be implemented across all sites once we start the main study. This will take care of the situation where REDCap is down when needed for either randomisation or visit days. The strategies are kept on our SharePoint site, alongside pdf copies of the latest instruments from REDCap.
