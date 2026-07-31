@@ -60,6 +60,27 @@ created and maintained throughout the study:
   and discoverability as well as improve future collaboration on analyses of the
   data.
 
+### Internal field naming conventions in REDCap
+
+To make clear where a field belongs and what it will be used for, we use the
+following suffix naming conventions in REDCap:
+
+- `_admin`: Denotes fields used for administrative purposes (e.g.,
+  `bed_q_instruction_admin`, which includes the textual introduction to the
+  binge eating disorder questionnaire).
+- `_dq`: Denotes fields used for data quality (e.g., `tmt_b_v10_dq`, which
+  describes whether the participant completed the trail making test at visit
+  10).
+- `_file`: Denotes fields used for file uploads (e.g.,
+  `medicine_list_upload_v1_file`).
+- `_vX`: Denotes which visit a field or form is related to. E.g., `v1` is visit 1.
+  Visits `v0` through `v10` exist.
+
+::: callout-note
+The suffixes `_admin`, `_dq`, and `_file` mark fields excluded from the data
+package as they are not relevant for study analyses.
+:::
+
 ## Versioning and updates
 
 Metadata will be treated as a living resource. Updates will occur whenever new
