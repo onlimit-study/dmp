@@ -38,7 +38,7 @@ created and maintained throughout the study:
 
 - Field-level documentation: We will write detailed variable descriptions using
   the *Field Annotation* functionality in REDCap. This includes adherence to
-  naming conventions defined by internal rules.
+  naming conventions defined by some naming rules (see below).
 
   <!--TODO Check with Anne-Ditte if they are happy for those guidelines to be made public-->
 
@@ -47,7 +47,7 @@ created and maintained throughout the study:
   be integrated into the metadata repository by the data architect.
 
 - Device and sensor data: The site staff and the data architect will
-  collaboratively document the CSV filesoriginating from scanners and sensors to
+  collaboratively document the CSV files originating from scanners and sensors to
   ensure completeness and clarity.
 
 - Metadata packaging: We will use software developed from the [Seedcase
@@ -60,7 +60,7 @@ created and maintained throughout the study:
   and discoverability as well as improve future collaboration on analyses of the
   data.
 
-### Internal field naming conventions in REDCap
+### Field naming conventions in REDCap
 
 To make clear where a field belongs and what it will be used for, we use the
 following suffix naming conventions in REDCap:
