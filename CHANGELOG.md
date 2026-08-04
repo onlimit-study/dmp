@@ -15,6 +15,12 @@ that any individual release will not have many changes within it. Below
 is a list of the releases we've made so far, along with what was changed
 within each release.
 
+## 0.6.0 (2026-08-04)
+
+### Feat
+
+- ✨ add REDCap field naming conventions (#222)
+
 ## 0.5.0 (2026-04-23)
 
 ### Feat
