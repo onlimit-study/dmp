@@ -74,11 +74,11 @@ tied to a specific week.
   | W-4   | 1     | besg_1_screening,                                      |
   |       |       | bedq (1. time)                                         |
   | W-3   | 2     | besoegsdag_2,                                          |
-  |       |       | vas (1. time)                                          |
+  |       |       | was (1. time)                                          |
   | W-2   | 3     | besoegsdag_3,                                          |
-  |       |       | vas (2. time)                                          |
+  |       |       | was (2. time)                                          |
   | W-1   | 4     | besoegsdag_4 ,                                         |
-  |       |       | vas (3. time)                                          |
+  |       |       | was (3. time)                                          |
   |       |       | randomisering                                          |
   |       |       | sociodemografiske_karakteristika (1. time)             |
   |       |       | diabetes_status (1. time)                              |
@@ -100,7 +100,7 @@ tied to a specific week.
   | W11   | 5     | besgsdag_5,                                            |
   |       |       | gruppemde_uge_11                                       |
   | W12   | 6     | besgsdag_6 ,                                           |
-  |       |       | vas (4. time)                                          |
+  |       |       | was (4. time)                                          |
   |       |       | pittsburgh_sleep_quality_index_psqi (2. time)          |
   |       |       | physical_and_mental_health_sf12 (2. time)              |
   |       |       | european_quality_of_life_5_dimensions_eq5d5l (2. time) |
@@ -116,13 +116,13 @@ tied to a specific week.
   | W16   | 7     | besgsdag_7                                             |
   | W17   |       | gruppemde_uge_17                                       |
   | W18   | 8     | besgsdag_8,                                            |
-  |       |       | vas (5. time)                                          |
+  |       |       | was (5. time)                                          |
   |       |       | gruppemde_uge_18                                       |
   | W30   |       | hba1c_uge_30                                           |
   | W42   |       | hba1c_uge_42                                           |
   | W51   | 9     | besoegsdag_9                                           |
   | W52   | 10    | besgsdag_10_5f76 ,                                     |
-  |       |       | vas (6. time)                                          |
+  |       |       | was (6. time)                                          |
   |       |       | sociodemografiske_karakteristika_short                 |
   |       |       | diabetes_status (2. time)                              |
   |       |       | pittsburgh_sleep_quality_index_psqi (3. time)          |
@@ -156,7 +156,7 @@ contains. These can then be used to calculate the week number later.
   | ekstra_kontakt              | Anytime throughout weeks 1-52. This form will capture any contact between study staff and the participant that falls outside the standard touch points. The form as a date for the contact and it is expected that the form is completed on the day of the contact. |
   | hba1c_follow_up             | Anytime throughout weeks 1-52. This form will register any extra HbA1c testing done at the lab if the study team suspects that there is a problem, the form as a date for the testing                                                                               |
   | medicine_changes            | Anytime throughout weeks 1-52. This form will register any changes to medicine during the study, the form has a date for the capture of the information                                                                                                             |
-  | individuel_ditistsamtale_1  | At some point between weeks 18 and 50                                                                                                                                                                                                                               |
-  | individuel_ditistsamtale_2  | At some point between weeks 18 and 50                                                                                                                                                                                                                               |
-  | individuel_ditistsamtale_3  | At some point between weeks 18 and 50                                                                                                                                                                                                                               |
-  | individuel_ditistsamtale_4  | At some point between weeks 18 and 50                                                                                                                                                                                                                               |
+  | individual_ditistsamtale_1  | At some point between weeks 18 and 50                                                                                                                                                                                                                               |
+  | individual_ditistsamtale_2  | At some point between weeks 18 and 50                                                                                                                                                                                                                               |
+  | individual_ditistsamtale_3  | At some point between weeks 18 and 50                                                                                                                                                                                                                               |
+  | individual_ditistsamtale_4  | At some point between weeks 18 and 50                                                                                                                                                                                                                               |
