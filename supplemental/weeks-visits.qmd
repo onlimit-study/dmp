@@ -78,11 +78,11 @@ set to be used in the Event planning.
   | -4    | 1     | besg_1_screening,                                      |
   | -4    | 1     | bedq (1. time)                                         |
   | -3    | 2     | besoegsdag_2,                                          |
-  | -3    | 2     | vas (1. time)                                          |
+  | -3    | 2     | was (1. time)                                          |
   | -2    | 3     | besoegsdag_3,                                          |
-  | -2    | 3     | vas (2. time)                                          |
+  | -2    | 3     | was (2. time)                                          |
   | -1    | 4     | besoegsdag_4 ,                                         |
-  | -1    | 4     | vas (3. time)                                          |
+  | -1    | 4     | was (3. time)                                          |
   | -1    | 4     | randomisering                                          |
   | -1    | 4     | sociodemografiske_karakteristika (1. time)             |
   | -1    | 4     | diabetes_status (1. time)                              |
@@ -104,7 +104,7 @@ set to be used in the Event planning.
   | 10    |       | gruppemde_uge_11                                       |
   | 11    | 5     | besgsdag_5,                                            |
   | 12    | 6     | besgsdag_6 ,                                           |
-  | 12    | 6     | vas (4. time)                                          |
+  | 12    | 6     | was (4. time)                                          |
   | 12    | 6     | pittsburgh_sleep_quality_index_psqi (2. time)          |
   | 12    | 6     | physical_and_mental_health_sf12 (2. time)              |
   | 12    | 6     | european_quality_of_life_5_dimensions_eq5d5l (2. time) |
@@ -120,13 +120,13 @@ set to be used in the Event planning.
   | 16    | 7     | besgsdag_7                                             |
   | 17    |       | gruppemde_uge_17                                       |
   | 18    | 8     | besgsdag_8,                                            |
-  | 18    | 8     | vas (5. time)                                          |
+  | 18    | 8     | was (5. time)                                          |
   | 18    |       | gruppemde_uge_18                                       |
   | 30    |       | hba1c_uge_30                                           |
   | 42    |       | hba1c_uge_42                                           |
   | 51    | 9     | besoegsdag_9                                           |
   | 52    | 10    | besgsdag_10_5f76 ,                                     |
-  | 52    | 10    | vas (6. time)                                          |
+  | 52    | 10    | was (6. time)                                          |
   | 52    | 10    | sociodemografiske_karakteristika_short                 |
   | 52    | 10    | diabetes_status (2. time)                              |
   | 52    | 10    | pittsburgh_sleep_quality_index_psqi (3. time)          |
