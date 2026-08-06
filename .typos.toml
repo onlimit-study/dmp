@@ -5,3 +5,8 @@ extend-exclude = [
   "_site/*",
   "*.svg"
 ]
+
+[default.extend-words]
+vas = "vas"
+VAS = "VAS"
+fase = "fase"
