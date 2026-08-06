@@ -134,16 +134,16 @@ weeks).
   |       |       | social_support_for_eating_habits (3. time)             |
   |       |       | diabetes_distress_paid5_scale (3. time)                |
 
-## Table of REDCap instruments that are not tied to a specific week or visit
+## Recurring REDCap instruments
 
 In this section is shown the REDCap instruments that are not tied to a specific
-week or visit. The table is divided into two columns: Instrument and
+week or visit, meaning they are collected throughout the study.
 Description. The Instrument column shows the name of the instrument used in
 REDCap, and the Description column shows a brief description of the instrument
 as well as stating which weeks it may occur in, as well as which date fields it
 contains. These can then be used to calculate the week number later.
 
-  | Instrument                  | Description                                                                                                                                                                                                                                                         |
+  | Instrument name                 | Description                                                                                                                                                                                                                                                         |
   | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | stamdata                    | Running updates throughout weeks 1-52. This form will contain basic information about the participant as well as information about drop-out or completion of study                                                                                                  |
   | adverse_events              | Anytime throughout weeks 1-52. This form will register any adverse event the participant experience throughout the study, the form has a date of completion and the dates of the event.                                                                             |
