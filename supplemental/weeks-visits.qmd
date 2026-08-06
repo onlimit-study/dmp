@@ -3,15 +3,16 @@ title: "Weeks, visits, and REDCap instruments"
 engine: python
 ---
 
-This document explains how the study weeks, visits, and REDCap instruments relate to
-each other within the feasibility study. The main study will have included many
-of these details into the design of the REDCap.
+This document explains how the study weeks, visits, and REDCap instruments
+relate to each other within the feasibility study. The main study will have
+included many of these details into the design of the REDCap.
 
 The feasibility study for ON LiMiT is divided into three sections, or phases,
 with a pre-phase section for screening and initial consent. The study is
 conducted over a period of 52 weeks, with a number of study site visits and
 dietician-led group sessions. The table below shows the relationship between the
-study weeks (not calendar weeks), visits, and instruments used in the feasibility study.
+study weeks (not calendar weeks), visits, and instruments used in the
+feasibility study.
 
 ## Phases of the study
 
@@ -23,18 +24,19 @@ described in a separate section.
 
 ### Pre-phase: The screening phase
 
-This phase is leading up to active participation in the study. This comprise
-of study week -5 up to and including week 0 and this is where study site visits 1 to 4
-takes place where the bulk of the demographic data is captured alongside a
+This phase is leading up to active participation in the study. This comprise of
+study week -5 up to and including week 0 and this is where study site visits 1
+to 4 takes place where the bulk of the demographic data is captured alongside a
 number of questionnaires and other relevant data.
 
 ### Phase 1: The weight loss phase
 
-This is the first 12 study weeks from 1-12 where study site visits 5 and 6 fall. In
-this phase the participants have two large visit days as well as five sessions
-with dieticians. The challenge with the feasibility data is that the dieticians
-have decided to group their meetings based on the phases, whereas the study site
-visits are individual events with a clear naming based on the visit number.
+This is the first 12 study weeks from 1-12 where study site visits 5 and 6 fall.
+In this phase the participants have two large visit days as well as five
+sessions with dieticians. The challenge with the feasibility data is that the
+dieticians have decided to group their meetings based on the phases, whereas the
+study site visits are individual events with a clear naming based on the visit
+number.
 
 There is a mismatch between the name of the instruments for the dietician-led
 group sessions and the instrument names. The name the dieticians see on screen
@@ -62,88 +64,90 @@ visit where the same questionnaires and data are captured as in the pre-phase.
 
 ## Table of weeks, visits, and instruments
 
-This section shows the relationship between the weeks, visits, and
-instruments where the instruments have a relationship to a fixed week (or
-weeks).
+This section shows the relationship between the weeks, visits, and instruments
+where the instruments have a relationship to a fixed study week (or weeks). The
+numbering in brackets after the instrument name indicates that this instrument
+is collected multiple times throughout the study. For instance (1. time) shows
+that this is the visit where the instrument is completed the first time. REDCap
+will automatically create a new instance of the instrument for each time it is
+set to be used in the Event planning.
 
   | Weeks | Visit | Instrument name                                        |
   | ----- | ----- | ------------------------------------------------------ |
-  | W-5   | 0     | prscreening_telefoninterview_frste_kontakt             |
-  | W-4   | 1     | besg_1_screening,                                      |
-  |       |       | bedq (1. time)                                         |
-  | W-3   | 2     | besoegsdag_2,                                          |
-  |       |       | was (1. time)                                          |
-  | W-2   | 3     | besoegsdag_3,                                          |
-  |       |       | was (2. time)                                          |
-  | W-1   | 4     | besoegsdag_4 ,                                         |
-  |       |       | was (3. time)                                          |
-  |       |       | randomisering                                          |
-  |       |       | sociodemografiske_karakteristika (1. time)             |
-  |       |       | diabetes_status (1. time)                              |
-  |       |       | pittsburgh_sleep_quality_index_psqi (1. time)          |
-  |       |       | physical_and_mental_health_sf12 (1. time)              |
-  |       |       | european_quality_of_life_5_dimensions_eq5d5l (1. time) |
-  |       |       | tobacco_and_nicotine_use (1. time)                     |
-  |       |       | sefnc_baseline_v4 (1. time)                            |
-  |       |       | item_bodily_distress_syndrome_checklist (1. time)      |
-  |       |       | the_three_item_loneliness_scale_tils (1. time)         |
-  |       |       | yale_food_addiction_scale_yfas (1. time)               |
-  |       |       | social_support_for_eating_habits (1. time)             |
-  |       |       | diabetes_distress_paid5_scale (1. time)                |
-  | W1    |       | gruppemde_uge_1                                        |
-  | W3    |       | gruppemde_uge_3                                        |
-  | W5    |       | gruppemde_uge_5                                        |
-  | W7    |       | gruppemde_uge_7                                        |
-  | W9    |       | gruppemde_uge_9                                        |
-  | W11   | 5     | besgsdag_5,                                            |
-  |       |       | gruppemde_uge_11                                       |
-  | W12   | 6     | besgsdag_6 ,                                           |
-  |       |       | was (4. time)                                          |
-  |       |       | pittsburgh_sleep_quality_index_psqi (2. time)          |
-  |       |       | physical_and_mental_health_sf12 (2. time)              |
-  |       |       | european_quality_of_life_5_dimensions_eq5d5l (2. time) |
-  |       |       | tobacco_and_nicotine_use (2. time)                     |
-  |       |       | sefnc_week12_v6                                        |
-  |       |       | item_bodily_distress_syndrome_checklist (2. time)      |
-  |       |       | the_three_item_loneliness_scale_tils (2. time)         |
-  |       |       | yale_food_addiction_scale_yfas (2. time)               |
-  |       |       | social_support_for_eating_habits (2. time)             |
-  |       |       | diabetes_distress_paid5_scale (2. time)                |
-  | W13   |       | gruppemde_uge_13                                       |
-  | W15   |       | gruppemde_uge_15                                       |
-  | W16   | 7     | besgsdag_7                                             |
-  | W17   |       | gruppemde_uge_17                                       |
-  | W18   | 8     | besgsdag_8,                                            |
-  |       |       | was (5. time)                                          |
-  |       |       | gruppemde_uge_18                                       |
-  | W30   |       | hba1c_uge_30                                           |
-  | W42   |       | hba1c_uge_42                                           |
-  | W51   | 9     | besoegsdag_9                                           |
-  | W52   | 10    | besgsdag_10_5f76 ,                                     |
-  |       |       | was (6. time)                                          |
-  |       |       | sociodemografiske_karakteristika_short                 |
-  |       |       | diabetes_status (2. time)                              |
-  |       |       | pittsburgh_sleep_quality_index_psqi (3. time)          |
-  |       |       | physical_and_mental_health_sf12 (3. time)              |
-  |       |       | european_quality_of_life_5_dimensions_eq5d5l (3. time) |
-  |       |       | tobacco_and_nicotine_use (3. time)                     |
-  |       |       | selfefficacy_for_nutrition_change_sefnc_week_52        |
-  |       |       | item_bodily_distress_syndrome_checklist (3. time)      |
-  |       |       | the_three_item_loneliness_scale_tils (3. time)         |
-  |       |       | yale_food_addiction_scale_yfas (3. time)               |
-  |       |       | social_support_for_eating_habits (3. time)             |
-  |       |       | diabetes_distress_paid5_scale (3. time)                |
+  | -5    | 0     | prscreening_telefoninterview_frste_kontakt             |
+  | -4    | 1     | besg_1_screening,                                      |
+  | -4    | 1     | bedq (1. time)                                         |
+  | -3    | 2     | besoegsdag_2,                                          |
+  | -3    | 2     | vas (1. time)                                          |
+  | -2    | 3     | besoegsdag_3,                                          |
+  | -2    | 3     | vas (2. time)                                          |
+  | -1    | 4     | besoegsdag_4 ,                                         |
+  | -1    | 4     | vas (3. time)                                          |
+  | -1    | 4     | randomisering                                          |
+  | -1    | 4     | sociodemografiske_karakteristika (1. time)             |
+  | -1    | 4     | diabetes_status (1. time)                              |
+  | -1    | 4     | pittsburgh_sleep_quality_index_psqi (1. time)          |
+  | -1    | 4     | physical_and_mental_health_sf12 (1. time)              |
+  | -1    | 4     | european_quality_of_life_5_dimensions_eq5d5l (1. time) |
+  | -1    | 4     | tobacco_and_nicotine_use (1. time)                     |
+  | -1    | 4     | sefnc_baseline_v4 (1. time)                            |
+  | -1    | 4     | item_bodily_distress_syndrome_checklist (1. time)      |
+  | -1    | 4     | the_three_item_loneliness_scale_tils (1. time)         |
+  | -1    | 4     | yale_food_addiction_scale_yfas (1. time)               |
+  | -1    | 4     | social_support_for_eating_habits (1. time)             |
+  | -1    | 4     | diabetes_distress_paid5_scale (1. time)                |
+  | 0     |       | gruppemde_uge_1                                        |
+  | 2     |       | gruppemde_uge_3                                        |
+  | 4     |       | gruppemde_uge_5                                        |
+  | 6     |       | gruppemde_uge_7                                        |
+  | 8     |       | gruppemde_uge_9                                        |
+  | 10    |       | gruppemde_uge_11                                       |
+  | 11    | 5     | besgsdag_5,                                            |
+  | 12    | 6     | besgsdag_6 ,                                           |
+  | 12    | 6     | vas (4. time)                                          |
+  | 12    | 6     | pittsburgh_sleep_quality_index_psqi (2. time)          |
+  | 12    | 6     | physical_and_mental_health_sf12 (2. time)              |
+  | 12    | 6     | european_quality_of_life_5_dimensions_eq5d5l (2. time) |
+  | 12    | 6     | tobacco_and_nicotine_use (2. time)                     |
+  | 12    | 6     | sefnc_week12_v6                                        |
+  | 12    | 6     | item_bodily_distress_syndrome_checklist (2. time)      |
+  | 12    | 6     | the_three_item_loneliness_scale_tils (2. time)         |
+  | 12    | 6     | yale_food_addiction_scale_yfas (2. time)               |
+  | 12    | 6     | social_support_for_eating_habits (2. time)             |
+  | 12    | 6     | diabetes_distress_paid5_scale (2. time)                |
+  | 12    |       | gruppemde_uge_13                                       |
+  | 15    |       | gruppemde_uge_15                                       |
+  | 16    | 7     | besgsdag_7                                             |
+  | 17    |       | gruppemde_uge_17                                       |
+  | 18    | 8     | besgsdag_8,                                            |
+  | 18    | 8     | vas (5. time)                                          |
+  | 18    |       | gruppemde_uge_18                                       |
+  | 30    |       | hba1c_uge_30                                           |
+  | 42    |       | hba1c_uge_42                                           |
+  | 51    | 9     | besoegsdag_9                                           |
+  | 52    | 10    | besgsdag_10_5f76 ,                                     |
+  | 52    | 10    | vas (6. time)                                          |
+  | 52    | 10    | sociodemografiske_karakteristika_short                 |
+  | 52    | 10    | diabetes_status (2. time)                              |
+  | 52    | 10    | pittsburgh_sleep_quality_index_psqi (3. time)          |
+  | 52    | 10    | physical_and_mental_health_sf12 (3. time)              |
+  | 52    | 10    | european_quality_of_life_5_dimensions_eq5d5l (3. time) |
+  | 52    | 10    | tobacco_and_nicotine_use (3. time)                     |
+  | 52    | 10    | selfefficacy_for_nutrition_change_sefnc_week_52        |
+  | 52    | 10    | item_bodily_distress_syndrome_checklist (3. time)      |
+  | 52    | 10    | the_three_item_loneliness_scale_tils (3. time)         |
+  | 52    | 10    | yale_food_addiction_scale_yfas (3. time)               |
+  | 52    | 10    | social_support_for_eating_habits (3. time)             |
+  | 52    | 10    | diabetes_distress_paid5_scale (3. time)                |
 
 ## Recurring REDCap instruments
 
 In this section is shown the REDCap instruments that are not tied to a specific
-week or visit, meaning they are collected throughout the study.
-Description. The Instrument column shows the name of the instrument used in
-REDCap, and the Description column shows a brief description of the instrument
-as well as stating which weeks it may occur in, as well as which date fields it
-contains. These can then be used to calculate the week number later.
+week or visit, meaning they are collected throughout the study. All of these
+instruments have a manually entered date field that is used to calculate the
+week number.
 
-  | Instrument name                 | Description                                                                                                                                                                                                                                                         |
+  | Instrument                  | Description                                                                                                                                                                                                                                                         |
   | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | stamdata                    | Running updates throughout weeks 1-52. This form will contain basic information about the participant as well as information about drop-out or completion of study                                                                                                  |
   | adverse_events              | Anytime throughout weeks 1-52. This form will register any adverse event the participant experience throughout the study, the form has a date of completion and the dates of the event.                                                                             |
