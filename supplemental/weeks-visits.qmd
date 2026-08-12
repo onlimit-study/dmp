@@ -5,7 +5,7 @@ engine: python
 
 This document explains how the study weeks, visits, and REDCap instruments
 relate to each other within the feasibility study. The main study will have
-included many of these details into the design of the REDCap.
+included many of these details into the design of REDCap.
 
 The feasibility study for ON LiMiT is divided into three sections, or phases,
 with a pre-phase section for screening and initial consent. The study is
