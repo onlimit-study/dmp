@@ -1,0 +1,10 @@
+[files]
+extend-exclude = [
+  "*.html",
+  "*.css",
+  ".quarto/*",
+  "_site/*",
+  "*.svg",
+  # Has lots of Danish words in it.
+  "supplemental/redcap/feasibility-dictionary.csv",
+]

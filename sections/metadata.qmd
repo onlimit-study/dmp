@@ -47,8 +47,8 @@ created and maintained throughout the study:
   be integrated into the metadata repository by the data architect.
 
 - Device and sensor data: The site staff and the data architect will
-  collaboratively document the CSV files originating from scanners and sensors to
-  ensure completeness and clarity.
+  collaboratively document the CSV files originating from scanners and sensors
+  to ensure completeness and clarity.
 
 - Metadata packaging: We will use software developed from the [Seedcase
   Project](https://seedcase-project.org) to generate and store metadata in a
