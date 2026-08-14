@@ -79,8 +79,8 @@ This is a description of some of the files in this repository.
     configuration file.
   - `rumdl.toml` and `panache.toml`: [rumdl](https://rumdl.dev) and
     [Panache](https://panache.bz) configuration file for formatting Markdown
-    files in the project. - `cog.toml`: [Cocogitto](https://docs.cocogitto.io) configuration file for
-    managing versions.
+    files in the project. - `cog.toml`: [Cocogitto](https://docs.cocogitto.io)
+    configuration file for managing versions.
   - `cliff.toml`: [git-cliff](https://git-cliff.org) configuration file for
     creating the changelog.
 - `.editorconfig`: Editor configuration file for

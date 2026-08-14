@@ -75,11 +75,10 @@ following suffix naming conventions in REDCap:
   `medicine_list_upload_v1_file`).
 - `_vX`: Denotes which visit a field or form is related to. E.g., `v1` is visit 1.
   Visits `v0` through `v10` exist.
-
-::: callout-note
-The suffixes `_admin`, `_dq`, and `_file` mark fields excluded from the data
+  ::: callout-note
+  The suffixes `_admin`, `_dq`, and `_file` mark fields excluded from the data
 package as they are not relevant for study analyses.
-:::
+  :::
 
 ## Versioning and updates
 
