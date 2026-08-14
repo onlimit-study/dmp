@@ -3,5 +3,7 @@ extend-exclude = [
   "*.css",
   ".quarto/*",
   "_site/*",
-  "*.svg"
+  "*.svg",
+  # Has lots of Danish words in it.
+  "supplemental/redcap/feasibility-dictionary.csv",
 ]
