@@ -1,109 +1,106 @@
 # Data collection
 
-Data for the ON LiMiT study will be collected from multiple sources,
-including participants, healthcare professionals, lab technicians, and
-electronic devices. This section describes what, where, and how these
-sources of data will be collected.
+Data for the ON LiMiT study will be collected from multiple sources, including
+participants, healthcare professionals, lab technicians, and electronic devices.
+This section describes what, where, and how these sources of data will be
+collected.
 
 ## Sources and methods
 
-Participants will provide data through a variety of sources, the primary
-being the Liva Healthcare app which will record lifestyle information in
-REDCap. Connected devices such as smart watch and smart scales will
-transmit data directly to the Liva app.
+Participants will provide data through a variety of sources, the primary being
+the Liva Healthcare app which will record lifestyle information in REDCap.
+Connected devices such as smart watch and smart scales will transmit data
+directly to the Liva app.
 
-Additional data will be gathered with a SENS accelerometer and a blinded
-Libre CGM which will be uploaded either into REDCap or directly to
-GenomeDK. Some scanner results will be uploaded via REDCap (DXA and
-Fibro) others will be uploaded directly to GenomeDK (VO2Max and
-Finapres).
+Additional data will be gathered with a SENS accelerometer and a blinded Libre
+CGM which will be uploaded either into REDCap or directly to GenomeDK. Some
+scanner results will be uploaded via REDCap (DXA and Fibro) others will be
+uploaded directly to GenomeDK (VO2Max and Finapres).
 
 We will also be collecting data from MyFood24, which is a website where
-participants will be asked to keep a very detailed food diary for three
-days at a couple of points during the study. Some participants will also
-be asked to do a Food Preference test which we expect to upload into
-REDCap.
+participants will be asked to keep a very detailed food diary for three days at
+a couple of points during the study. Some participants will also be asked to do
+a Food Preference test which we expect to upload into REDCap.
 
-Healthcare professionals and lab technicians will enter clinical and
-biological sample data into REDCap forms, and laboratory data may be
-uploaded from internal systems where applicable.
+Healthcare professionals and lab technicians will enter clinical and biological
+sample data into REDCap forms, and laboratory data may be uploaded from internal
+systems where applicable.
 
 Further details can be seen in the diagram below.
 
 ## Frequency of collection
 
-The aim is to collect participant app and web based data (Liva, RECap,
-MyFood24) on a monthly basis.
+The aim is to collect participant app and web based data (Liva, RECap, MyFood24)
+on a monthly basis.
 
-Sensor and scanner data (SENS, Libre, Fibro scans, and DXA scans) will
-be uploaded at clinic visits, as we expect to sign off on a visit as
-soon as it is finished.
+Sensor and scanner data (SENS, Libre, Fibro scans, and DXA scans) will be
+uploaded at clinic visits, as we expect to sign off on a visit as soon as it is
+finished.
 
 <!--TODO check the agreement with Liva once signed-->
 
 ## Data formats
 
--   REDCap: Structured tabular data in CSV imported to GenomeDK via API.
--   Liva app: CSV exports via FTP to GenomeDK. The watch and scales data
-    are directly imported into Liva app.
--   MyFood24: CSV import from secure website into GenomeDK.
--   Scanners: CSV files uploaded into REDCap or directly to GenomeDK.
+- REDCap: Structured tabular data in CSV imported to GenomeDK via API.
+- Liva app: CSV exports via FTP to GenomeDK. The watch and scales data are
+  directly imported into Liva app.
+- MyFood24: CSV import from secure website into GenomeDK.
+- Scanners: CSV files uploaded into REDCap or directly to GenomeDK.
 
 ## Estimated raw data volumes for the feasibility study
 
--   REDCap clinical data: Unknown size at present.
--   Liva app data: Unknown size at present.
--   MyFood24 dietary logs: Unknown size at present.
--   Sensor data (SENS, Libre): Unknown size at present.
--   Scanner data:
-    -   VO2Max: 20KB times 1 reading per visit, 4 visits = 20x4x24 =
-        2MB.
-    -   Finapres: 60KB times 8 readings per visit, 6 visits = 60x8x6x24
-        = 69MB.
+- REDCap clinical data: Unknown size at present.
+- Liva app data: Unknown size at present.
+- MyFood24 dietary logs: Unknown size at present.
+- Sensor data (SENS, Libre): Unknown size at present.
+- Scanner data:
+  - VO2Max: 20KB times 1 reading per visit, 4 visits = 20x4x24 = 2MB.
+  - Finapres: 60KB times 8 readings per visit, 6 visits = 60x8x6x24 = 69MB.
 
 ## Data aggregation and storage
 
-The REDCap database serves as the central hub for most clinical and
-scanner data, including manual uploads from devices such as SENS and
-Libre, and potentially iMotions. The Liva app aggregates participant
-lifestyle data and connected device readings. There will also be test
-results (like VO2Max and Finapres) that will be sent to GenomeDK
-directly, and this is the same as with data from MyFood24.
+The REDCap database serves as the central hub for most clinical and scanner
+data, including manual uploads from devices such as SENS and Libre, and
+potentially iMotions. The Liva app aggregates participant lifestyle data and
+connected device readings. There will also be test results (like VO2Max and
+Finapres) that will be sent to GenomeDK directly, and this is the same as with
+data from MyFood24.
 
-GenomeDK's servers will be the final repository for processed and
-collated data, ensuring a central location for secure storage of data
-and computational capacity for analysis.
+GenomeDK's servers will be the final repository for processed and collated data,
+ensuring a central location for secure storage of data and computational
+capacity for analysis.
 
 See the [Storage, backup, recovery, and access](storage.qmd) for further
 details.
 
 ## Quality assurance
 
-We will set up and run automated checks in REDCap to ensure completeness
-and consistency of clinical data. The person responsible will be the
-Data Architect.
+We will set up and run automated checks in REDCap to ensure completeness and
+consistency of clinical data. The person responsible will be the Data Architect.
 
 Uploaded sensor device data will be checked against expected ranges and
-timestamps. The people responsible will be the on-site staff who are
-using REDCap during data collection.
+timestamps. The people responsible will be the on-site staff who are using
+REDCap during data collection.
 
-We will run checks to identify any missingness in the data or any
-anomalies and report on the results (if any). We will do any follow-up
-procedures to correct for these issues, which we will run during
-transfer to GenomeDK. The person responsible for this will be the Data
-Architect.
+We will run checks to identify any missingness in the data or any anomalies and
+report on the results (if any). We will do any follow-up procedures to correct
+for these issues, which we will run during transfer to GenomeDK. The person
+responsible for this will be the Data Architect.
 
 <!--TODO Do we need any checks on the API and FTP transfers?-->
 
 ## Visualisation of data flow
 
-Underneath the diagram is a more detailed description of the components
-and their interactions.
+Underneath the diagram is a more detailed description of the components and
+their interactions.
 
 ```{mermaid}
 %%| label: fig-c4-context
-%%| fig-cap: "Data flow in the ON LiMiT study, who generates data, where is does it enter, and how is it transmitted to storage."
+%%| fig-cap: >-
+%%|   Data flow in the ON LiMiT study, who generates data, where is does it
+%%|   enter, and how is it transmitted to storage.
 %%| fig-width: 100%
+
 flowchart LR
 
 Lab(["<b>Lab staff</b><br>collecting and analysing biological samples from participants."])
@@ -151,51 +148,50 @@ MyF --> |website download| Genome
 
 ### REDCap
 
-REDCap is a secure web application for building and managing online
-surveys and databases. It is used to collect data from participants and
-healthcare professionals in the ON LiMiT project. REDCap will have two
-main functions, the first is to collect data from clinicians and
-participants via forms and questionnaires, and the second is to collate
-data from other systems, likely through APIs or csv uploads.
+REDCap is a secure web application for building and managing online surveys and
+databases. It is used to collect data from participants and healthcare
+professionals in the ON LiMiT project. REDCap will have two main functions, the
+first is to collect data from clinicians and participants via forms and
+questionnaires, and the second is to collate data from other systems, likely
+through APIs or csv uploads.
 
 ### iMotions Food Preference
 
 iMotion Food Preference is a system that tracks the eye movements of
-participants when they are looking at pictures of food. The data
-collected by this system can be pulled out as csv files and uploaded to
-the REDCap database or directly to the GenomeDK server.
+participants when they are looking at pictures of food. The data collected by
+this system can be pulled out as csv files and uploaded to the REDCap database
+or directly to the GenomeDK server.
 
 ### SENS
 
-SENS is an activity monitor that will be placed on the study
-participants for a week. The data collected by a SENS device will be
-extracted at clinic visits and the data will be uploaded to the REDCap
-database. The SENS device will track the participants' physical activity
-levels in selected weeks of the study.
+SENS is an activity monitor that will be placed on the study participants for a
+week. The data collected by a SENS device will be extracted at clinic visits and
+the data will be uploaded to the REDCap database. The SENS device will track the
+participants' physical activity levels in selected weeks of the study.
 
 ### Libre
 
-Libre is a blinded continuous glucose monitoring (CGM) sensor from
-Abbott that will be worn by the participants for a week. The data
-collected by the Libre device will be extracted at clinic visits and
-uploaded to the REDCap database. The Libre device will track the
-participants' glucose levels in selected weeks of the study.
+Libre is a blinded continuous glucose monitoring (CGM) sensor from Abbott that
+will be worn by the participants for a week. The data collected by the Libre
+device will be extracted at clinic visits and uploaded to the REDCap database.
+The Libre device will track the participants' glucose levels in selected weeks
+of the study.
 
 ### Liva Healthcare app
 
-Liva is a mobile app that will be used by the participants to track
-their physical activity (via Garmin activity watch), adherence to the
-assigned diet intervention (via short diet screener), body weight (via
-Gamin scale), answer other small questionnaires, follow the study
-schedule, and interact with study personnel via a chat function. The app
-will likely connect to the REDCap database via an API, allowing the data
-to be automatically uploaded to the database.
+Liva is a mobile app that will be used by the participants to track their
+physical activity (via Garmin activity watch), adherence to the assigned diet
+intervention (via short diet screener), body weight (via Gamin scale), answer
+other small questionnaires, follow the study schedule, and interact with study
+personnel via a chat function. The app will likely connect to the REDCap
+database via an API, allowing the data to be automatically uploaded to the
+database.
 
 ### Garmin watch and scales
 
-The Garmin watch and scales will be used by the participants to track
-their physical activity and weight. The data collected by these devices
-will be transmitted to the Liva app where it will be collated and then
-transmitted to GenomeDK. The watch will track the participants' physical
-activity levels, while the scales will track their weight, both will
-submit their measurements to the Liva app.
+The Garmin watch and scales will be used by the participants to track their
+physical activity and weight. The data collected by these devices will be
+transmitted to the Liva app where it will be collated and then transmitted to
+GenomeDK. The watch will track the participants' physical activity levels, while
+the scales will track their weight, both will submit their measurements to the
+Liva app.
