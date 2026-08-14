@@ -4,52 +4,51 @@
 {{< include /includes/_badges.qmd >}}
 :::
 
-:::: {.content-visible when-format="pdf"}
-::: callout-note
-This is **version {{< meta version >}}** of the Data Management Plan.
-Every change to this document will update the version number. To see
-a list of the changes made, check out the changelog at @sec-changelog.
+::: {.content-visible when-format="pdf"}
+::::: callout-note
+This is **version {{< meta version >}}** of the Data Management Plan. Every
+change to this document will update the version number. To see a list of the
+changes made, check out the changelog at @sec-changelog.
+:::::
+
+::::: callout-tip
+Some of the content in this document, in particular the diagrams, may be best
+viewed online at <https://dmp.onlimit.org/>.
+:::::
 :::
 
-::: callout-tip
-Some of the content in this document, in particular the diagrams, may be
-best viewed online at <https://dmp.onlimit.org/>.
-:::
-::::
+ON LiMiT (Optimal Non-pharmacological Lifestyle Modifications in people with
+Type 2 diabetes) is a large Danish intervention study investigating the
+maintenance of remission of type 2 diabetes through weight loss, diet, and
+exercise. The project runs from 2025 to 2030 and will involve 1,500 participants
+with type 2 diabetes.
 
-ON LiMiT (Optimal Non-pharmacological Lifestyle Modifications in people
-with Type 2 diabetes) is a large Danish intervention study investigating
-the maintenance of remission of type 2 diabetes through weight loss,
-diet, and exercise. The project runs from 2025 to 2030 and will involve
-1,500 participants with type 2 diabetes.
-
-Although the ON LiMiT study has been classified as not being a clinical
-drug trial by the Danish Medical Agency (DMA), we have chosen to align
-with best practices for clinical trials wherever possible. While a Data
-Management Plan (DMP) is not mandatory for a study such as ON LiMiT, it
-is strongly recommended for all research studies. This DMP ensures
-transparency, compliance, and integrity in handling participant data
-throughout the project lifecycle.
+Although the ON LiMiT study has been classified as not being a clinical drug
+trial by the Danish Medical Agency (DMA), we have chosen to align with best
+practices for clinical trials wherever possible. While a Data Management Plan
+(DMP) is not mandatory for a study such as ON LiMiT, it is strongly recommended
+for all research studies. This DMP ensures transparency, compliance, and
+integrity in handling participant data throughout the project lifecycle.
 
 We follow a modified version of a DMP template from
-[DeiC](https://deic.dk/en/data-management), mainly around how we
-describe access to data.
+[DeiC](https://deic.dk/en/data-management), mainly around how we describe access
+to data.
 
 ## Collaborations
 
-The project is being conducted in Aarhus, Odense, and Copenhagen and is
-a collaboration between Steno Diabetes Center Aarhus, Steno Diabetes
-Center Odense, Steno Diabetes Center Copenhagen, Bispebjerg Hospital,
-and the Department of Nutrition, Exercise and Sports and the Center for
-Basic Metabolic Research at the University of Copenhagen.
+The project is being conducted in Aarhus, Odense, and Copenhagen and is a
+collaboration between Steno Diabetes Center Aarhus, Steno Diabetes Center
+Odense, Steno Diabetes Center Copenhagen, Bispebjerg Hospital, and the
+Department of Nutrition, Exercise and Sports and the Center for Basic Metabolic
+Research at the University of Copenhagen.
 
 ## Governance and maintenance
 
-This document will be maintained by members of the study team and has
-been approved for publication on the project website by the Project
-Manager on behalf of the Chief Investigator.
+This document will be maintained by members of the study team and has been
+approved for publication on the project website by the Project Manager on behalf
+of the Chief Investigator.
 
 ## Funding
 
-The project is funded by approximately DKK 102 million from the Novo
-Nordisk Foundation (Grant Number NNF24SA0097844).
+The project is funded by approximately DKK 102 million from the Novo Nordisk
+Foundation (Grant Number NNF24SA0097844).
