@@ -23,8 +23,9 @@ For example:
 - `3_v4_dxa.csv`: Participant 3, visit 4, DXA scanning
 
 - `3_v4-5_finapres.csv`: Participant 3, visit 4, run number 5 of the
-  [finapres](https://www.finapres.com) scanning
-::: {.callout-important title="Our naming rules"}
+  [finapres](https://www.finapres.com) scanning ::: {.callout-important
+  title="Our naming rules"}
+
 - Use an underscore (`_`) to separate individual items (who, when, what).
 
 - Use a hyphen (`-`) to indicate multiple measurements at the same visit. :::
