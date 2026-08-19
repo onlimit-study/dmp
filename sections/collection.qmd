@@ -39,12 +39,29 @@ finished.
 
 <!--TODO check the agreement with Liva once signed-->
 
+## Connecting the data
+
+The data will be connected using the unique participant ID and study week ID as
+the primary key across all data sources. The participant ID (which REDCap refers
+to as record ID) will be generated in REDCap and will be used to connect data
+from the Liva app, MyFood24, and other sources. for the feasibility data, the
+study week ID will be extracted from the instrument names for most of the data,
+and for the repeating instruments it will be calculated and added to the data
+during the transfer to GenomeDK. A table of the instruments and their
+corresponding study week IDs can be found in the [Week, visits, and REDCap
+instruments](supplemental/weeks-visits.qmd) section.
+
+The Main study data will have the study week ID added as a field to all
+instruments, either hardcoded for the instruments that are tied to a specific
+week, or as a calculated field in the repeating instruments, where it will be
+based on the date from the first group visit.
+
 ## Data formats
 
 - REDCap: Structured tabular data in CSV imported to GenomeDK via API.
-- Liva app: CSV exports via FTP to GenomeDK. The watch and scales data are
+- Liva app: CSV exports via AWS to GenomeDK. The watch and scales data are
   directly imported into Liva app.
-- MyFood24: CSV import from secure website into GenomeDK.
+- MyFood24: CSV import via API from the supplier's website into GenomeDK.
 - Scanners: CSV files uploaded into REDCap or directly to GenomeDK.
 
 ## Estimated raw data volumes for the feasibility study
