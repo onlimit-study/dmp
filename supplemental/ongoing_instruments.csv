@@ -1,14 +1,14 @@
 ﻿instrument_name;description;start_study_week;end_study_week
- stamdata                    ;Basic information about the participant as well as information about drop-out or completion of study                                                                                                  ;1;52
- adverse_events              ;Any adverse event the participant experience throughout the study;1;52
- fase_1_ditetiske_afvigelser ;Any deviation from the NUPO diet;1;11
- fase_2_ditetiske_afvigelser ; Any deviation from the reintroduction of normal meals;12;18
- fase_3_ditetiske_afvigelser ; Any deviation from the recommended diet;18;52
- trningsafvigelser           ; Any deviation from the recommended exercise;18;52
- ekstra_kontakt              ; Any contact between study staff and the participant that falls outside the standard touch points. The form as a date for the contact and it is expected that the form is completed on the day of the contact. ;1;52
- hba1c_follow_up             ; Any extra HbA1c testing done at the lab if the study team suspects that there is a problem;1;52
- medicine_changes            ; Any changes to medicine during the study;1;52
- individual_ditistsamtale_1  ;Allocated time to catch up with each participant during phase 3;18;52
- individual_ditistsamtale_2  ;Allocated time to catch up with each participant during phase 3;18;52
- individual_ditistsamtale_3  ;Allocated time to catch up with each participant during phase 3;18;52
- individual_ditistsamtale_4  ;Allocated time to catch up with each participant during phase 3;18;52
+stamdata;Basic information about the participant as well as information about drop-out or completion of study;1;52
+adverse_events;Any adverse event the participant experience throughout the study;1;52
+fase_1_ditetiske_afvigelser;Any deviation from the NUPO diet;1;11
+fase_2_ditetiske_afvigelser;Any deviation from the reintroduction of normal meals;12;18
+fase_3_ditetiske_afvigelser;Any deviation from the recommended diet;18;52
+trningsafvigelser;Any deviation from the recommended exercise;18;52
+ekstra_kontakt;Any contact between study staff and the participant that falls outside the standard touch points. The form as a date for the contact and it is expected that the form is completed on the day of the contact.;1;52
+hba1c_follow_up;Any extra HbA1c testing done at the lab if the study team suspects that there is a problem;1;52
+medicine_changes;Any changes to medicine during the study;1;52
+individual_ditistsamtale_1;Allocated time to catch up with each participant during phase 3;18;52
+individual_ditistsamtale_2;Allocated time to catch up with each participant during phase 3;18;52
+individual_ditistsamtale_3;Allocated time to catch up with each participant during phase 3;18;52
+individual_ditistsamtale_4;Allocated time to catch up with each participant during phase 3;18;52
