@@ -1,0 +1,164 @@
+---
+title: "Weeks, visits, and REDCap instruments"
+engine: python
+---
+
+This document explains how the study weeks, visits, and REDCap instruments
+relate to each other within the feasibility study. The main study will have
+included many of these details into the design of REDCap.
+
+The feasibility study for ON LiMiT is divided into three sections, or phases,
+with a pre-phase section for screening and initial consent. The study is
+conducted over a period of 52 weeks, with a number of study site visits and
+dietician-led group sessions. The table below shows the relationship between the
+study weeks (not calendar weeks), visits, and instruments used in the
+feasibility study.
+
+## Phases of the study
+
+In this section we will describe the different phases of the study and how they
+relate solely to the REDCap collected data. There are a number of other data
+collection points that are not captured in REDCap, such as scans, blood tests,
+diet compliance, and exercise data. These are not captured in REDCap and will be
+described in a separate section.
+
+### Pre-phase: The screening phase
+
+This phase is leading up to active participation in the study. This comprise of
+study week -5 up to and including week 0 and this is where study site visits 1
+to 4 takes place where the bulk of the demographic data is captured alongside a
+number of questionnaires and other relevant data.
+
+### Phase 1: The weight loss phase
+
+This is the first 12 study weeks from 1-12 where study site visits 5 and 6 fall.
+In this phase the participants have two large visit days as well as five
+sessions with dieticians. The challenge with the feasibility data is that the
+dieticians have decided to group their meetings based on the phases, whereas the
+study site visits are individual events with a clear naming based on the visit
+number.
+
+There is a mismatch between the name of the instruments for the dietician-led
+group sessions and the instrument names. The name the dieticians see on screen
+is referencing weeks 0, 2, 4, 6, 8, 10, 12, 14, 16, and 18. The instrument names
+in REDCap are referencing weeks 1, 3, 5, 7, 9, 11, 13, 15, 17, and 18.
+
+The date field from the first dietician-led group session is used to determine
+the start of the study for the individual participants. This can in turn be used
+to determine the week number for all the instruments that do not have a week
+number associated with them.
+
+### Phase 2: The re-introduction of food phase
+
+This phase is weeks 13-18 where normal food is slowly re-introduced. There are
+two study visits (7 in week 16 and 8 in week 18), and five dietician-led group
+sessions.
+
+### Phase 3: The maintenance phase
+
+This is weeks 19-52 for feasibility. There are two weeks where the participants
+HbA1c is measured (weeks 30 and 42) and two study site visits (9 in week 51 and
+10 in week 52). There are also four individual sessions with the dieticians. At
+the end of the study (in week 52) the participants will have a final study site
+visit where the same questionnaires and data are captured as in the pre-phase.
+
+## Table of weeks, visits, and instruments
+
+This section shows the relationship between the weeks, visits, and instruments
+where the instruments have a relationship to a fixed study week (or weeks). The
+numbering in brackets after the instrument name indicates that this instrument
+is collected multiple times throughout the study. For instance (1. time) shows
+that this is the visit where the instrument is completed the first time. REDCap
+will automatically create a new instance of the instrument for each time it is
+set to be used in the Event planning.
+
+  | Phase | Study week | Visit | Instrument name                                 | Repetition times |
+  | ----- | ---------- | ----- | ----------------------------------------------- | ---------------- |
+  | Pre   | \-5        | 0     | prscreening_telefoninterview_frste_kontakt      |                  |
+  | Pre   | \-4        | 1     | besg_1_screening                                |                  |
+  | Pre   | \-4        | 1     | bedq                                            | 1                |
+  | Pre   | \-3        | 2     | besoegsdag_2                                    |                  |
+  | Pre   | \-3        | 2     | vas                                             | 1                |
+  | Pre   | \-2        | 3     | besoegsdag_3                                    |                  |
+  | Pre   | \-2        | 3     | vas                                             | 2                |
+  | Pre   | \-1        | 4     | besoegsdag_4                                    |                  |
+  | Pre   | \-1        | 4     | vas                                             | 3                |
+  | Pre   | \-1        | 4     | randomisering                                   |                  |
+  | Pre   | \-1        | 4     | sociodemografiske_karakteristika                | 1                |
+  | Pre   | \-1        | 4     | diabetes_status                                 | 1                |
+  | Pre   | \-1        | 4     | pittsburgh_sleep_quality_index_psqi             | 1                |
+  | Pre   | \-1        | 4     | physical_and_mental_health_sf12                 | 1                |
+  | Pre   | \-1        | 4     | european_quality_of_life_5_dimensions_eq5d5l    | 1                |
+  | Pre   | \-1        | 4     | tobacco_and_nicotine_use                        | 1                |
+  | Pre   | \-1        | 4     | sefnc_baseline_v4                               | 1                |
+  | Pre   | \-1        | 4     | item_bodily_distress_syndrome_checklist         | 1                |
+  | Pre   | \-1        | 4     | the_three_item_loneliness_scale_tils            | 1                |
+  | Pre   | \-1        | 4     | yale_food_addiction_scale_yfas                  | 1                |
+  | Pre   | \-1        | 4     | social_support_for_eating_habits                | 1                |
+  | Pre   | \-1        | 4     | diabetes_distress_paid5_scale                   | 1                |
+  | 1     | 0          |       | gruppemde_uge_1                                 |                  |
+  | 1     | 2          |       | gruppemde_uge_3                                 |                  |
+  | 1     | 4          |       | gruppemde_uge_5                                 |                  |
+  | 1     | 6          |       | gruppemde_uge_7                                 |                  |
+  | 1     | 8          |       | gruppemde_uge_9                                 |                  |
+  | 1     | 11         | 5     | besgsdag_5                                      |                  |
+  | 1     | 12         |       | gruppemde_uge_11                                |                  |
+  | 1     | 12         | 6     | besgsdag_6                                      |                  |
+  | 1     | 12         | 6     | vas                                             | 4                |
+  | 1     | 12         | 6     | pittsburgh_sleep_quality_index_psqi             | 2                |
+  | 1     | 12         | 6     | physical_and_mental_health_sf12                 | 2                |
+  | 1     | 12         | 6     | european_quality_of_life_5_dimensions_eq5d5l    | 2                |
+  | 1     | 12         | 6     | tobacco_and_nicotine_use                        | 2                |
+  | 1     | 12         | 6     | sefnc_week12_v6                                 |                  |
+  | 1     | 12         | 6     | item_bodily_distress_syndrome_checklist         | 2                |
+  | 1     | 12         | 6     | the_three_item_loneliness_scale_tils            | 2                |
+  | 1     | 12         | 6     | yale_food_addiction_scale_yfas                  | 2                |
+  | 1     | 12         | 6     | social_support_for_eating_habits                | 2                |
+  | 1     | 12         | 6     | diabetes_distress_paid5_scale                   | 2                |
+  | 2     | 14         |       | gruppemde_uge_13                                |                  |
+  | 2     | 16         |       | gruppemde_uge_15                                |                  |
+  | 2     | 16         | 7     | besgsdag_7                                      |                  |
+  | 2     | 16         |       | gruppemde_uge_17                                |                  |
+  | 2     | 18         | 8     | besgsdag_8                                      |                  |
+  | 2     | 18         | 8     | vas                                             | 5                |
+  | 2     | 18         |       | gruppemde_uge_18                                |                  |
+  | 3     | 30         |       | hba1c_uge_30                                    |                  |
+  | 3     | 42         |       | hba1c_uge_42                                    |                  |
+  | 3     | 51         | 9     | besoegsdag_9                                    |                  |
+  | 3     | 52         | 10    | besgsdag_10_5f76                                |                  |
+  | 3     | 52         | 10    | vas                                             | 6                |
+  | 3     | 52         | 10    | sociodemografiske_karakteristika_short          |                  |
+  | 3     | 52         | 10    | diabetes_status                                 | 2                |
+  | 3     | 52         | 10    | pittsburgh_sleep_quality_index_psqi             | 3                |
+  | 3     | 52         | 10    | physical_and_mental_health_sf12                 | 3                |
+  | 3     | 52         | 10    | european_quality_of_life_5_dimensions_eq5d5l    | 3                |
+  | 3     | 52         | 10    | tobacco_and_nicotine_use                        | 3                |
+  | 3     | 52         | 10    | selfefficacy_for_nutrition_change_sefnc_week_52 |                  |
+  | 3     | 52         | 10    | item_bodily_distress_syndrome_checklist         | 3                |
+  | 3     | 52         | 10    | the_three_item_loneliness_scale_tils            | 3                |
+  | 3     | 52         | 10    | yale_food_addiction_scale_yfas                  | 3                |
+  | 3     | 52         | 10    | social_support_for_eating_habits                | 3                |
+  | 3     | 52         | 10    | diabetes_distress_paid5_scale                   | 3                |
+
+## Recurring REDCap instruments
+
+In this section is shown the REDCap instruments that are not tied to a specific
+week or visit, meaning they are collected throughout the study. All of these
+instruments have a manually entered date field that is used to calculate the
+week number.
+
+  | Instrument                  | Description                                                                                                                                                                                                   | Start study week | End study week |
+  | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------- |
+  | stamdata                    | Basic information about the participant as well as information about drop-out or completion of study                                                                                                          | 1                | 52             |
+  | adverse_events              | Any adverse event the participant experience throughout the study                                                                                                                                             | 1                | 52             |
+  | fase_1_ditetiske_afvigelser | Any deviation from the NUPO diet                                                                                                                                                                              | 1                | 11             |
+  | fase_2_ditetiske_afvigelser | Any deviation from the reintroduction of normal meals                                                                                                                                                         | 12               | 18             |
+  | fase_3_ditetiske_afvigelser | Any deviation from the recommended diet                                                                                                                                                                       | 18               | 52             |
+  | trningsafvigelser           | Any deviation from the recommended exercise                                                                                                                                                                   | 18               | 52             |
+  | ekstra_kontakt              | Any contact between study staff and the participant that falls outside the standard touch points. The form as a date for the contact and it is expected that the form is completed on the day of the contact. | 1                | 52             |
+  | hba1c_follow_up             | Any extra HbA1c testing done at the lab if the study team suspects that there is a problem                                                                                                                    | 1                | 52             |
+  | medicine_changes            | Any changes to medicine during the study                                                                                                                                                                      | 1                | 52             |
+  | individual_ditistsamtale_1  | Allocated time to catch up with each participant during phase 3                                                                                                                                               | 18               | 52             |
+  | individual_ditistsamtale_2  | Allocated time to catch up with each participant during phase 3                                                                                                                                               | 18               | 52             |
+  | individual_ditistsamtale_3  | Allocated time to catch up with each participant during phase 3                                                                                                                                               | 18               | 52             |
+  | individual_ditistsamtale_4  | Allocated time to catch up with each participant during phase 3                                                                                                                                               | 18               | 52             |

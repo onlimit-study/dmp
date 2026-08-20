@@ -40,6 +40,11 @@ book:
       - sections/selection.qmd
       - sections/sharing.qmd
       - sections/responsibilities.qmd
+    - part: "Supplementals"
+      chapters:
+        - supplemental/naming.qmd
+        - supplemental/weeks-visits.qmd
+        - supplemental/risk-assessment.qmd
   appendices:
     - CONTRIBUTING.md
     - CHANGELOG.md
