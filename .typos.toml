@@ -7,3 +7,8 @@ extend-exclude = [
   # Has lots of Danish words in it.
   "supplemental/redcap/feasibility-dictionary.csv",
 ]
+
+[default.extend-words]
+vas = "vas"
+VAS = "VAS"
+fase = "fase"
