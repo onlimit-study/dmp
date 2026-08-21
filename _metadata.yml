@@ -1,5 +1,8 @@
 gh:
-  repo: dmp
   org: onlimit-study
-
+  repo: dmp
+tagline: "Data Management Plan (DMP) for the ON-LiMiT study"
+links:
+  github: "https://github.com/onlimit-study/dmp"
+  site: "https://dmp.onlimit.org"
 version: "0.6.0"
