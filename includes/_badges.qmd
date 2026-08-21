@@ -6,6 +6,7 @@ License](https://img.shields.io/github/license/{{< meta gh.org >}}/{{< meta gh.r
 Release](https://img.shields.io/github/v/release/{{< meta gh.org >}}/{{< meta gh.repo >}}.svg)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/releases/latest)
 [![Build
 website](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/build-website.yml/badge.svg)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/build-website.yml)
+[![Checks](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/checks.yml/badge.svg)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/checks.yml)
 [![pre-commit.ci
 status](https://results.pre-commit.ci/badge/github/{{< meta gh.org >}}/{{< meta gh.repo >}}/main.svg)](https://results.pre-commit.ci/latest/github/{{< meta gh.org >}}/{{< meta gh.repo >}}/main)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
