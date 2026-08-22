@@ -55,6 +55,8 @@ jobs:
         uses: cocogitto/cocogitto-action@9a9fe03b31c47444290c0d7f9b1ee1b44ee13f20 # v4.1.0
         with:
           command: check
+          # The repo hasn't always used conventional commits, so we only check from the latest.
+          args: --from-latest-tag
 
       # For updating the version number in `_metadata.yaml`
       - name: Install yq
