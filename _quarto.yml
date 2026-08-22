@@ -20,7 +20,7 @@ book:
   favicon: _extensions/onlimit-study/onlimit-theme/favicon/favicon.ico
   navbar:
     background: white
-    logo: _extensions/onlimit-study/onlimit-theme/images/logo.png
+    logo: _extensions/onlimit-study/onlimit-theme/images/onlimit.png
     logo-alt: "ON LiMiT logo, with apple in the O and a person running under the LIMIT text."
     title: false
     pinned: true

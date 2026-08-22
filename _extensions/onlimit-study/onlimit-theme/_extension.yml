@@ -20,13 +20,13 @@ contributes:
       page-navigation: true
       navbar:
         pinned: true
-        logo: images/apple-logo.png
-        logo-alt: "ON-LiMiT: Main page"
+        logo: images/onlimit-apple.png
+        logo-alt: "ON LiMiT: Main page"
       search:
         location: navbar
         type: textbox
       page-footer:
-        center:
+        right:
           - text: "License: CC BY 4.0"
             href: https://creativecommons.org/licenses/by/4.0/
 

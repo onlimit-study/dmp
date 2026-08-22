@@ -1,7 +1,7 @@
 meta:
   name:
-    full: ON-LiMiT Study
-    short: ON-LiMiT
+    full: ON LiMiT Study
+    short: ON LiMiT
   link:
     github: https://onlimit.org
 
@@ -20,20 +20,35 @@ typography:
   headings: mukta
   monospace: roboto mono
 
-
 defaults:
   bootstrap:
     rules: |
-        .profile-picture {
-          display: inline-block;
-          border-radius: 50%;
-          object-fit: cover;
-          width: 200px;
-          height: 200px;
-          text-align: center;
-        }
+      .profile-picture {
+        display: inline-block;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+      }
 
-        // Only brand is white in navbar
-        .navbar-brand {
-          color: #ffffff;
-        }
+      // Only brand is white in navbar
+      .navbar-brand {
+        color: #ffffff;
+      }
+
+      // Set top border of navbar
+      .nav-footer {
+        border-top: 1px solid #dee2e6; // same as Bootstrap's default border color
+      }
+
+      // Make the center footer larger.
+      .nav-footer-center {
+        flex-grow: 4; // take up 4x more space than siblings (left/right)
+        margin: 20px 0; // add spacing above and below the logos
+      }
+
+      // Prevent imgs from touching when they wrap on small screens
+      .nav-footer-center img {
+        margin: 5px;
+      }
