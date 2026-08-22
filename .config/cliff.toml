@@ -9,6 +9,10 @@ repo = "dmp"
 [changelog]
 # A Tera template to be rendered for each release in the changelog.
 header = """
+---
+toc: false
+---
+
 # Changelog
 
 Since we follow [Conventional
