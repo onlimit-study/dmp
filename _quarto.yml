@@ -61,25 +61,11 @@ format:
   onlimit-theme-html:
     theme:
       - brand
-  pdf:
-    include-in-header:
-      text: |
-        \usepackage{scrlayer-scrpage}
-        \pagestyle{scrheadings}
-        \clearpairofpagestyles
-        \rohead*{\today}
-        \cofoot*{\pagemark}
-        \rofoot*{CC-BY 4.0}
+  typst:
     from: markdown+emoji
-    fontsize: 11pt
+    brand: "_extensions/onlimit-study/onlimit-theme/_brand.yml"
     papersize: a4
-    geometry:
-      - top=2.5cm
-      - bottom=2.5cm
-      - left=2.5cm
-      - right=2.5cm
-
-editor:
-  markdown:
-    wrap: 72
-    canonical: true
+    fontsize: 11pt
+    margin:
+      x: 2cm
+      y: 2cm
