@@ -1,6 +1,5 @@
 ---
 title: "Weeks, visits, and REDCap instruments"
-engine: python
 ---
 
 This document explains how the study weeks, visits, and REDCap instruments
