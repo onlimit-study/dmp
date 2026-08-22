@@ -41,7 +41,8 @@ jobs:
 
       # Check that the website builds, but don't publish it
       - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
+        run: |
+          quarto render
 
   # Dependency Review Action
   #
