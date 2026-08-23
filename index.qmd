@@ -18,10 +18,10 @@ viewed online at <https://dmp.onlimit.org/>.
 :::
 
 ::: callout-important
-This document is continually evolving and likely won't be complete until the
-ON-LiMiT study has completed data collection on the last participant. Until
-then, as we update this Data Management Plan we create "versions" to communicate
-what we've changed, which is listed in @sec-changelog.
+This document is continually evolving and will likely not be complete until
+data collection is finished for the final participant in the ON-LiMiT study. Until
+then, changes to the Data Management Plan are versioned as the document is updated, with
+each change listed in @sec-changelog.
 :::
 
 ON LiMiT (Optimal Non-pharmacological Lifestyle Modifications in people with
