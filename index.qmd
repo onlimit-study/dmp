@@ -17,6 +17,13 @@ viewed online at <https://dmp.onlimit.org/>.
 :::::
 :::
 
+::: callout-important
+This document is continually evolving and will likely not be complete until data
+collection is finished for the final participant in the ON-LiMiT study. Until
+then, changes to the Data Management Plan are versioned as the document is
+updated, with each change listed in @sec-changelog.
+:::
+
 ON LiMiT (Optimal Non-pharmacological Lifestyle Modifications in people with
 Type 2 diabetes) is a large Danish intervention study investigating the
 maintenance of remission of type 2 diabetes through weight loss, diet, and
