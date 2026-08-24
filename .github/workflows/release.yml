@@ -61,7 +61,7 @@ jobs:
       # For updating the version number in `_metadata.yaml`
       - name: Install yq
         run: |
-          snap install yq
+          sudo snap install yq
 
       # Install uv to use git-cliff and rumdl
       - name: Set up uv
