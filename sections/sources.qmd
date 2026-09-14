@@ -95,3 +95,32 @@ classDef system fill:none
 classDef external fill:lightgrey
 classDef hidden fill:none, stroke-width:0
 ```
+
+### Devices, scanners, and other equipment
+
+The main study will be conducted at five different sites, and data will be
+collected using a variety of devices. A few will be unique to one or two sites,
+but most will be used at all sites.
+
+The following equipment will be used for data collection:
+
+- ECG (all sites) for measuring heart rate and rhythm. This will be done for all
+  participants.
+- DXA scanner (all sites) for measuring body composition and bone density. This
+  will be done for participants in the intervention arms.
+- Fibroscanner (two sites) for measuring liver stiffness. This will be done for
+  participants in the intervention arms.
+- Food preference (two sites) for establishing food preferences. This will be
+  done for participants in the intervention arms.
+- VO2Max, bike (all sites) for measuring maximal oxygen uptake during cycling.
+  This will be done for participants in the intervention arms.
+- VO2Max, breathing (all sites) for measuring maximal oxygen uptake during
+  cycling. This will be done for participants in the intervention arms.
+- CGM (all sites) for measuring glucose levels. This will be done for all
+  participants.
+- SENS motion (all sites) for measuring physical activity. This will be done for
+  participants in the intervention arms.
+
+For a detailed overview of the equipment used at each site, including scanner
+type, site, make, and model, please refer to the [Equipment
+overview](supplemental/equipment.qmd) section.
