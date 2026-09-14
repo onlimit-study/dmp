@@ -138,8 +138,8 @@ Scales["<b>Scales</b><br>smart scales which will connect to the Liva app."]
 BP["<b>Blood Pressure monitor</b><br>the user will measure their blood pressure and enter it into the app."]
 %%MBox["<b>Meal Boxes</b><br>contains recipes and ingredients for two meals a day."]
 
-Lab -->|Uploads data from systems ?| Forms
-HP --> |Completes data forms| Forms
+Lab -->|Uploads data from systems| Forms
+HP -->|Completes data forms| Forms
 Forms --- Red
 Red -->|API| Genome
 
@@ -149,19 +149,19 @@ Pt -->|Enters data| iMo
 Pt -->|Wears for a week| Sen
 Pt -->|Wears for two weeks| Lib
 Pt -->|Wears continuously| Watch
-Pt --> |Uses| Scales
-Pt --> |Uses|BP
+Pt -->|Uses| Scales
+Pt -->|Uses|BP
 %%Pt --> |Chooses| MBox
 
-iMo --> |??| Red
+iMo -->|Manual upload| Red
 Sen -->|Manual upload| Red
 Lib -->|Manual upload| Red
 Watch -->|transmits| Liva
 Scales -->|transmits| Liva
 BP -->|Participant enters results| Liva
-Liva --> |ftp| Genome
-MyF --> |website download| Genome
-%%MBox --> |?? may also be to RedCap| Genome
+Liva -->|ftp| Genome
+MyF -->|website download| Genome
+%%MBox -->|?? may also be to RedCap| Genome
 ```
 
 ### REDCap
