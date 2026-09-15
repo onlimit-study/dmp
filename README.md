@@ -11,6 +11,7 @@ License](https://img.shields.io/github/license/onlimit-study/dmp.svg)](https://g
 Release](https://img.shields.io/github/v/release/onlimit-study/dmp.svg)](https://github.com/onlimit-study/dmp/releases/latest)
 [![Build
 website](https://github.com/onlimit-study/dmp/actions/workflows/build-website.yml/badge.svg)](https://github.com/onlimit-study/dmp/actions/workflows/build-website.yml)
+[![Checks](https://github.com/onlimit-study/dmp/actions/workflows/checks.yml/badge.svg)](https://github.com/onlimit-study/dmp/actions/workflows/checks.yml)
 [![pre-commit.ci
 status](https://results.pre-commit.ci/badge/github/onlimit-study/dmp/main.svg)](https://results.pre-commit.ci/latest/github/onlimit-study/dmp/main)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
@@ -45,8 +46,8 @@ to abide by its terms.
 The following people have contributed to this project by submitting pull
 requests :tada:
 
-[@danielibsen](https://github.com/danielibsen),
 [@K-Beicher](https://github.com/K-Beicher),
+[@danielibsen](https://github.com/danielibsen),
 [@lwjohnst86](https://github.com/lwjohnst86),
 [@signekb](https://github.com/signekb)
 
