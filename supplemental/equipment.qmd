@@ -9,41 +9,37 @@ Below is a table of the equipment used at each site. The table includes the
 scanner type, site, make, and model of each piece of equipment. See below for
 site abbreviations.
 
-  | Scanner type       | Site | Make                                         | Model                        |
-  | ------------------ | ---- | -------------------------------------------- | ---------------------------- |
-  | CGM                | BBH  | Abbott                                       | Freestyle LibreProiQ         |
-  | DXA                | BBH  | GE Healthcare                                | Lunar iDXA Waukesha, WI, USA |
-  | EKG                | BBH  |                                              |                              |
-  | Fibro              | BBH  | To be procured                               |                              |
-  | Finapres           | BBH  | Finapres                                     | Finapres Nova                |
-  | VO2Max (bike)      | BBH  |                                              |                              |
-  | VO2Max (breathing) | BBH  |                                              |                              |
-  | CGM                | NEXS | Abbott                                       | Freestyle LibreProiQ         |
-  | DXA                | NEXS | GE Healthcare                                | Lunar Prodigy iDXA           |
-  | EKG                | NEXS | Intramedic A/S                               | Vyntus CPX added module      |
-  | FoodPreference     | NEXS |                                              |                              |
-  | VO2Max (bike)      | NEXS | Jaeger electronically braked cycle ergometer | ER800                        |
-  | VO2Max (breathing) | NEXS | Intramedic A/S                               | Vyntus CPX                   |
-  | CGM                | SDCA | Abbott                                       | Freestyle LibreProiQ         |
-  | DXA                | SDCA | Tromp                                        | Hologic Horizon-A            |
-  | EKG                | SDCA |                                              |                              |
-  | Fibro              | SDCA | To be procured                               |                              |
-  | VO2Max (bike)      | SDCA |                                              |                              |
-  | VO2Max (breathing) | SDCA |                                              |                              |
-  | CGM                | SDCC | Abbott                                       | Freestyle LibreProiQ         |
-  | DXA                | SDCC | GE Medical Systems (Wisconsin, USA)          | Lunar iDXA                   |
-  | EKG                | SDCC | GE Healthcare                                | MAC VU360 Resting EKG        |
-  | Fibro              | SDCC | Echosens (Paris, France)                     | Fibroscan Compact 530        |
-  | Finapres           | SDCC | Finapres                                     | NOVA                         |
-  | FoodPreference     | SDCC | Tobii (Stockholm, Sweden)                    | X2-60 device                 |
-  | SENS               | SDCC | Sens motion                                  | SENS motion PLUS             |
-  | VO2Max (bike)      | SDCC | Lode (Groningen, The Netherlands)            | Corival cpet                 |
-  | VO2Max (breathing) | SDCC | Jaeger (previously Vyaire)                   | Vyntus CPX                   |
-  | CGM                | SDCO | Abbott                                       | Freestyle LibreProiQ         |
-  | DXA                | SDCO |                                              |                              |
-  | EKG                | SDCO |                                              |                              |
-  | VO2Max (bike)      | SDCO |                                              |                              |
-  | VO2Max (breathing) | SDCO |                                              |                              |
+  | Scanner type       | Site                | Make                                         | Model                        |
+  | ------------------ | ------------------- | -------------------------------------------- | ---------------------------- |
+  | CGM                | All Sites           | Abbott                                       | Freestyle LibreProiQ         |
+  | DXA                | Bispebjerg Hospital | GE Healthcare                                | Lunar iDXA Waukesha, WI, USA |
+  | DXA                | NEXS                | GE Healthcare                                | Lunar Prodigy iDXA           |
+  | DXA                | Steno, Aarhus       | Tromp                                        | Hologic Horizon-A            |
+  | DXA                | Steno, Copenhagen   | GE Medical Systems (Wisconsin, USA)          | Lunar iDXA                   |
+  | DXA                | Steno, Odense       |                                              |                              |
+  | EKG                | Bispebjerg Hospital |                                              |                              |
+  | EKG                | NEXS                | Intramedic A/S                               | Vyntus CPX added module      |
+  | EKG                | Steno, Aarhus       |                                              |                              |
+  | EKG                | Steno, Copenhagen   | GE Healthcare                                | MAC VU360 Resting EKG        |
+  | EKG                | Steno, Odense       |                                              |                              |
+  | Fibro              | Bispebjerg Hospital | To be procured                               |                              |
+  | Fibro              | Steno, Aarhus       | To be procured                               |                              |
+  | Fibro              | Steno, Copenhagen   | Echosens (Paris, France)                     | Fibroscan Compact 530        |
+  | Finapres           | Bispebjerg Hospital | Finapres                                     | NOVA                         |
+  | Finapres           | Steno, Copenhagen   | Finapres                                     | NOVA                         |
+  | FoodPreference     | NEXS                |                                              |                              |
+  | FoodPreference     | Steno, Copenhagen   | Tobii (Stockholm, Sweden)                    | X2-60 device                 |
+  | SENS               | All Sites           | Sens motion                                  | SENS motion PLUS             |
+  | VO2Max (bike)      | Bispebjerg Hospital |                                              |                              |
+  | VO2Max (bike)      | NEXS                | Jaeger electronically braked cycle ergometer | ER800                        |
+  | VO2Max (bike)      | Steno, Aarhus       |                                              |                              |
+  | VO2Max (bike)      | Steno, Copenhagen   | Lode (Groningen, The Netherlands)            | Corival cpet                 |
+  | VO2Max (bike)      | Steno, Odense       |                                              |                              |
+  | VO2Max (breathing) | Bispebjerg Hospital |                                              |                              |
+  | VO2Max (breathing) | NEXS                | Intramedic A/S                               | Vyntus CPX                   |
+  | VO2Max (breathing) | Steno, Aarhus       |                                              |                              |
+  | VO2Max (breathing) | Steno, Copenhagen   | Jaeger (previously Vyaire)                   | Vyntus CPX                   |
+  | VO2Max (breathing) | Steno, Odense       |                                              |                              |
 
   : List of all scanners used to collect data, their make and model, and which
     site they are used at.
