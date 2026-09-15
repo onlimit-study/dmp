@@ -23,6 +23,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.7.1](https://github.com/onlimit-study/dmp/compare/0.7.0..0.7.1) - 2026-09-15
+
+### ♻️ Refactor
+
+- Replace `?` with current decisions in flowcharts
+  [#266](https://github.com/onlimit-study/dmp/pull/266) by
+  [`@K-Beicher`](https://github.com/K-Beicher)
+  ([02a00c2](https://github.com/onlimit-study/dmp/commit/02a00c261edf7c98bf82de794d58ccd8375939ad))
+
 ## [0.7.0](https://github.com/onlimit-study/dmp/compare/0.6.0..0.7.0) - 2026-08-24
 
 ### ✨ Features
