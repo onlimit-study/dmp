@@ -106,20 +106,27 @@ The following equipment will be used for data collection:
 
 - [ECG](https://en.wikipedia.org/wiki/Electrocardiography) (all sites) for
   measuring heart rate and rhythm. This will be done for all participants.
-- DXA scanner (all sites) for measuring body composition and bone density. This
-  will be done for participants in the intervention arms.
-- Fibroscanner (two sites) for measuring liver stiffness. This will be done for
+- [DXA](https://en.wikipedia.org/wiki/Dual-energy_X-ray_absorptiometry)scanner
+  (all sites) for measuring body composition and bone density. This will be done
+  for participants in the intervention arms.
+- [Fibroscanner](https://en.wikipedia.org/wiki/Elastography#Transient_elastography)
+  (two sites) for measuring liver stiffness. This will be done for participants
+  in the intervention arms.
+- [iMotion Food
+  preference](https://imotions.com/customer-stories/food-reward-biometrics/)
+  (two sites) for establishing food preferences. This will be done for
   participants in the intervention arms.
-- Food preference (two sites) for establishing food preferences. This will be
-  done for participants in the intervention arms.
-- VO2Max, bike (all sites) for measuring maximal oxygen uptake during cycling.
-  This will be done for participants in the intervention arms.
-- VO2Max, breathing (all sites) for measuring maximal oxygen uptake during
-  cycling. This will be done for participants in the intervention arms.
-- CGM (all sites) for measuring glucose levels. This will be done for all
-  participants.
-- SENS motion (all sites) for measuring physical activity. This will be done for
+- [VO2Max](https://en.wikipedia.org/wiki/VO2_max), bike (all sites) for
+  measuring maximal oxygen uptake during cycling. This will be done for
   participants in the intervention arms.
+- [VO2Max](https://en.wikipedia.org/wiki/VO2_max), breathing (all sites) for
+  measuring maximal oxygen uptake during cycling. This will be done for
+  participants in the intervention arms.
+- [CGM](https://en.wikipedia.org/wiki/Continuous_glucose_monitoring) (all sites)
+  for measuring glucose levels. This will be done for all participants.
+- [SENS motion](https://en.wikipedia.org/wiki/Physical_activity) (all sites) for
+  measuring physical activity. This will be done for participants in the
+  intervention arms.
 
 For a detailed overview of the equipment used at each site, including scanner
 type, site, make, and model, please refer to the [Equipment
