@@ -23,7 +23,7 @@ Researcher(["<b>Researcher</b><br><i>[person]</i><br>interested in doing additio
 
 onlimit[["<b>ON LiMiT</b><br><i>[system]</i><br>the ON LiMiT system will be comprised of REDCap and GenomeDK.<br>REDCap receives raw data; GenomeDK stores cleaned data."]]
 DS[["<b>Denmark Statistics</b><br><i>[system]</i><br>Closed analysis tool where data from ON LiMiT can be uploaded."]]
-DP[["<b>Data Collectors</b><br><i>[systems]</i><br>Monsenso, MyFood24,<br>Food preferences app,<br>SENS, Libre CGM,<br>Clinic: biological samples."]]
+DP[["<b>Data Collectors</b><br><i>[systems]</i><br>LIVA, MyFood24,<br>Food preferences app,<br>SENS, Libre CGM,<br>Clinic: biological samples."]]
 
 onlimit:::system
 DP:::external
