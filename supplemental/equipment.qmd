@@ -45,6 +45,4 @@ site abbreviations.
   | VO2Max (bike)      | SDCO |                                              |                              |
   | VO2Max (breathing) | SDCO |                                              |                              |
 
-Sites: BBH = Bispebjerg Hospital, NEXS = Novo Nordisk Foundation Center for
-Basic Metabolic Research, SDCA = Steno Diabetes Center Aarhus, SDCC = Steno
-Diabetes Center Copenhagen, SDCO = Steno Diabetes Center Odense
+Table: List of all scanners used to collect data, their make and model, and which site they are used at.

@@ -104,7 +104,7 @@ but most will be used at all sites.
 
 The following equipment will be used for data collection:
 
-- ECG (all sites) for measuring heart rate and rhythm. This will be done for all
+- [ECG](https://en.wikipedia.org/wiki/Electrocardiography) (all sites) for measuring heart rate and rhythm. This will be done for all
   participants.
 - DXA scanner (all sites) for measuring body composition and bone density. This
   will be done for participants in the intervention arms.
@@ -123,4 +123,4 @@ The following equipment will be used for data collection:
 
 For a detailed overview of the equipment used at each site, including scanner
 type, site, make, and model, please refer to the [Equipment
-overview](supplemental/equipment.qmd) section.
+overview](/supplemental/equipment.qmd) section.
