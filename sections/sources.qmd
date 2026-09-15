@@ -104,8 +104,8 @@ but most will be used at all sites.
 
 The following equipment will be used for data collection:
 
-- [ECG](https://en.wikipedia.org/wiki/Electrocardiography) (all sites) for measuring heart rate and rhythm. This will be done for all
-  participants.
+- [ECG](https://en.wikipedia.org/wiki/Electrocardiography) (all sites) for
+  measuring heart rate and rhythm. This will be done for all participants.
 - DXA scanner (all sites) for measuring body composition and bone density. This
   will be done for participants in the intervention arms.
 - Fibroscanner (two sites) for measuring liver stiffness. This will be done for

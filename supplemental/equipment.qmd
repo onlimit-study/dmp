@@ -45,4 +45,5 @@ site abbreviations.
   | VO2Max (bike)      | SDCO |                                              |                              |
   | VO2Max (breathing) | SDCO |                                              |                              |
 
-Table: List of all scanners used to collect data, their make and model, and which site they are used at.
+  : List of all scanners used to collect data, their make and model, and which
+    site they are used at.
