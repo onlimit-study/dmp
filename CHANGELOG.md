@@ -23,6 +23,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.8.0](https://github.com/onlimit-study/dmp/compare/0.7.1..0.8.0) - 2026-09-16
+
+### ✨ Features
+
+- List and describe collection equipment
+  [#265](https://github.com/onlimit-study/dmp/pull/265) by
+  [`@K-Beicher`](https://github.com/K-Beicher)
+  ([dc803a6](https://github.com/onlimit-study/dmp/commit/dc803a663f3ba84a3c2fa69b5712ba48bca09329))
+
 ## [0.7.1](https://github.com/onlimit-study/dmp/compare/0.7.0..0.7.1) - 2026-09-15
 
 ### ♻️ Refactor
