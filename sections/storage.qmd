@@ -13,16 +13,14 @@ data we store is recoverable, should a disk fail, or a server stop working.
 
 ## Storage of data and metadata
 
-There are three main places we will store data from ON-LiMiT. The first two,
-where the data is entered or generated are [REDCap](https://project-redcap.org)
-and the [LIVA](https://www.livahealthcare.com) application. These are not final
-storage areas, but they will hold data for long enough that we will need to take
-them into consideration. The final storage place for data will be
-[GenomeDK](https://genome.au.dk), which also is the place where we are most
-responsible for setting up not only the storage, but also the subsequent safety
-and security of the data.
-
-<!--TODO #92 Add MyFood24 as they (like Liva) store data in AWS temporarily-->
+There are four main places we will store data from ON-LiMiT. The first three,
+where the data is entered or generated are [REDCap](https://project-redcap.org),
+[MyFood24](https://myfood24.org), and [LIVA](https://www.livahealthcare.com).
+These are not final storage areas, but they will hold data for long enough that
+we will need to take them into consideration. The final storage place for data
+will be [GenomeDK](https://genome.au.dk), which also is the place where we are
+most responsible for setting up not only the storage, but also the subsequent
+safety and security of the data.
 
 ::: content-hidden
 TODO: Once we know more about the specific data points we will be able to expand
@@ -62,6 +60,13 @@ stored on AWS services that are physically based in Frankfurt, Germany. The data
 will be made available to us via AWS on a ftp connection on request, we hope to
 transfer the data directly to folders on GDK, from where we will transform and
 load them into storage.
+
+### MyFood24
+
+MyFood24 is a web-based dietary assessment tool that is hosted on AWS servers in
+the EU. The data collected through MyFood24 will be stored securely on these
+servers, and we will have access to the data via secure API endpoints. Similar
+to LIVA, we will transfer the data to GDK for long-term storage and analysis.
 
 ## Backup and recovery
 
@@ -113,14 +118,6 @@ servers in answer to our questions about the procedures in place.
 > annual classification, a new risk assessment is carried out whenever
 > significant changes are made to the system."
 
-::: content-hidden
-TODO: As some of the study is being conducted using the REDCap facilities at the
-University of Copenhagen, we will need to check that they are running a similar
-system.
-
-Check if REDCap CPH behaves in a similar fashion
-:::
-
 ### LIVA
 
 Backups, retention, recovery, and export options are governed by our contract
@@ -128,6 +125,14 @@ with them. The Liva contract draft should specify backup frequency, encryption,
 location (EU/EEA), recovery time, and access/audit reporting. We will confirm
 these parameters during contract finalization and update this section once the
 contract is signed.
+
+<!--TODO #271 update DMP Storage with info on LIVA backup-->
+### MyFood24
+
+Backup and recovery procedures for MyFood24 are governed by our contract with
+them. They have confirmed that they perform regular backups of the data stored
+on their AWS servers, and that these backups are encrypted and stored in
+compliance with GDPR regulations.
 
 ## Access to the main data structures
 
@@ -138,8 +143,8 @@ will have access to data on GDK as they will be helping with the transformation
 of raw data to Parquet files, and the creation of metadata. It should be made
 clear that no data analysis is to take place using the data without prior
 approval of project synopsis from the Publication Panel and from Project
-Management Team. There will also be staff at LIVA which will have access to
-their back-end data, this is covered by the contract.
+Management Team. There will also be staff at LIVA and MyFood24 who will have
+access to their back-end data, this is covered by the contracts.
 
 ::: content-hidden
 TODO: Confirm these parameters during contract finalization and update this
@@ -167,9 +172,14 @@ once a month.
 
 ### LIVA
 
-We will rely on the Liva contract agreement for access control, audit reporting
-cadence, and data‑sharing/export mechanisms. We expect that Liva will be able to
-provide us with either access to a list of users with data viewing access, or
-will be able to provide such a list on demand.
+The contract with LIVA specifies parameters for access control, and
+data‑sharing/export mechanisms. LIVA can provide a list of people with access to
+the data on demand.
 
 <!--TODO We should write down access guidelines to REDCap data, this should detail that data should not be accessed in order to do analysis without prior approval -->
+### MyFood24
+
+The contract with MyFood24 specifies access control, and data-sharing/export
+mechanisms. MyFood24 will be able to provide such a list on demand. Once the
+data is transferred to GDK, access will be managed on a project folder basis,
+similar to other data stored in GDK.
