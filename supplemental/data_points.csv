@@ -1,0 +1,33 @@
+﻿Study week number;;W-3;W-2;W0;W2;W4;W6;W8;W10;W12;W14;W16;W18;W24;W36;W48;W50;W52;W64;W76;W88;W100;W102;W104
+Visit name/number;;Screening;1;2, +2;;;;;;3, +3;;;4;;;;5;6;;;;;7;8, +8
+Will there be data generated:;;?;x;x;x;x;x;x;?;x;?;?;x;x;x;x;?;x;x;x;x;x;?;x
+Basic data;REDCap Data;x;x;;;;;;;;;;;;;;;;;;;;;
+Diet group session;REDCap Data;;;x;x;x;x;x;?;?;?;?;?;;;;;;;;;;;
+Blood sample;LABKA;;x;x;;;;;;x;;;x;;;;;x;;;;;;x
+HbA1c;LABKA;;;x;;;;;;x;;;x;x;x;x;;x;x;x;x;x;;x
+Height/Weight;REDCap Data;;;x;;;;;;x;;;;;;;;x;;;;;;x
+Fecal;LABKA;;;x;;;;;;x;;;x;;;;;x;;;;;;x
+Urine;LABKA;;;x;;;;;;x;;;x;x;;;;x;;x;;;;x
+Saliva;LABKA;;;x;;;;;;;;;;;;;;x;;;;;;x
+MMTT;"CSV
+REDCap Admin";;;x;;;;;;x;;;;;;;;;;;;;;x
+SENS;"CSV
+REDCap Admin";;;x;;;;;;;;;;;;;;x;;;;;;x
+Waist-Hip;REDCap Data;;;x;;;;;;x;;;;;;;;x;;;;;;x
+DXA;"CSV
+REDCap Admin";;;x;;;;;;x;;;;;;;;x;;;;;;x
+Fibroscan;"CSV
+REDCap Admin";;;x;;;;;;x;;;;;;;;x;;;;;;x
+Cognitive tests;REDCap Data;;;x;;;;;;;;;;;;;;x;;;;;;x
+Food pref;"CSV
+REDCap Admin";;;x;;;;;;x;;;;;;;;x;;;;;;x
+BP/Rest HR;REDCap Data;;x;x;;;;;;x;;;;;;;;x;;;;;;x
+ECG;REDCap Data;;x;;;;;;;;;;;;;;;;;;;;;
+VO2 max;"CSV
+REDCap Admin";;;x;;;;;;x;;;;;;;;x;;;;;;x
+CGM;"CSV
+REDCap Admin";;;x;;;;;;;;;;;;;;x;;;;;;x
+Questionnaires;REDCap Data;;x;x;;;;;;;;;;;;;;x;;;;;;x
+MyFood24;API;;;x;;;;;;;;;All subsequent weeks;;;;;;;;;;;
+LIVA App (exercise);API;;;;;;;;;;;;;;;;;;;;;;;
+LIVA App (diet);API;;;;;;;;;;;;All subsequent weeks;;;;;;;;;;;
