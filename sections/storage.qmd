@@ -173,13 +173,13 @@ once a month.
 ### LIVA
 
 The contract with LIVA specifies parameters for access control, and
-data‑sharing/export mechanisms. LIVA can provide a list of people with access to
+data sharing and export mechanisms. LIVA can provide a list of people with access to
 the data on demand.
 
 <!--TODO We should write down access guidelines to REDCap data, this should detail that data should not be accessed in order to do analysis without prior approval -->
 ### MyFood24
 
-The contract with MyFood24 specifies access control, and data-sharing/export
+The contract with MyFood24 specifies access control, and data sharing and export
 mechanisms. MyFood24 will be able to provide such a list on demand. Once the
 data is transferred to GDK, access will be managed on a project folder basis,
 similar to other data stored in GDK.
