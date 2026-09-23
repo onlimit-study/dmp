@@ -172,9 +172,9 @@ once a month.
 
 ### LIVA
 
-The contract with LIVA specifies parameters for access control, and
-data sharing and export mechanisms. LIVA can provide a list of people with access to
-the data on demand.
+The contract with LIVA specifies parameters for access control, and data sharing
+and export mechanisms. LIVA can provide a list of people with access to the data
+on demand.
 
 <!--TODO We should write down access guidelines to REDCap data, this should detail that data should not be accessed in order to do analysis without prior approval -->
 ### MyFood24
