@@ -1,0 +1,95 @@
+﻿data_point;data_source;study_week;visit;will_data_be_generated;schedule_value
+Basic data;REDCap Data;-3;Screening;Unknown;
+Basic data;REDCap Data;-2;1;Yes;
+Blood sample;LABKA;-2;1;Yes;
+BP/Rest HR;REDCap Data;-2;1;Yes;
+ECG;REDCap Data;-2;1;Yes;
+Questionnaires;REDCap Data;-2;1;Yes;
+Blood sample;LABKA;0;2;Yes;
+BP/Rest HR;REDCap Data;0;2;Yes;
+CGM;CSV | REDCap Admin;0;2;Yes;
+Cognitive tests;REDCap Data;0;2;Yes;
+Diet group session;REDCap Data;0;2;Yes;
+DXA;CSV | REDCap Admin;0;2;Yes;
+Fecal;LABKA;0;2;Yes;
+Fibroscan;CSV | REDCap Admin;0;2;Yes;
+Food pref;CSV | REDCap Admin;0;2;Yes;
+HbA1c;LABKA;0;2;Yes;
+Height/Weight;REDCap Data;0;2;Yes;
+MMTT;CSV | REDCap Admin;0;2;Yes;
+MyFood24;API;0;2;Yes;
+Questionnaires;REDCap Data;0;2;Yes;
+Saliva;LABKA;0;2;Yes;
+SENS;CSV | REDCap Admin;0;2;Yes;
+Urine;LABKA;0;2;Yes;
+VO2 max;CSV | REDCap Admin;0;2;Yes;
+Waist-Hip;REDCap Data;0;2;Yes;
+LIVA App (diet);API;1;4;Yes;All subsequent weeks
+Diet group session;REDCap Data;2;;Yes;
+Diet group session;REDCap Data;4;;Yes;
+Diet group session;REDCap Data;6;;Yes;
+Diet group session;REDCap Data;8;;Yes;
+Diet group session;REDCap Data;10;;Unknown;Unknown
+Blood sample;LABKA;12;3;Yes;
+BP/Rest HR;REDCap Data;12;3;Yes;
+Diet group session;REDCap Data;12;3;Yes;Unknown
+DXA;CSV | REDCap Admin;12;3;Yes;
+Fecal;LABKA;12;3;Yes;
+Fibroscan;CSV | REDCap Admin;12;3;Yes;
+Food pref;CSV | REDCap Admin;12;3;Yes;
+HbA1c;LABKA;12;3;Yes;
+Height/Weight;REDCap Data;12;3;Yes;
+MMTT;CSV | REDCap Admin;12;3;Yes;
+Urine;LABKA;12;3;Yes;
+VO2 max;CSV | REDCap Admin;12;3;Yes;
+Waist-Hip;REDCap Data;12;3;Yes;
+Diet group session;REDCap Data;14;;Unknown;Unknown
+Diet group session;REDCap Data;16;;Unknown;Unknown
+Blood sample;LABKA;18;4;Yes;
+Diet group session;REDCap Data;18;4;Yes;Unknown
+Fecal;LABKA;18;4;Yes;
+HbA1c;LABKA;18;4;Yes;
+MyFood24;API;18;4;Yes;Every three months
+Urine;LABKA;18;4;Yes;
+HbA1c;LABKA;24;;Yes;
+Urine;LABKA;24;;Yes;
+HbA1c;LABKA;36;;Yes;
+HbA1c;LABKA;48;;Yes;
+Blood sample;LABKA;52;6;Yes;
+BP/Rest HR;REDCap Data;52;6;Yes;
+CGM;CSV | REDCap Admin;52;6;Yes;
+Cognitive tests;REDCap Data;52;6;Yes;
+DXA;CSV | REDCap Admin;52;6;Yes;
+Fecal;LABKA;52;6;Yes;
+Fibroscan;CSV | REDCap Admin;52;6;Yes;
+Food pref;CSV | REDCap Admin;52;6;Yes;
+HbA1c;LABKA;52;6;Yes;
+Height/Weight;REDCap Data;52;6;Yes;
+Questionnaires;REDCap Data;52;6;Yes;
+Saliva;LABKA;52;6;Yes;
+SENS;CSV | REDCap Admin;52;6;Yes;
+Urine;LABKA;52;6;Yes;
+VO2 max;CSV | REDCap Admin;52;6;Yes;
+Waist-Hip;REDCap Data;52;6;Yes;
+HbA1c;LABKA;64;;Yes;
+HbA1c;LABKA;76;;Yes;
+Urine;LABKA;76;;Yes;
+HbA1c;LABKA;88;;Yes;
+HbA1c;LABKA;100;;Yes;
+Blood sample;LABKA;104;8;Yes;
+BP/Rest HR;REDCap Data;104;8;Yes;
+CGM;CSV | REDCap Admin;104;8;Yes;
+Cognitive tests;REDCap Data;104;8;Yes;
+DXA;CSV | REDCap Admin;104;8;Yes;
+Fecal;LABKA;104;8;Yes;
+Fibroscan;CSV | REDCap Admin;104;8;Yes;
+Food pref;CSV | REDCap Admin;104;8;Yes;
+HbA1c;LABKA;104;8;Yes;
+Height/Weight;REDCap Data;104;8;Yes;
+MMTT;CSV | REDCap Admin;104;8;Yes;
+Questionnaires;REDCap Data;104;8;Yes;
+Saliva;LABKA;104;8;Yes;
+SENS;CSV | REDCap Admin;104;8;Yes;
+Urine;LABKA;104;8;Yes;
+VO2 max;CSV | REDCap Admin;104;8;Yes;
+Waist-Hip;REDCap Data;104;8;Yes;
