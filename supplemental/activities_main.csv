@@ -1,40 +1,102 @@
-﻿Overview of Activities in the Main ON LiMiT study (all sites);;;;;;;;;;;;;;
-;Screening;Baseline;Baseline;1-11 w;12 w;12 w;13-17 w;18 w;19-104 w;pre-52 w;52 w;pre-104 w;104 w;
-Activity;T-2 V1;T0 V2a;T0_MMTT V2b;Education;T12 V3a;T12_MMTT V3b;Education;T18 V4;;T51 V5;T52 V6;T103 V7;T104 V8a;T104 MMTT V8b
-;;3 hours;3 hours;;;3 hours;;;;0.5 hours;3 hours;3 hours;3 hours;
-Screening of In- & Exclusion Criteria;X;;;;;;;;;;;;;
-Consent;X;;;;;;;;;;;;;
-Medical history (incl medication);X;;;;;;;;;;;;;
-BED screening (hvis valideret);X;;;;;;;;;;;;;
-Paperwork, intros etc;X;X;;;X;;;;;;X;;X;
-BMI (height and weight);X;;;;X;;;;;;X;;X;
-Cardiac symptoms;X;;;;;;;;;;;;;
-;X;;;;;;;;;;;;;
-ECG;X;;;;;;;;;;;;;
-Blood sample;X;X;;;X;;;X;;;X;;X;
-HbA1c (diagnostic);X;X;;;X;;;X;;;X;;X;
-CGM on;;X (Control);;X Group meeting  1;;;;;;X;;X;;
-Return CGM;;;;;;;;;;;X;;X;
-SENS on;X;;;;;;;;;X;;X;;
-Return SENS;;X;;;;;;;;;X;;X;
-Garmin equipment handed out;;;;X;;;;;;;;;;
-Home collection materials handed out;X;;;;;;X;;X;;;;;
-Return collected samples;;X;;;;;;X;;;X;;X;
-MMTT;;;X;;;X;;;;;;X;;
-Finapres;;X;;;X;;;;;;;;X;
-Spot urine sample on site;;X;;;X;;;X;;;X;;X;
-Saliva sample on site;;X;;;;;;;;;X;;X;
-Fecal;;X;;;X;;;X;;;X;;X;
-DXA scan;;X;;;X;;;;;;X;;X;
-Fibro scan;;X;;;X;;;;;;X;;X;
-Waist-hip circumference;;X;;;X;;;;;;X;;X;
-SCIP-D and TMT-B tests;;X;;;;;;;;;X;;X;
-Questionnaires;;X;;;;;;;;;X;;X;
-Food preference test;;X;;;;;;;;;X;;X;
-BP & HR;X;X;;;X;;;;;;X;;X;
-VO2 peak;;X;;;;;;;;;X;;X;
-Randomisation;;X;;;;;;;;;;;;
-Intro to meal boxes;;;;X;;;;;;;;;;
-Intro to maintenance diet;;;;;;;X;;;;;;;
-Dietary education;;;;Every two weeks;;;Every two weeks;;;;;;;
-Exercise classes;;;;;;;;Starts here;;;;;;
+﻿activity;timepoint;visit 
+Paperwork, intros etc;Baseline;visit2
+Blood sample;Baseline;visit2
+HbA1c (diagnostic);Baseline;visit2
+CGM on (control arm);Baseline;visit2
+Return SENS;Baseline;visit2
+Return collected samples;Baseline;visit2
+Finapres;Baseline;visit2
+Spot urine sample on site;Baseline;visit2
+Saliva sample on site;Baseline;visit2
+Fecal;Baseline;visit2
+DXA scan;Baseline;visit2
+Fibro scan;Baseline;visit2
+Waist-hip circumference;Baseline;visit2
+SCIP-D and TMT-B tests;Baseline;visit2
+Questionnaires;Baseline;visit2
+Food preference test;Baseline;visit2
+BP & HR;Baseline;visit2
+VO2 peak;Baseline;visit2
+Randomisation;Baseline;visit2
+MMTT;Baseline;visit2_MMTT
+CGM on (intervention arm);Week_1;Dietary_education
+Garmin equipment handed out;Week_1;Dietary_education
+Intro to meal boxes;Week_11;Dietary_education
+Dietary education;Weeks_1-11;Dietary_education-every_two_weeks
+Home collection materials handed out;Week_11;Dietary_education
+Intro to maintenance diet;Week_12;Dietary_education
+Dietary education;Weeks_12-18;Dietary_education-every_two_weeks
+Screening of In- & Exclusion Criteria;Screening;visit1
+Consent;Screening;visit1
+Medical history (incl medication);Screening;visit1
+BED screening (hvis valideret);Screening;visit1
+Paperwork, intros etc;Screening;visit1
+BMI (height and weight);Screening;visit1
+Cardiac symptoms;Screening;visit1
+ECG;Screening;visit1
+Blood sample;Screening;visit1
+HbA1c (diagnostic);Screening;visit1
+SENS on;Screening;visit1
+Home collection materials handed out;Screening;visit1
+BP & HR;Screening;visit1
+CGM on;Week_103;visit7
+SENS on;Week_103;visit7
+MMTT;Week_103;visit7
+Paperwork, intros etc;Week_104;visit8
+BMI (height and weight);Week_104;visit8
+Blood sample;Week_104;visit8
+HbA1c (diagnostic);Week_104;visit8
+Return CGM;Week_104;visit8
+Return SENS;Week_104;visit8
+Return collected samples;Week_104;visit8
+Finapres;Week_104;visit8
+Spot urine sample on site;Week_104;visit8
+Saliva sample on site;Week_104;visit8
+Fecal;Week_104;visit8
+DXA scan;Week_104;visit8
+Fibro scan;Week_104;visit8
+Waist-hip circumference;Week_104;visit8
+SCIP-D and TMT-B tests;Week_104;visit8
+Questionnaires;Week_104;visit8
+Food preference test;Week_104;visit8
+BP & HR;Week_104;visit8
+VO2 peak;Week_104;visit8
+MMTT;Week_104;visit8_MMTT
+Paperwork, intros etc;Week_12;visit3
+BMI (height and weight);Week_12;visit3
+Blood sample;Week_12;visit3
+HbA1c (diagnostic);Week_12;visit3
+Finapres;Week_12;visit3
+Spot urine sample on site;Week_12;visit3
+Fecal;Week_12;visit3
+DXA scan;Week_12;visit3
+Fibro scan;Week_12;visit3
+Waist-hip circumference;Week_12;visit3
+BP & HR;Week_12;visit3
+MMTT;Week_12;visit3_MMTT
+Blood sample;Week_18;visit4
+HbA1c (diagnostic);Week_18;visit4
+Return collected samples;Week_18;visit4
+Spot urine sample on site;Week_18;visit4
+Fecal;Week_18;visit4
+Exercise classes;Weeks_18-104;Every week
+CGM on;Week_51;visit5
+SENS on;Week_51;visit5
+Paperwork, intros etc;Week_52;visit6
+BMI (height and weight);Week_52;visit6
+Blood sample;Week_52;visit6
+HbA1c (diagnostic);Week_52;visit6
+Return CGM;Week_52;visit6
+Return SENS;Week_52;visit6
+Return collected samples;Week_52;visit6
+Spot urine sample on site;Week_52;visit6
+Saliva sample on site;Week_52;visit6
+Fecal;Week_52;visit6
+DXA scan;Week_52;visit6
+Fibro scan;Week_52;visit6
+Waist-hip circumference;Week_52;visit6
+SCIP-D and TMT-B tests;Week_52;visit6
+Questionnaires;Week_52;visit6
+Food preference test;Week_52;visit6
+BP & HR;Week_52;visit6
+VO2 peak;Week_52;visit6
