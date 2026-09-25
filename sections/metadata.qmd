@@ -79,6 +79,32 @@ following suffix naming conventions in REDCap:
 The suffixes `_admin`, `_dq`, and `_file` mark fields excluded from the data
 package as they are not relevant for study analyses.
 
+### Participant identifiers
+
+In the feasibility study participants are assigned a unique ID when they enroll
+in the study. This ID is an auto-numbering, and will be referred to as
+`participant_id`. The `participant_id` is used to link all data collected for a
+participant across different data sources. The `participant_id` is stored in
+REDCap and will be used in the metadata to ensure that all data can be traced
+back to the correct participant while maintaining confidentiality. In addition,
+a list of all ID from the various systems (e.g., Liva Healthcare, MyFood24,
+SENS) will be maintained to ensure that data from different sources can be
+linked correctly.
+
+When a participant contacts the study they are first of all added to a
+spreadsheet with their contact details. This spreadsheet is stored securely on
+servers at Steno Copenhagen and accessible to relevant study staff. This list is
+used to do the first telephone screening call. If a participant deemed eligible
+for the study their details are transferred to REDCap with the ID that they hold
+in the spreadsheet, this is in the format `i100x` with `x` being a number. At
+the same time this temporary ID is copied to a column where it will remain. If
+the participant is subsequently enrolled their ID is changed to a numeric ID
+starting with 1. In the feasibility study the 24 participants are numbered from
+1 to 24. This is mainly done as a way to ensure that the enrolled participants
+are shown at the top of all lists and reports in REDCap. The temporary ID is
+kept so that staff can go back to the spreadsheet and correctly identify the
+participant should there be a need for it.
+
 ## Versioning and updates
 
 Metadata will be treated as a living resource. Updates will occur whenever new
