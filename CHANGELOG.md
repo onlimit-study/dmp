@@ -1,8 +1,8 @@
 ---
-toc: false
+toc-depth: 3
 ---
 
-# Changelog
+# Changelog {#sec-changelog}
 
 Since we follow [Conventional
 Commits](https://decisions.seedcase-project.org/why-conventional-commits/),
