@@ -1,4 +1,4 @@
-# Contributing
+# Contributing {#sec-contributing}
 
 ## :bug: Issues and bugs
 
