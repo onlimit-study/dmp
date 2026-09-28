@@ -13,7 +13,7 @@ header = """
 toc-depth: 3
 ---
 
-# Changelog {#sec-changelog}
+# Changelog {{ "{#sec-changelog}" }}
 
 Since we follow [Conventional
 Commits](https://decisions.seedcase-project.org/why-conventional-commits/),
