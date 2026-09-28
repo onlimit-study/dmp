@@ -23,6 +23,29 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.9.1](https://github.com/onlimit-study/dmp/compare/0.9.0..0.9.1) - 2026-09-28
+
+### 🐛 Fixes
+
+- Rename duplicate figure chunk label
+  [#276](https://github.com/onlimit-study/dmp/pull/276) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([bbe088a](https://github.com/onlimit-study/dmp/commit/bbe088af8921ed48ef0d1f1579c8391afbeaa5c5))
+
+### 👷 CI/CD
+
+- Skip website build check, often gets stuck
+  [#275](https://github.com/onlimit-study/dmp/pull/275) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([9acad0f](https://github.com/onlimit-study/dmp/commit/9acad0f674fadda2d71c956047ed6ec5e5141267))
+
+### 👩‍💻 Miscellaneous
+
+- Ignore all CSV files for typos, high false-positives
+  [#274](https://github.com/onlimit-study/dmp/pull/274) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([315bb23](https://github.com/onlimit-study/dmp/commit/315bb234df9d9d516e7c9890543754032c28ba68))
+
 ## [0.9.0](https://github.com/onlimit-study/dmp/compare/0.8.0..0.9.0) - 2026-09-28
 
 ### ✨ Features
