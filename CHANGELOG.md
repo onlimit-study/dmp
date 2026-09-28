@@ -23,6 +23,19 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.9.0](https://github.com/onlimit-study/dmp/compare/0.8.0..0.9.0) - 2026-09-28
+
+### ✨ Features
+
+- Add section on site specific tests
+  [#270](https://github.com/onlimit-study/dmp/pull/270) by
+  [`@K-Beicher`](https://github.com/K-Beicher)
+  ([c3cc6c0](https://github.com/onlimit-study/dmp/commit/c3cc6c00263a48d2a2af403b3c6b326d0edd529d))
+- Expand storage section to include MyFood24
+  [#272](https://github.com/onlimit-study/dmp/pull/272) by
+  [`@K-Beicher`](https://github.com/K-Beicher)
+  ([10b1c55](https://github.com/onlimit-study/dmp/commit/10b1c552e89ff801022149da855771fcdaf1759c))
+
 ## [0.8.0](https://github.com/onlimit-study/dmp/compare/0.7.1..0.8.0) - 2026-09-16
 
 ### ✨ Features
