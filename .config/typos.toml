@@ -2,11 +2,11 @@
 extend-exclude = [
   "*.html",
   "*.css",
+  # Most csv's have Danish in them or shouldn't be checked.
+  "*.csv",
   ".quarto/*",
   "_site/*",
   "*.svg",
-  # Has lots of Danish words in it.
-  "supplemental/redcap/feasibility-dictionary.csv",
 ]
 
 [default.extend-words]
