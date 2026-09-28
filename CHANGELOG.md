@@ -23,6 +23,29 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.9.2](https://github.com/onlimit-study/dmp/compare/0.9.1..0.9.2) - 2026-09-28
+
+### 🐛 Fixes
+
+- Add missing `#sec-` links to appendices
+  [#277](https://github.com/onlimit-study/dmp/pull/277) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([2000e32](https://github.com/onlimit-study/dmp/commit/2000e326c35a84a0e625c5a39897fba686065e68))
+
+### 💄 Styling
+
+- Increase size of fonts in PDF
+  [#278](https://github.com/onlimit-study/dmp/pull/278) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([03d461c](https://github.com/onlimit-study/dmp/commit/03d461c70e05e9e063651a7f8ed28bf96cfabf70))
+
+### 👩‍💻 Miscellaneous
+
+- Escape `{#` in `cliff.toml`
+  [#281](https://github.com/onlimit-study/dmp/pull/281) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([886f4e9](https://github.com/onlimit-study/dmp/commit/886f4e90da7d62efeaab692831a1eaa088c8bdae))
+
 ## [0.9.1](https://github.com/onlimit-study/dmp/compare/0.9.0..0.9.1) - 2026-09-28
 
 ### 🐛 Fixes
@@ -284,7 +307,7 @@ changelog.
   [`@danielibsen`](https://github.com/danielibsen)
   ([c516c82](https://github.com/onlimit-study/dmp/commit/c516c82b21a0752066c9bd8c4b6629a4b041ab27))
 
-## [0.2.0] - 2025-12-08
+## 0.2.0 - 2025-12-08
 
 ### ✨ Features
 
