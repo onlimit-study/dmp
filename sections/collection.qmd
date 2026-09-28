@@ -113,7 +113,7 @@ Underneath the diagram is a more detailed description of the components and
 their interactions.
 
 ```{mermaid}
-%%| label: fig-c4-context
+%%| label: fig-data-flow
 %%| fig-cap: >-
 %%|   Data flow in the ON LiMiT study, who generates data, where is does it
 %%|   enter, and how is it transmitted to storage.
