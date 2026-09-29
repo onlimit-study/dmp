@@ -110,7 +110,7 @@ The following equipment will be used for data collection:
   (all sites) for measuring body composition and bone density. This will be done
   for participants in the intervention arms.
 - [Fibroscanner](https://en.wikipedia.org/wiki/Elastography#Transient_elastography)
-  (two sites) for measuring liver stiffness. This will be done for participants
+  (four sites) for measuring liver stiffness. This will be done for participants
   in the intervention arms.
 - [iMotion Food
   preference](https://imotions.com/customer-stories/food-reward-biometrics/)
@@ -131,3 +131,28 @@ The following equipment will be used for data collection:
 For a detailed overview of the equipment used at each site, including scanner
 type, site, make, and model, please refer to the [Equipment
 overview](/supplemental/equipment.qmd) section.
+
+### Tests specific to one or more sites
+
+Most of the tests mentioned above will be done at all sites, but a few will be
+specific to one or two sites. The following tests will be conducted at specific
+sites:
+
+- Fibroscanner: This test will be conducted at Steno Aarhus, Steno Copenhagen,
+  Steno Odense, and Bispebjerg Hospital for measuring liver stiffness in
+  participants in the intervention arms.
+- iMotion Food preference: This test will be conducted at Steno Copenhagen and
+  NEXS (Department of Nutrition, Exercise and Sports, University of Copenhagen)
+  for establishing food preferences in participants in the intervention arms.
+- Finapres: This test will be conducted at Bispebjerg Hospital for measuring
+  cholesterol levels in participants in the intervention arms.
+- [Mixed Meal Tolerance
+  Test](https://prosciento.com/wp-content/uploads/2022/01/ProSciento-Fact-Sheet-OGT-and-MMT.pdf):
+  This test will be conducted at Steno Aarhus, Steno Odense, and Bispebjerg
+  Hospital for measuring glucose levels in participants in the intervention
+  arms.
+- [Oral Glucose Tolerance
+  Test](https://prosciento.com/wp-content/uploads/2022/01/ProSciento-Fact-Sheet-OGT-and-MMT.pdf):
+  This test will be conducted at NEXS (Department of Nutrition, Exercise and
+  Sports, University of Copenhagen) for measuring glucose levels in participants
+  in the intervention arms.
