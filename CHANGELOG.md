@@ -23,6 +23,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.10.0](https://github.com/onlimit-study/dmp/compare/0.9.2..0.10.0) - 2026-09-29
+
+### ✨ Features
+
+- Describe meaning of participant IDs in metadata
+  [#273](https://github.com/onlimit-study/dmp/pull/273) by
+  [`@K-Beicher`](https://github.com/K-Beicher)
+  ([9ecbccb](https://github.com/onlimit-study/dmp/commit/9ecbccbab742a1c594209d825b2b6371ce677001))
+
 ## [0.9.2](https://github.com/onlimit-study/dmp/compare/0.9.1..0.9.2) - 2026-09-28
 
 ### 🐛 Fixes
