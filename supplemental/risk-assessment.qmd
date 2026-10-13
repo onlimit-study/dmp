@@ -211,6 +211,7 @@ If yes, with whom?
 
 Joint Data Controller:
 
+::: {layout-ncol="2"}
 Steno Diabetes Centre Copenhagen\
 v/ Region Hovedstaden\
 Borgmester Ib Juuls vej 83\
@@ -219,16 +220,12 @@ Denmark\
 CVR: 2919 0623\
 ("SDCC")
 
-and
-
 Steno Diabetes Center Odense\
 v/ Region Syddanmark\
 Indgang 112, Kløvervænget 10\
 5000 Odense C\
 CVR no. 2919 0909\
 ("SDCO")
-
-and
 
 Copenhagen University Hospital Bispebjerg\
 v/ Region Hovedstaden\
@@ -238,15 +235,11 @@ Bispebjerg Bakke 23\
 CVR no. 2919 0623\
 ("BH")
 
-and
-
 Novo Nordisk Foundation Center for Basic Metabolic Research\
 University of Copenhagen\
 Blegdamsvej 3B, Building\ 7 2200 København N\
 CVR no. 2997 9812\
 ("CBMR")
-
-and
 
 Department of Nutrition, Exercise and Sports\
 Copenhagen University\
@@ -254,6 +247,7 @@ Nørre Allé 51\
 2200 København N\
 CVR no. 2997 9812\
 ("NEXS")
+:::
 
 ***Are you planning to share (disclose) personal data with others within the
 EU/EEA? (*Please tick relevant box*)***
