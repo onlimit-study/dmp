@@ -23,6 +23,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.10.1](https://github.com/onlimit-study/dmp/compare/0.10.0..0.10.1) - 2026-10-30
+
+### ♻️ Refactor
+
+- Use column layout for institutions in risk assessment
+  [#280](https://github.com/onlimit-study/dmp/pull/280) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([94adb11](https://github.com/onlimit-study/dmp/commit/94adb1198a801d5e887996ba30891785e8b3d632))
+
 ## [0.10.0](https://github.com/onlimit-study/dmp/compare/0.9.2..0.10.0) - 2026-09-29
 
 ### ✨ Features
