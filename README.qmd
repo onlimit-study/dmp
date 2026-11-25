@@ -10,7 +10,7 @@ metadata-files:
 
 <!-- TODO: Add more description of project -->
 
-This repository contains the Data Management Plan (DMP) for the ON-LiMiT study.
+This repository contains the Data Management Plan (DMP) for the ON LiMiT study.
 
 ::: callout-tip
 This website repository was generated from the

@@ -1,6 +1,6 @@
 
 
-# dmp: Data Management Plan (DMP) for the ON-LiMiT study
+# dmp: Data Management Plan (DMP) for the ON LiMiT study
 
 <!-- TODO: Include DOI after uploading -->
 
@@ -22,7 +22,7 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 
 <!-- TODO: Add more description of project -->
 
-This repository contains the Data Management Plan (DMP) for the ON-LiMiT
+This repository contains the Data Management Plan (DMP) for the ON LiMiT
 study.
 
 > [!TIP]

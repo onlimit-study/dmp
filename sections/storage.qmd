@@ -13,7 +13,7 @@ data we store is recoverable, should a disk fail, or a server stop working.
 
 ## Storage of data and metadata
 
-There are four main places we will store data from ON-LiMiT. The first three,
+There are four main places we will store data from ON LiMiT. The first three,
 where the data is entered or generated are [REDCap](https://project-redcap.org),
 [MyFood24](https://myfood24.org), and [LIVA](https://www.livahealthcare.com).
 These are not final storage areas, but they will hold data for long enough that
