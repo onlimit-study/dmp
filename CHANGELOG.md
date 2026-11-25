@@ -23,6 +23,26 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.10.2](https://github.com/onlimit-study/dmp/compare/0.10.1..0.10.2) - 2026-11-25
+
+### 🐛 Fixes
+
+- Use full name for GenomeDK
+  [#298](https://github.com/onlimit-study/dmp/pull/298) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([8747029](https://github.com/onlimit-study/dmp/commit/874702969987df5a032ac8d659df6d446636e902))
+- Standardize on `ON LiMiT` name, without a dash
+  [#297](https://github.com/onlimit-study/dmp/pull/297) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ffe0974](https://github.com/onlimit-study/dmp/commit/ffe0974ad3a59624527d86d14cfdd1b74dbdbce6))
+
+### 👩‍💻 Miscellaneous
+
+- Add csv files for activities and data points
+  [#269](https://github.com/onlimit-study/dmp/pull/269) by
+  [`@K-Beicher`](https://github.com/K-Beicher)
+  ([7acb7dc](https://github.com/onlimit-study/dmp/commit/7acb7dcc2773e38ae64225e9cb0ff393ca14658e))
+
 ## [0.10.1](https://github.com/onlimit-study/dmp/compare/0.10.0..0.10.1) - 2026-10-30
 
 ### ♻️ Refactor
